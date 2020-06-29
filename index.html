@@ -165,7 +165,7 @@ body {
 <a href="home" class="title">ERIC DELITZSCH<a/></li>
 <div class="topnav" id="myTopnav">
   <a href="work">WORK</a>
-  <a href="art">ART</a>
+  <a href="art">ARTa</a>
   <a href="studio">STUDIO</a> 
 </div>
 <div class="menua" id="mymenua">
@@ -183,8 +183,35 @@ function myFunction() {
 }
 </script>
 
+<script src="canvas-video-player.js"></script>
+<script>
+
+var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+
+if (isIOS) {
+
+    var canvasVideo = new CanvasVideoPlayer({
+        videoSelector: '.video',
+        canvasSelector: '.canvas',
+        timelineSelector: false,
+        autoplay: true,
+        makeLoop: true,
+        pauseOnClick: false,
+        audio: false
+    });
+
+}else {
+
+    // Use HTML5 video
+    document.querySelectorAll('.canvas')[0].style.display = 'none';
+
+}   
+
+</script>
+
 <section class="header">
-    <video class="video-background" playsinline autoplay loop muted>
+    <video class="video-background" playsinline  muted="muted" loop="loop" autoplay="autoplay">
+  <source type="video/mp4" src="Planta 10.mp4">
   <source type="video/webm" src="Planta 10.webm">
 </video>
   </section>
