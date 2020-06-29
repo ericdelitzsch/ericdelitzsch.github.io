@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Eric Delitzsch</title>
+  <title>Eric Delitzsch</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -165,7 +165,7 @@ body {
 <a href="home" class="title">ERIC DELITZSCH<a/></li>
 <div class="topnav" id="myTopnav">
   <a href="work">WORK</a>
-  <a href="art">ARaT</a>
+  <a href="art">ART</a>
   <a href="studio">STUDIO</a> 
 </div>
 <div class="menua" id="mymenua">
@@ -183,16 +183,10 @@ function myFunction() {
 }
 </script>
 
-<script>
-var mobilevideo = document.getElementsByTagName("video-background")[0];
-mobilevideo.setAttribute("playsinline", "");
-mobilevideo.setAttribute("muted", "");
-</script>
-
 <section class="header">
-    <video id="video-background" poster="poster.JPG" autoplay muted loop>
-            <source src="Planta 10.webm" type="video/webm">
-        </video>
+    <video class="video-background" playsinline autoplay loop muted>
+  <source type="video/webm" src="Planta 10.webm">
+</video>
   </section>
 
 </body>
