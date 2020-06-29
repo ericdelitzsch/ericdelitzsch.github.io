@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Eric Delitzsch</title>
+	<title>Eric Delitzsch</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 body {
@@ -141,6 +142,7 @@ body {
       .video-background
       {
         position: absolute;
+        
         width: auto;
         height: 100%;
       }
@@ -163,16 +165,12 @@ body {
 <a href="home" class="title">ERIC DELITZSCH<a/></li>
 <div class="topnav" id="myTopnav">
   <a href="work">WORK</a>
-  <a href="art">ARaaT</a>
+  <a href="art">ART</a>
   <a href="studio">STUDIO</a> 
 </div>
 <div class="menua" id="mymenua">
   <a href="javascript:void(0);" style="font-size:2.9vh;" class="menub" onclick="myFunction()">&#9776;</a>
 </div>
-
-<video class="video-background" playsinline autoplay loop muted>
-  <source src="Planta 10.ogv" type="video/ogg" ></source>
-</video>
 
 <script>
 function myFunction() {
@@ -184,6 +182,14 @@ function myFunction() {
   }
 }
 </script>
+
+<section class="header">
+    <video class="video-background" playsinline autoplay loop muted>
+  <source type="video/mp4" src="Planta 10.mp4"></source>
+  <source type="video/webm" src="Planta 10.webm"></source>
+  <source src="Planta 10.ogv" type="video/ogg" ></source>
+</video>
+  </section>
 
 </body>
 </html>
