@@ -183,33 +183,7 @@ function myFunction() {
 }
 </script>
 
-<script src="canvas-video-player.js"></script>
-<script>
-
-var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
-
-if (isIOS) {
-
-    var canvasVideo = new CanvasVideoPlayer({
-        videoSelector: '.video',
-        canvasSelector: '.canvas',
-        timelineSelector: false,
-        autoplay: true,
-        makeLoop: true,
-        pauseOnClick: false,
-        audio: false
-    });
-
-}else {
-
-    // Use HTML5 video
-    document.querySelectorAll('.canvas')[0].style.display = 'none';
-
-}   
-
-</script>
-
-<video playsinline controls autoplay muted>
+<video class="video-background" playsinline controls autoplay muted>
   <source type="video/mp4" src="Planta 10.mp4">
   <source type="video/webm" src="Planta 10.webm">
 </video>
