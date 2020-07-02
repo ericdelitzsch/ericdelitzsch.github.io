@@ -8,15 +8,20 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
-html {
-      scroll-behavior: smooth;
-    }
+body, html {
+  color: black;
+  font-size: 2.9vh;
+  font-family: raleway;
+  height: 100%;
+  margin: 0;
+}
 
-body {
-  text-align: right;
-      color: black;
-      font-size: 2.9vh;
-      font-family: raleway;
+.bg {
+  background-image: url("https://www.dropbox.com/s/49frhqyoam0stb7/Modelo%20Tepozltna.max_cloud.jpg?raw=1");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .topnav {
@@ -32,8 +37,7 @@ body {
 .topnav a {
   float: left;
   display: block;
-  color: black;
-  background-color: white;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -52,7 +56,7 @@ body {
 
 .menub {
   text-decoration: none;
-  color: black;
+  color: white;
   position: absolute;
   left: 84%;
   top: 11.5%;
@@ -63,7 +67,7 @@ body {
       position: absolute;
       left: 10%;
       top: 12%;
-      color: black;
+      color: white;
       text-decoration: none;
       z-index: 1;
 
@@ -142,7 +146,7 @@ body {
 
 header {
   position: relative;
-  top: 120px;
+  top: 0;
   margin: 7vw;
   font-size: 0;
   display: -ms-flexbox;
@@ -172,7 +176,7 @@ header div img {
 @media screen and (max-width: 1100px) {
   header {
   position: relative;
-  top: 175px;
+  top: 0;
   margin:0 auto;
   font-size: 0;
   display: -ms-flexbox;
@@ -184,23 +188,16 @@ header div img {
   display: flex;
 }
 
-.single-img2{
-    padding:0 .5vw 1vw;
-
-
-}
-
-
 </style>
 </head>
 <body>
 
-  <header>
+<div class="bg"></div>
 
-    <div class="single-img2"> <img src="https://www.dropbox.com/s/2s7n6fjhoten4h3/Modelo%20Tepozltna.max_cloud2.jpg?raw=1"> </div>
+<header>
 
-    <div class="single-img3"> <img src="https://www.dropbox.com/s/49frhqyoam0stb7/Modelo%20Tepozltna.max_cloud.jpg?raw=1"></div>
 
+    <div class="single-img3"> <img src="https://www.dropbox.com/s/2s7n6fjhoten4h3/Modelo%20Tepozltna.max_cloud2.jpg?raw=1"></div>
 
 
   </header>
@@ -225,5 +222,6 @@ function myFunction() {
   }
 }
 </script>
+
 </body>
 </html>
