@@ -8,15 +8,20 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
-html {
-      scroll-behavior: smooth;
-    }
+body, html {
+  color: black;
+  font-size: 2.9vh;
+  font-family: raleway;
+  height: 100%;
+  margin: 0;
+}
 
-body {
-  text-align: right;
-      color: black;
-      font-size: 2.9vh;
-      font-family: raleway;
+.bg {
+  background-image: url("https://www.dropbox.com/s/zvp4spuz24slg8z/Chiapas%20138%20Facahda.jpg?raw=1");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .topnav {
@@ -33,7 +38,6 @@ body {
   float: left;
   display: block;
   color: black;
-  background-color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -142,7 +146,7 @@ body {
 
 header {
   position: relative;
-  top: 120px;
+  top: 0;
   margin: 7vw;
   font-size: 0;
   display: -ms-flexbox;
@@ -172,7 +176,7 @@ header div img {
 @media screen and (max-width: 1100px) {
   header {
   position: relative;
-  top: 175px;
+  top: 0;
   margin:0 auto;
   font-size: 0;
   display: -ms-flexbox;
@@ -184,22 +188,16 @@ header div img {
   display: flex;
 }
 
-.single-img2{
-    padding:0 .5vw 1vw;
-
-
-}
-
-
 </style>
 </head>
 <body>
 
-  <header>
+<div class="bg"></div>
 
-    <div class="single-img7"> <img src="https://www.dropbox.com/s/zvp4spuz24slg8z/Chiapas%20138%20Facahda.jpg?raw=1"></div>
+<header>
 
-    <div class="single-img2"> <img src="https://www.dropbox.com/s/bnvqyx019wks38j/Chiapas%20138%20-%205%20%283%29.png?raw=1"> </div>
+
+    <<div class="single-img2"> <img src="https://www.dropbox.com/s/bnvqyx019wks38j/Chiapas%20138%20-%205%20%283%29.png?raw=1"> </div>
 
     <div class="single-img3"> <img src="https://www.dropbox.com/s/5p7pu7qa4iplvkn/Chaipas%20138%20-%202.jpg.png?raw=1"></div>
 
@@ -208,7 +206,6 @@ header div img {
     <div class="single-img5"> <img src="https://www.dropbox.com/s/gfaplyrqqwvgosy/Chaipas%20138%20.jpg?raw=1"></div>
 
     <div class="single-img6"> <img src="https://www.dropbox.com/s/a4jkk4vd4tg72iu/Chiapas%20138%20-%206%20%282%29.png?raw=1"></div>
-
 
   </header>
 <a href="home" class="title">ERIC DELITZSCH<a/></li>
@@ -232,5 +229,6 @@ function myFunction() {
   }
 }
 </script>
+
 </body>
 </html>
