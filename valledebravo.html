@@ -8,6 +8,12 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
+html {
+  scroll-behavior: smooth;
+
+
+}
+
 body, html {
   color: black;
   font-size: 2.9vh;
@@ -188,6 +194,43 @@ header div img {
   display: flex;
 }
 
+}
+
+.section1 {
+  position: absolute;
+  top: 85%;
+  left: 46%;
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+ .section1 {
+  position: absolute;
+  top: 85%;
+  left:46.5%;
+  max-width: 7.5%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  text-decoration: none;
+  color: white;
+  }
+
+@media screen and (max-width: 800px) {
+ .section1 {
+  position: absolute;
+  top: 90%;
+  left:43%;
+  max-width: 15%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  text-decoration: none;
+  color: white;
+  }
 </style>
 </head>
 <body>
@@ -197,7 +240,7 @@ header div img {
 <header>
 
 
-    <div class="single-img2"> <img src="https://www.dropbox.com/s/2bnujl7y7rl50iw/Valle%20Vestibulo.png?raw=1"> </div>
+    <div class="single-img2" id="section2"> <img src="https://www.dropbox.com/s/2bnujl7y7rl50iw/Valle%20Vestibulo.png?raw=1"> </div>
 
     <div class="single-img3"> <img src="https://www.dropbox.com/s/ukd4qvdjky8ifi4/Valle%20Sala%20y%20Comedor.png?raw=1"></div>
 
@@ -207,7 +250,16 @@ header div img {
 
     <div class="single-img5"> <img src="https://www.dropbox.com/s/v33w3cz03upiqvh/Valle%20Aereo%202.jpg?raw=1"></div>
 
+
   </header>
+
+<div>
+<a href="#section2"> <img src="arrow.png" class="section1" style="width:100px;height:auto;">
+</div>
+
+
+
+
 <a href="home" class="title">ERIC DELITZSCH<a/></li>
 <div class="topnav" id="myTopnav">
   <a href="work">WORK</a>
@@ -215,20 +267,10 @@ header div img {
   <a href="studio">STUDIO</a>
   <a href="studio"></a>  
 </div>
-<div class="menua" id="mymenua">
-  <a href="javascript:void(0);" style="font-size:2.9vh;" class="menub" onclick="myFunction()">&#9776;</a>
-</div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+<div class="menua" id="mymenua">
+  <a href="work" style="font-size:2.9vh;" class="menub" onclick="myFunction()">&#9776;</a>
+</div>
 
 </body>
 </html>
