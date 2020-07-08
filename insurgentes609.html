@@ -20,6 +20,12 @@ body, html {
   margin: 0;
 }
 
+body, .smooth-container { scroll-behavior: smooth }
+
+.section1 {
+  -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+}
+
 .bg {
   background-image: url("https://www.dropbox.com/s/fgd9q24vncte4nm/Insurgentes%20Sur%20609%20Exterior%203.jpg?raw=1");
   height: 100%; 
@@ -232,6 +238,8 @@ header div img {
 </style>
 </head>
 <body>
+
+<script src="zenscroll-min.js"></script>
 
 <div class="bg"></div>
 
