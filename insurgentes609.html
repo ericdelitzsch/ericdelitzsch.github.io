@@ -255,9 +255,9 @@ header div img {
 </div>
 
 <script>
- $(document).ready(function(){
-    $(window).scrollTop(0);
-});
+ window.onbeforeunload = function () {
+        window.scrollTo(0,0);
+};
 </script>
 
 <script type="text/javascript">
