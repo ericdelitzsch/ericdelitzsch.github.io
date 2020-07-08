@@ -254,11 +254,13 @@ header div img {
 <a href="#section2"> <img src="arrow.png" class="section1" style="width:100px;height:auto;">
 </div>
 
+
 <script>
- window.onbeforeunload = function () {
+window.onbeforeunload = function () {
         window.scrollTo(0,0);
 };
 </script>
+
 
 <script type="text/javascript">
 
@@ -278,6 +280,19 @@ window.addEventListener("DOMContentLoaded", function(e) {
 
 </script>
 
+<script>
+
+//Smooth scrolling with links
+$('a[href*=\\#]').on('click', function(event){     
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+});
+
+// Smooth scrolling when the document is loaded and ready
+$(document).ready(function(){
+  $('html,body').animate({scrollTop:$(location.hash).offset().‌​top}, 500);
+});
+</script>
 
 <a href="home" class="title">ERIC DELITZSCH<a/></li>
 <div class="topnav" id="myTopnav">
