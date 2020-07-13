@@ -5,6 +5,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>history.scrollRestoration = "manual"</script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
@@ -18,12 +19,6 @@ body, html {
   font-family: raleway;
   height: 100%;
   margin: 0;
-}
-
-body, .smooth-container { scroll-behavior: smooth }
-
-.section1 {
-  -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
 }
 
 .bg {
@@ -239,8 +234,6 @@ header div img {
 </head>
 <body>
 
-<script src="zenscroll-min.js"></script>
-
 <div class="bg"></div>
 
 <header>
@@ -266,13 +259,6 @@ header div img {
 </div>
 
 
-<script>
-window.onbeforeunload = function () {
-        window.scrollTo(0,0);
-};
-</script>
-
-
 <script type="text/javascript">
 
 window.addEventListener("DOMContentLoaded", function(e) {
@@ -293,16 +279,8 @@ window.addEventListener("DOMContentLoaded", function(e) {
 
 <script>
 
-//Smooth scrolling with links
-$('a[href*=\\#]').on('click', function(event){     
-    event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-});
 
-// Smooth scrolling when the document is loaded and ready
-$(document).ready(function(){
-  $('html,body').animate({scrollTop:$(location.hash).offset().‌​top}, 500);
-});
+
 </script>
 
 <a href="home" class="title">ERIC DELITZSCH<a/></li>
