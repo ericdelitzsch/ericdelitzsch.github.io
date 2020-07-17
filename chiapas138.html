@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Eric Delitzsch</title>
+  <title>Eric Delitzsch | Chiapas 138</title>
   <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>history.scrollRestoration = "manual"</script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
@@ -257,7 +258,23 @@ header div img {
 <a href="#section2"> <img src="arrow.png" class="section1" style="width:100px;height:auto;">
 </div>
 
+<script type="text/javascript">
 
+window.addEventListener("DOMContentLoaded", function(e) {
+  var links = document.getElementsByTagName("A");
+  for(var i=0; i < links.length; i++) {
+    if(!links[i].hash) continue;
+    if(links[i].origin + links[i].pathname != self.location.href) continue;
+    (function(anchorPoint) {
+      links[i].addEventListener("click", function(e) {
+        anchorPoint.scrollIntoView(true);
+        e.preventDefault();
+      }, false);
+    })(document.getElementById(links[i].hash.replace(/#/, "")));
+  }
+}, false);
+
+</script>
 
 
 <a href="home" class="title">ERIC DELITZSCH<a/></li>
