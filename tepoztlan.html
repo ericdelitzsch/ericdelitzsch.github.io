@@ -152,8 +152,8 @@ body, html {
       }
 
 header {
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: 85%;
   margin: 7vw;
   font-size: 0;
   display: -ms-flexbox;
@@ -232,6 +232,93 @@ header div img {
 	text-decoration: none;
 	color: white;
   }
+ }
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0 0.65em;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+#sections {
+  font-size: 17px;
+  padding: 70px 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+  
+#sections .main {
+  padding-right: 20px;
+  padding-top: 15px;
+  -webkit-flex: 2 1 25%;
+  flex: 2 1 25%;
+  -webkit-order: 2;
+  order: 2;
+}
+
+#sections .sub-section-1 {
+  padding-right: 200px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 1;
+  order: 1;
+}
+
+#sections .sub-section-2 {
+  padding-left: 10px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 3;
+  order: 3;
+}
+@media all and (max-width: 1200px)
+{
+  #sections {
+    padding: 60px 60px;
+    font-size: 20px;
+  }
+
+
+@media all and (max-width: 1000px)
+{
+  #sections {
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  
+  #sections > .main, #sections > .sub-section-1, #sections > .sub-section-2 {
+    /* For mobile phones, each section should be on a line of it's own at 100% width. */
+    width: 100%;
+    -webkit-order: 0;
+            order: 0;
+  }
+  
+  #sections .main {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-1 {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-2 {
+    padding-left: 0;
+  }
+}
+}
 </style>
 </head>
 <body>
@@ -240,11 +327,26 @@ header div img {
 
 <header>
 
+	<div id="sections">
+  <section class="sub-section-1" id="section2">
+    <b>Casa Mozoquila</b>
+    <p>Nestled into a forested slope along the eastern edge of the Case Inlet, this small retreat opens to a western view of the Olympic Mountains and the Puget Sound. Anchored by a weathered cedar clad bedroom wing, a bold concrete cantilever projects the living and dining into the forest and toward the view. An ipe deck slips from inside the kitchen into a meadow to the south, separated only by large sliding glass doors extending the sense of interior directly to the outdoors. A broad flat roof hovers high above the living spaces creating the feeling that one is sitting outdoors amidst the trees. Smaller, thoughtfully placed apertures define the exterior of the bedroom volume, along with a single large opening belonging to the master bath to give the users a ritual of bathing within the forest. A balance of simple lines and rugged low maintenance materials, this modest retreat is a welcome sanctuary from the city.</p>
+  </section>
+  
+  </section>
+  
+  <section class="main">
+    <p><b>location:</b> Tepoztlan, Mexico</p>
+    <p><b>area:</b> 200 sq m</p>
+     <p><b>year</b> 2020-2021</p>
+  </section>
+</div>
+
 	<div class="single-img3" id="smaqueta 4"> <img src="https://www.dropbox.com/s/1yiy331eoj6op0q/Maqueta%204.jpg?raw=1"></div>
     
-    <div class="single-img3" id="section2"> <img src="https://www.dropbox.com/s/2s7n6fjhoten4h3/Modelo%20Tepozltna.max_cloud2.jpg?raw=1"></div>
+    <div class="single-img3" id="section3"> <img src="https://www.dropbox.com/s/2s7n6fjhoten4h3/Modelo%20Tepozltna.max_cloud2.jpg?raw=1"></div>
 
-    <div class="single-img3" id="section2"> <img src="https://www.dropbox.com/s/fpombcfgmyvwhjc/timelapse.gif?raw=1"></div>
+    <div class="single-img3" id="section3"> <img src="https://www.dropbox.com/s/fpombcfgmyvwhjc/timelapse.gif?raw=1"></div>
 
     <div class="single-img3" id="section3"> <img src="https://www.dropbox.com/s/voci8j7nvcwlxk7/Recama%20dia.jpg?raw=1"></div>
 
