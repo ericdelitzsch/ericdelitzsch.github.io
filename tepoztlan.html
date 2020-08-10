@@ -21,7 +21,16 @@ body, html {
   font-family: raleway;
   height: 100%;
   margin: 0;
+
 }
+  webkit-overflow-scrolling: touch;
+
+}
+
+-webkit-font-smoothing: antialiased;
+
+}
+
 
 .bg {
   background-image: url("https://www.dropbox.com/s/n60pggjsva6te4t/Exterior.webp?raw=1");
@@ -154,7 +163,7 @@ body, html {
 header {
 	position: absolute;
   top: 77.5%;
-  margin: 12vw;
+  margin: 12vw 12vw 1vw 12vw;
   display: -ms-flexbox;
   -ms-flexbox-wrap: wrap;
   -ms-flexbox-direction: column;
@@ -320,6 +329,67 @@ h2 {
   }
 }
 }
+
+.column1 {
+  float: left;
+  font-size: 20px;
+  width: 31.9%;
+  padding: 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 20px;
+  width: 31.9%;
+  text-align: center;
+  padding: 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 20px;
+  width: 31.9%;
+  text-align: right;
+  padding: 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+  }
+
+@media all and (max-width: 1000px)
+{
+  .column1 {
+  float: left;
+  font-size: 13px;
+  width: 27%;
+  padding: 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 13px;
+  width: 27%;
+  text-align: center;
+  padding: 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 13px;
+  width: 27%;
+  text-align: right;
+  padding: 10px;
+}
+  
+}
+
+
 </style>
 </head>
 <body>
@@ -367,6 +437,19 @@ h2 {
 
     <div class="single-img3" id="maqueta 3"> <img src="https://www.dropbox.com/s/gx718xp8uxa3p70/Maqueta%203.webp?raw=1"></div>
 
+
+ <div class="row">
+  <div class="column1">
+    <a style="text-decoration: none; color:#005799" href="studio">Contact</a><br>
+  </div>
+  <div class="column2">
+    <a style="text-decoration: none; color:#005799" href="">Instagram</a><br>
+  </div>
+  <div class="column3">
+    <a style="text-decoration: none; color:#005799" href="#top">🡡 Top</a><br>
+  </div>
+</div>
+
   </header>
 
 <div>
@@ -401,8 +484,19 @@ window.addEventListener("DOMContentLoaded", function(e) {
 </div>
 
 <div class="menua" id="mymenua">
-  <a href="work" style="font-size:2.9vh;" class="menub" onclick="myFunction()">&#9776;</a>
+  <a href="javascript:void(0);" style="font-size:2.9vh;" class="menub" onclick="myFunction()">&#9776;</a>
 </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
 </body>
 </html>
