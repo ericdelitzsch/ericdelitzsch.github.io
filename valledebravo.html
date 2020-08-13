@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Eric Delitzsch | Valle de Bravo</title>
+  <title>Eric Delitzsch | Tepoztlan</title>
   <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,10 +21,19 @@ body, html {
   font-family: raleway;
   height: 100%;
   margin: 0;
+
+}
+{
+  webkit-overflow-scrolling: touch;
+}
+{
+
+-webkit-font-smoothing: antialiased;
+
 }
 
 .bg {
-  background-image: url("https://www.dropbox.com/s/n2xkm7qd9zep4ol/Valle%20Entrada.jpg?raw=1");
+  background-image: url("https://www.dropbox.com/s/wmialebkw492mbp/Exterior.jpg?raw=1");
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
@@ -66,7 +75,7 @@ body, html {
   color: white;
   position: absolute;
   left: 84%;
-  top: 11.5%;
+  top: 11.75%;
   
   }
 
@@ -153,10 +162,9 @@ body, html {
       }
 
 header {
-  position: relative;
-  top: 0;
-  margin: 7vw;
-  font-size: 0;
+	position: absolute;
+  top: 77.5%;
+  margin: 12vw 12vw 1vw 12vw;
   display: -ms-flexbox;
   -ms-flexbox-wrap: wrap;
   -ms-flexbox-direction: column;
@@ -170,9 +178,11 @@ header div {
   -webkit-box-flex: auto;
   -ms-flex: auto;
   flex: auto;
-  width: 1200px;
+  width: 100%;
+  height: auto;
   margin: .5vw;
   margin:1vw auto;
+  
 
 }
 
@@ -185,7 +195,7 @@ header div img {
   header {
   position: relative;
   top: 0;
-  margin:0 auto;
+  margin:10px 10px 20px 10px;
   font-size: 0;
   display: -ms-flexbox;
   -ms-flexbox-wrap: wrap;
@@ -199,40 +209,190 @@ header div img {
 }
 
 .section1 {
-  position: absolute;
-  top: 85%;
-  left: 46%;
-  text-decoration: none;
-  color: white;
+	position: absolute;
+	top: 85%;
+	left: 46%;
+	text-decoration: none;
+	color: white;
 }
 
 @media screen and (max-width: 900px) {
  .section1 {
-  position: absolute;
-  top: 85%;
-  left:46.5%;
-  max-width: 7.5%;
-  display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  text-decoration: none;
-  color: white;
+ 	position: absolute;
+	top: 85%;
+	left:46.5%;
+	max-width: 7.5%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	height: auto;
+	text-decoration: none;
+	color: white;
   }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
  .section1 {
-  position: absolute;
-  top: 90%;
-  left:43%;
-  max-width: 15%;
-  display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  text-decoration: none;
-  color: white;
+ 	position: absolute;
+	top: 90%;
+	left:43%;
+	max-width: 15%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	height: auto;
+	text-decoration: none;
+	color: white;
   }
+ }
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0 0.65em;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+#sections {
+  font-size: 17px;
+  padding: 70px 0px 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+  
+#sections .main {
+  padding-right: 20px;
+  padding-top: 15px;
+  -webkit-flex: 2 1 25%;
+  flex: 2 1 25%;
+  -webkit-order: 2;
+  order: 2;
+}
+
+#sections .sub-section-1 {
+  padding-right: 200px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 1;
+  order: 1;
+}
+
+#sections .sub-section-2 {
+  padding-left: 10px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 3;
+  order: 3;
+}
+@media all and (max-width: 1200px)
+{
+  #sections {
+    padding: 60px 60px;
+    font-size: 20px;
+  }
+
+
+@media all and (max-width: 1000px)
+{
+  #sections {
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  
+  #sections > .main, #sections > .sub-section-1, #sections > .sub-section-2 {
+    /* For mobile phones, each section should be on a line of it's own at 100% width. */
+    width: 100%;
+    -webkit-order: 0;
+            order: 0;
+  }
+  
+  #sections .main {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-1 {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-2 {
+    padding-left: 0;
+  }
+}
+}
+
+.column1 {
+  float: left;
+  font-size: 20px;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 20px;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 20px;
+  width: 32%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+  }
+
+@media all and (max-width: 1000px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 15px;
+  width: 30%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 15px;
+  line-height: 30px;
+  width: 30%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 15px;
+  line-height: 30px;
+  width: 30%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+
 </style>
 </head>
 <body>
@@ -241,19 +401,60 @@ header div img {
 
 <header>
 
+	<div id="sections">
+  <section class="sub-section-1" id="section2">
+    <b>Casa Xolatlaco</b>
+    <p>Located in Tepoztlán, a town located 76 km south from Mexico City, this house opens to the views of the breath-taking mountainous landscape. 
+	The house is constructed of region materials, such as volcanic stone and wood. The idea behind the design was to create a corridor framed by 2 courtyards that separate the public and the private areas of the house. On the front, there is a terrace with the kitchen, dinning and living room, with moving windows, the house opens to the views and the nature. On the back of the house, there are 4 bedrooms with a more private social area and a small terrace with a swimming pool. The combination of a simple house and simple materials becomes a modest house retreat to escape from the city. 
+	</p>
+  </section>
+  
+  <section class="main">
+    <p><b>location:</b> Tepoztlan, Mexico</p>
+    <p><b>type:</b> Residential</p>
+    <p><b>area:</b> 200 sq m</p>
+    <p><b>year:</b> 2020-2021</p>
+    <p><b>status:</b> Under Construction</p>
+  </section>
 
-    <div class="single-img2" id="section2"> <img src="https://www.dropbox.com/s/ehkgsua8v0f57y1/Valle%20Vestibulo.jpg?raw=1"> </div>
+</div>
 
-    <div class="single-img3"> <img src="https://www.dropbox.com/s/02qrv8ldcnk6tsp/Valle%20Sala%20y%20Comedor.jpg?raw=1"></div>
+	<div class="single-img3" id="smaqueta 4"> <img src="https://www.dropbox.com/s/wpr5qmo7k4smlkr/Maqueta%204.jpg?raw=1"></div>
+    
+    <div class="single-img3" id="section3"> <img src="https://www.dropbox.com/s/lb9mfsvdvm7bwsi/Sala.jpg?raw=1"></div>
 
-    <div class="single-img6"> <img src="https://www.dropbox.com/s/mfgo50roezspchx/Valle%20Cocina.jpg?raw=1"></div>
+    <div class="single-img3" id="section3"> <img src="https://www.dropbox.com/s/tmhw79d303xy53i/Timelapse.gif?raw=1"></div>
 
-    <div class="single-img4"> <img src="https://www.dropbox.com/s/drbyl7oiphm6cw8/Valle%20Recamara%20Principal.jpg?raw=1"></div>
+    <div class="single-img3" id="section3"> <img src="https://www.dropbox.com/s/xo8xym2o1b6ay5b/Cocina.jpg?raw=1"></div>
 
-    <div class="single-img5"> <img src="https://www.dropbox.com/s/huojxieirx41yy5/Valle%20Aereo%202.jpg?raw=1"></div>
+    <div class="single-img3" id="section3"> <img src="https://www.dropbox.com/s/i5wfy4ikbpf4tgi/Recama%20dia.jpg?raw=1"></div>
+
+    <div class="single-img3" id="section3"> <img src="https://www.dropbox.com/s/r9ukqpoftufhkao/Recamara%20Detalle.jpg?raw=1"></div>
+
+    <div class="single-img3" id="section3"> <img src="https://www.dropbox.com/s/x4wcoqfy6k5lun8/Recamara%20Noche%202.jpg?raw=1"></div>
+
+    <div class="single-img3" id="section3"> <img src="https://www.dropbox.com/s/wbac9l3ld3czr9a/Recamara%20Noche.jpg?raw=1"></div>
+
+    <div class="single-img3" id="maqueta 2"> <img src="https://www.dropbox.com/s/n0naae60ujijy4j/Maqueta%201.jpg?raw=1"></div>
+
+    <div class="single-img3" id="maqueta 1"> <img src="https://www.dropbox.com/s/autmbc3exczew2c/Maqueta%202.jpg?raw=1"></div>
+
+    <div class="single-img3" id="maqueta 3"> <img src="https://www.dropbox.com/s/7l1ucvnztduvkkv/Maqueta%203.jpg?raw=1"></div>
 
 
-  </header>
+ <div class="row">
+  <div class="column1">
+    <a style="text-decoration: none; color:#005799" href="studio">Contact</a><br>
+  </div>
+  <div class="column2">
+    <a style="text-decoration: none; color:#005799" href="https://www.instagram.com/ericdelitzsch.arch/">Instagram</a><br>
+  </div>
+  <div class="column3">
+    <a style="text-decoration: none; color:#005799" href="#top">🡡 Top</a><br>
+  </div>
+</div>
+
+  </header> 
 
 <div>
 <a href="#section2"> <img src="arrow.png" class="section1" style="width:100px;height:auto;">
@@ -287,10 +488,19 @@ window.addEventListener("DOMContentLoaded", function(e) {
 </div>
 
 <div class="menua" id="mymenua">
-  <a href="work" style="font-size:2.7vh;" class="menub" onclick="myFunction()">&#9776;</a>
+  <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">&#9776;</a>
 </div>
 
-
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
 </body>
 </html>
