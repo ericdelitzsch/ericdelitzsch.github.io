@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Eric Delitzsch · Architecture</title>
+  <title>Eric Delitzsch | Work</title>
   <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Description" CONTENT="Eric Delitzsch is an Architecture Office based in Mexico City, ranging from Architecture, Planning, and Interiors.">
+<meta name="Description" CONTENT="Casa Xolatlaco - Tepoztlan Insurgentes Sur 609 - Mexico City">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+html {
+      scroll-behavior: smooth;
+    }
+
 body {
   text-align: right;
       color: black;
@@ -19,7 +24,7 @@ body {
     overflow: hidden;
     position: absolute;
     top: 10.5%;
-    right: 10%;
+    right: 6.9%;
     color: black;
     text-decoration: none;
   
@@ -29,10 +34,12 @@ body {
   float: left;
   display: block;
   color: black;
+  background-color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 2.9vh;
+  z-index: -1;
 }
 
 .topnav a:hover {
@@ -120,37 +127,6 @@ body {
     text-align: left;
   }
  
- } 
-.video-background
-    {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: auto;
-      height: auto;
-      z-index: -1;
-      display: block;
-
-     
-     }
-    @media (min-aspect-ratio:16/9)
-    {
-      .video-background
-      {
-        width: 100%;
-        height: auto;
-      }
-    }
-    @media (max-aspect-ratio:16/9)
-    {
-      .video-background
-      {
-        position: fixed;
-        left: -120%;
-        width: auto;
-        height: 100%;
-      }
-      
       }
 
       @media screen and (min-width:700px) {
@@ -163,14 +139,80 @@ body {
       
       }
 
+      
+      }
+
+header {
+  position: relative;
+  top: 80px;
+  margin: 7vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+
+}
+
+header div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 500px;
+  margin: .5vw;
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+  margin:5px auto;
+
+}
+
+@media screen and (max-width: 600px) {
+  header {
+  position: relative;
+  top: 150px;
+  margin:0 auto;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+}
+
+
 </style>
 </head>
 <body>
+
+  <header>
+
+  	 <div class="chiapas"> <a href="tepoztlan"> <img src="https://www.dropbox.com/s/wmialebkw492mbp/Exterior.jpg?raw=1"></div>
+      
+    <div class="chiapas"> <a href="chiapas138"> <img src="https://www.dropbox.com/s/h5txuoafrsonr01/Chaipas%20138%20.jpg?raw=1"></div>
+
+    <div class="insurgentes609"> <a href="insurgentes609"> <img src="https://www.dropbox.com/s/97femmdx79n44dh/Webp.net-gifmaker%20%281%29.gif?raw=1"></div>
+
+    <div class="valledebravo"> <a href="valledebravo"> <img src="https://www.dropbox.com/s/azgw7w666e4yhwr/Valle%20Sala%20de%20Juegos.jpg?raw=1"></div>
+
+    <div class="felixcandela"> <a href="felixcandela"> <img src="https://www.dropbox.com/s/81jfn5g6v6iz5x7/FelixCandela.gif?raw=1"></div>
+
+    <div class="maccovid"> <a href="maccovid"> <img src="https://www.dropbox.com/s/y983517cr0se9nt/MACCOVID.gif?raw=1"></div>
+
+  </header>
 <a href="home" class="title"><b>eric delitzsch · </b>architecture<a/></li>
 <div class="topnav" id="myTopnav">
   <a href="work">work</a>
   <a href="art">art</a>
-  <a href="studio">studio</a> 
+  <a href="studio">studio</a>
+  <a href="studio"></a>  
 </div>
 <div class="menua" id="mymenua">
   <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">&#9776;</a>
@@ -186,14 +228,5 @@ function myFunction() {
   }
 }
 </script>
-
-<section class="header">
-    <video class="video-background" playsinline autoplay loop muted>
-  <source type="video/mp4" src="https://www.dropbox.com/s/qob7a86u8iv1e9k/Planta%2010.mp4?raw=1"></source>
-  <source type="video/webm" src="https://www.dropbox.com/s/iq40bfunoo3vu80/mesquite.webm?raw=1"></source>
-  <source src="https://www.dropbox.com/s/46q0jtx3b0zg37h/Planta%2010.ogv?raw=1" type="video/ogg" ></source>
-</video>
-  </section>
-
 </body>
 </html>
