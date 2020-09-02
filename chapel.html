@@ -396,9 +396,13 @@ h2 {
 
 
 .videowrapper {
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
+ -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 100%;
+  height: auto;
+  margin: .5vw;
+  margin:1vw auto;
 
 
 }
@@ -439,7 +443,7 @@ h2 {
 
 	<div class="single-img3" id="vista2"> <img src="https://lh3.googleusercontent.com/AsvpVyhDGLrUi5TIQ218K8sRap0kbmEWhTrrqKJKrpmXKfDxMZoWiggblaj14yzN8Z0m2AsqawscttV764lQEDZVFtw33S70VYn-sBCPGV8c9ejEta8G1F0lIQUd6WQw0nA3iLWsUg=w2400"></div>
 
-	<video class="videowrapper" poster="/chapel/Thumbnail.jpg" controls preload="none">
+	<video class="videowrapper" display="block" poster="/chapel/Thumbnail.jpg" controls preload="none">
  		 <source src="/chapel/Timelapse Capilla.mp4" type="video/mp4">
   	</video>
 
