@@ -394,14 +394,32 @@ h2 {
 }
 
 
-
-.videowrapper {
-  width: 100%;
-  height: auto;
-  display: block;
-
-
+.video-wrapper {
+    position: relative;
+    padding-bottom: 74.25%; /* 4:3 ratio */
+    padding-top: -10px; 
+    height: 0;
+    overflow: hidden;
 }
+
+.video-wrapper-narrow {
+    padding-bottom: 40%;
+}
+
+iframe,object,embed,video,.videoWrapper,.video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-js, img.vjs-poster {
+    width: 100% !important;
+    height: 100% !important; //these need !important because IE wants to set height/width to 100px
+    max-width: 100%;
+}
+
 
 
 </style>
@@ -439,9 +457,9 @@ h2 {
 
 	<div class="single-img3" id="vista2"> <img src="https://lh3.googleusercontent.com/AsvpVyhDGLrUi5TIQ218K8sRap0kbmEWhTrrqKJKrpmXKfDxMZoWiggblaj14yzN8Z0m2AsqawscttV764lQEDZVFtw33S70VYn-sBCPGV8c9ejEta8G1F0lIQUd6WQw0nA3iLWsUg=w2400"></div>
 
-	<video class="videowrapper" display="block" poster="/chapel/Thumbnail.jpg" controls preload="none">
- 		 <source src="/chapel/Timelapse Capilla.mp4" type="video/mp4">
-  	</video>
+	<div class="video-wrapper">
+    	<iframe src="https://player.vimeo.com/video/34854116?badge=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+	</div>
 
 	
  <div class="row">
@@ -477,6 +495,53 @@ window.addEventListener("DOMContentLoaded", function(e) {
     })(document.getElementById(links[i].hash.replace(/#/, "")));
   }
 }, false);
+
+</script>
+
+<script type="text/javascript">
+
+// Vanilla version of FitVids
+// Still licencened under WTFPL
+//
+// Not as robust and fault tolerant as the jQuery version.
+// It's BYOCSS.
+// And also, I don't support this at all whatsoever.
+
+(function(window, document, undefined) {
+  "use strict";
+
+  // List of Video Vendors embeds you want to support
+  var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+
+  // Select videos
+  var fitVids = document.querySelectorAll(players.join(","));
+
+  // If there are videos on the page...
+  if (fitVids.length) {
+    // Loop through videos
+    for (var i = 0; i < fitVids.length; i++) {
+      // Get Video Information
+      var fitVid = fitVids[i];
+      var width = fitVid.getAttribute("width");
+      var height = fitVid.getAttribute("height");
+      var aspectRatio = height / width;
+      var parentDiv = fitVid.parentNode;
+
+      // Wrap it in a DIV
+      var div = document.createElement("div");
+      div.className = "fitVids-wrapper";
+      div.style.paddingBottom = aspectRatio * 100 + "%";
+      parentDiv.insertBefore(div, fitVid);
+      fitVid.remove();
+      div.appendChild(fitVid);
+
+      // Clear height/width from fitVid
+      fitVid.removeAttribute("height");
+      fitVid.removeAttribute("width");
+    }
+  }
+})(window, document);
+
 
 </script>
 
