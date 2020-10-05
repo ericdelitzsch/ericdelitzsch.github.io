@@ -4,7 +4,7 @@
   <title>Eric Delitzsch · Architecture | Light House</title>
   <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Description" CONTENT="Located in Tepoztlán, a town 76 km south from Mexico City, this house opens to the views of the breath-taking mountainous landscape.">
+<meta name="Description" CONTENT="Once an essential water navigation tool, this design successfully preserves the conceptual elements of the lighthouse building type.">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script>history.scrollRestoration = "manual"</script>
 <style>
@@ -402,6 +402,33 @@ h2 {
 }
 
 
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 4:3 ratio */
+    padding-top: 0px; 
+    height: 0px;
+    overflow: hidden;
+}
+
+.video-wrapper-narrow {
+    padding-bottom: 40%;
+}
+
+iframe,object,embed,video,.videoWrapper,.video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-js, img.vjs-poster {
+    width: 50% !important;
+    height: 100% !important; //these need !important because IE wants to set height/width to 100px
+    max-width: 100%;
+}
+
+
 </style>
 </head>
 <body>
@@ -413,9 +440,7 @@ h2 {
 	<div id="sections">
   <section class="sub-section-1" id="section2">
     <b>Light House</b>
-    <p>Located in Tepoztlán, a town 76 km south from Mexico City, this house opens to the views of the breath-taking mountainous landscape. 
-	The house is constructed of region materials, such as volcanic stone and wood. The idea behind the design was to create a corridor framed by 2 courtyards that separate the public and the private areas of the house. On the front, there is a terrace with the kitchen, dinning and living room, with moving windows, the house opens to the views and the nature. On the back of the house, there are 4 bedrooms with a more private social area and a small terrace with a swimming pool. The combination of a simple house and simple materials becomes a modest house retreat to escape from the city. 
-	</p>
+    <p> </p>
   </section>
   
   <section class="main">
@@ -425,10 +450,15 @@ h2 {
     <p><b>year:</b> 2020</p>
     <p><b>status:</b> Proposal</p>
   </section>
-
 </div>
 
+  <div class="video-wrapper">
+    <iframe src="https://player.vimeo.com/video/465173279" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  </div>
+
 	<div class="single-img3" id="render 1"> <img src="https://www.dropbox.com/s/p6byxig73zn7r3m/Render%201.jpg?raw=1"></div>
+
+  
 
 
  <div class="row">
@@ -468,6 +498,53 @@ window.addEventListener("DOMContentLoaded", function(e) {
     })(document.getElementById(links[i].hash.replace(/#/, "")));
   }
 }, false);
+
+</script>
+
+<script type="text/javascript">
+
+// Vanilla version of FitVids
+// Still licencened under WTFPL
+//
+// Not as robust and fault tolerant as the jQuery version.
+// It's BYOCSS.
+// And also, I don't support this at all whatsoever.
+
+(function(window, document, undefined) {
+  "use strict";
+
+  // List of Video Vendors embeds you want to support
+  var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+
+  // Select videos
+  var fitVids = document.querySelectorAll(players.join(","));
+
+  // If there are videos on the page...
+  if (fitVids.length) {
+    // Loop through videos
+    for (var i = 0; i < fitVids.length; i++) {
+      // Get Video Information
+      var fitVid = fitVids[i];
+      var width = fitVid.getAttribute("width");
+      var height = fitVid.getAttribute("height");
+      var aspectRatio = height / width;
+      var parentDiv = fitVid.parentNode;
+
+      // Wrap it in a DIV
+      var div = document.createElement("div");
+      div.className = "fitVids-wrapper";
+      div.style.paddingBottom = aspectRatio * 100 + "%";
+      parentDiv.insertBefore(div, fitVid);
+      fitVid.remove();
+      div.appendChild(fitVid);
+
+      // Clear height/width from fitVid
+      fitVid.removeAttribute("height");
+      fitVid.removeAttribute("width");
+    }
+  }
+})(window, document);
+
 
 </script>
 
