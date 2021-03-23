@@ -182,6 +182,13 @@ body {
   <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">&#9776;</a>
 </div>
 
+<div>
+<video id="videoItem" playsinline autoplay muted>
+    <source src="https://drive.google.com/uc?export=download&id=1Gu6dYHXkYeeHaxzSBnCAcScAzfIApH4-" type="video/mp4" />
+    <source src="https://drive.google.com/uc?export=download&id=1Z7NCPJIQWZqGfCWtu5fiLZc_vb9c0nvL" type="video/ogg" />
+</video>
+</div>
+
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -193,13 +200,24 @@ function myFunction() {
 }
 </script>
 
-<section class="header">
-    <video class="video-background" playsinline autoplay loop muted>
-  <source type="video/mp4" src="https://drive.google.com/uc?export=download&id=1XNXf_DJFNf5yuqanvzPHG2N_DF3SDCSR"></source>
-  <source type="video/webm" src="https://drive.google.com/uc?export=download&id=1Sp6umRG6se0_TnTXA_GX5MLnsu7lFS4T"></source>
-  <source src="https://drive.google.com/uc?export=download&id=1Z7NCPJIQWZqGfCWtu5fiLZc_vb9c0nvL" type="video/ogg" ></source>
-</video>
-  </section>
+<script>
+
+       // function to generate random int inside a given range
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    var video = document.getElementById('videoItem');
+    var sources = video.getElementsByTagName('src');
+    var videoUrlsMp4=["https://drive.google.com/uc?export=download&id=1Gu6dYHXkYeeHaxzSBnCAcScAzfIApH4-", "https://drive.google.com/uc?export=download&id=1Gu6dYHXkYeeHaxzSBnCAcScAzfIApH4-", "https://drive.google.com/uc?export=download&id=1Gu6dYHXkYeeHaxzSBnCAcScAzfIApH4-"];
+    var videoUrlsOgg4=["https://drive.google.com/uc?export=download&id=1Z7NCPJIQWZqGfCWtu5fiLZc_vb9c0nvL", "https://drive.google.com/uc?export=download&id=1Z7NCPJIQWZqGfCWtu5fiLZc_vb9c0nvL", "https://drive.google.com/uc?export=download&id=1Z7NCPJIQWZqGfCWtu5fiLZc_vb9c0nvL"];
+    var random_nr = getRandomInt(0, videoUrlsMp4.length-1);
+    sources[0].src = videoUrlsMp4[random_nr ];
+    sources[1].src = videoUrlsOgg4[random_nr ];
+    video.load();
+
+</script>
+
+
 
 </body>
 </html>
