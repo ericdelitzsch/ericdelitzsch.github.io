@@ -4,10 +4,12 @@
   <title>Art | Eric Delitzsch · Architects</title>
   <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Description" CONTENT="Through art, Eric Delitzsch expresses his vision of the nature and the surroundings">
+<meta name="Description" CONTENT="">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>history.scrollRestoration = "manual"</script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
 
   /* Customize website's scrollbar like Mac OS
 Not supports in Firefox and IE */
@@ -33,17 +35,31 @@ body::-webkit-scrollbar-button {
     display:none;
 }
 
-body {
-  text-align: right;
-      color: black;
-      font-size: 2.9vh;
-      font-family: raleway;
+html {
+  scroll-behavior: smooth;
+
+
+}
+
+body, html {
+  color: black;
+  font-size: 2.9vh;
+  font-family: raleway;
+  margin: 0;
+
+}
+{
+  webkit-overflow-scrolling: touch;
+}
+{
+
+-webkit-font-smoothing: antialiased;
+
 }
 
 .copyright{
-  font-size: 13px;
-  text-align: center;
-  width: 1550px;
+	font-size: 13px;
+	text-align: center;
 }
 
 .topnav {
@@ -60,7 +76,6 @@ body {
   float: left;
   display: block;
   color: black;
-  background-color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -69,7 +84,7 @@ body {
 }
 
 .topnav a:hover {
-  color: gray;
+  color: black;
 }
 
 .topnav .icon {
@@ -111,6 +126,9 @@ body {
     float: right;
     display: block;
   }
+  .copyright {
+    font-size: 13px;
+  }
 }
 
 
@@ -118,7 +136,7 @@ body {
   .topnav.responsive {position: relative;}
   .topnav.responsive {
     position: absolute;
-    left: 6%;
+    left: 5%;
     top: 15%;
   }
 
@@ -169,9 +187,39 @@ body {
       }
 
 header {
-  position: relative;
-  top: 100px;
-  margin: 7vw;
+	position: absolute;
+  margin: 12vw 12vw 1vw 12vw;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+
+}
+
+header div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 100%;
+  height: auto;
+  margin: .5vw;
+  margin:1vw auto;
+  
+
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+  position: absolute;
+  top: 20%;
+  margin:10px 10px 20px 10px;
   font-size: 0;
   display: -ms-flexbox;
   -ms-flexbox-wrap: wrap;
@@ -180,61 +228,314 @@ header {
   flex-flow: row wrap;
   display: -webkit-box;
   display: flex;
+}
+
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0 0.65em;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+#sections {
+  font-size: 17px;
+  padding: 70px 0px 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+  
+#sections .main {
+  padding-right: 20px;
+  padding-top: 15px;
+  -webkit-flex: 2 1 25%;
+  flex: 2 1 25%;
+  -webkit-order: 2;
+  order: 2;
+}
+
+#sections .sub-section-1 {
+  padding-right: 200px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 90%;
   -webkit-order: 1;
-
+  order: 1;
 }
 
-header div {
-  -webkit-box-flex: auto;
-  -ms-flex: auto;
-  flex: auto;
-  width: 500px;
-  margin: .5vw;
-   -webkit-order: 1;
+#sections .sub-section-2 {
+  padding-left: 10px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 3;
+  order: 3;
 }
-
-header div img {
-  width: 100%;
-  height: auto;
-}
-
-@media screen and (max-width: 600px) {
-  header div {
-    margin: 0;
-     -webkit-order: 1;
+@media all and (max-width: 1200px)
+{
+  #sections {
+    padding: 60px 60px;
+    font-size: 20px;
   }
 
-  header {
-    padding: 0;
-    -webkit-order: 1;
+
+@media all and (max-width: 1000px)
+{
+  #sections {
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 15px;
   }
+  
+  #sections > .main, #sections > .sub-section-1, #sections > .sub-section-2 {
+    /* For mobile phones, each section should be on a line of it's own at 100% width. */
+    width: 100%;
+    -webkit-order: 0;
+            order: 0;
+  }
+  
+  #sections .main {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-1 {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-2 {
+    padding-left: 0;
+  }
+}
+}
+
+.column1 {
+  float: left;
+  font-size: 20px;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 20px;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 20px;
+  width: 32%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+  }
+
+@media all and (max-width: 1000px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 15px;
+  width: 30%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 15px;
+  line-height: 30px;
+  width: 30%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 15px;
+  line-height: 30px;
+  width: 30%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 4:3 ratio */
+    padding-top: 0px; 
+    height: 0px;
+    overflow: hidden;
+}
+
+.video-wrapper-narrow {
+    padding-bottom: 40%;
+}
+
+iframe,object,embed,video,.videoWrapper,.video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-js, img.vjs-poster {
+    width: 50% !important;
+    height: 100% !important; //these need !important because IE wants to set height/width to 100px
+    max-width: 100%;
 }
 
 .vidrios1{
-    width: 550px;
+    width: 30vw;
     float: left;    
     margin-top: auto;    
-}
+}  
 
 .sombracelosia{
-    width: 550px;
+    width: 45vw;
     float: right;    
+    margin-top: auto;    
+} 
+
+.villa{
+    width: 50vw;    
+    margin-top: auto;    
+} 
+
+.playaventura{
+    width: 70vw;    
+    margin-top: auto;    
+} 
+
+.ajedrez{
+    width: 30vw; 
+    float: left;   
+    margin-top: auto;    
+} 
+
+.ajedrez{
+    width: 40vw; 
+    float: left;   
     margin-top: auto;    
 }
 
-.playaventura{
-    width: 1000px;
-    float: right;    
-    margin-top: auto;
-    }  
+.escalerasombras{
+    width: 40vw; 
+    float: right;   
+    margin-top: auto;    
+}
+
+.capilla{
+    width: 50vw;   
+    margin-top: auto;    
+}  
+
+.velero{
+    width: 50vw;   
+    margin-top: auto;    
+} 
+
+.vasoscristalsombra{
+    width: 35vw;
+    float: left;   
+    margin-top: auto;    
+}
+
+.candado{
+    width: 40vw;
+    float: right;   
+    margin-top: auto;    
+}
+
+.candado{
+    width: 40vw;
+    float: right;   
+    margin-top: auto;    
+}
+
+.aviones{
+    width: 60vw;
+    float: right;   
+    margin-top: auto;    
+}
+
+.ballet{
+    width: 60vw;
+    float: left;   
+    margin-top: auto;    
+}
 
 .florero{
-    width: 300px;
-    float: right;    
-    margin-top: auto;
-    }   
-  
+    width: 40vw; 
+    margin-top: auto;    
+}           
+
+
+
+@media all and (max-width: 1000px)
+{
+    .vidrios1{
+      width: 100%;
+      height:auto;
+  margin-top: 1vw;
+
+  }
+
+   .sombracelosia{
+    width: 100%;
+    height:auto;
+  margin-top: 1vw;
+
+  }
+
+  .ajedrez{
+    width: 100%;
+    height:auto;
+  margin-top: 1vw;    
 }
+
+.escalerasombras{
+    width: 100%;
+    height:auto;
+  margin-top: 1vw;   
+}
+
+.velero{
+    width: 100%;
+    height:auto;
+  margin-top: 1vw;   
+}
+
+.vasoscristalsombra{
+    width: 100%;
+    height:auto;
+  margin-top: 1vw;   
+}
+
+.candado{
+    width: 100%;
+    height:auto;
+  margin-top: 1vw;   
+}    
 
 
 
@@ -243,69 +544,127 @@ header div img {
 </head>
 <body>
 
-  <header>
 
-    <div class="vidrios1"> <meta name="Vasos vidrios 1">
-        <img src="https://drive.google.com/uc?export=download&id=1KWHC_AoV6yI-kbpIpgC9u8SkuQl5e-_h" > 
-      </div>
+<header>
 
-      <div class="sombracelosia"> <meta name="Sombra celosia">
-        <img src="https://drive.google.com/uc?export=download&id=13fP6xxAcZeelK6KrkoFCQr9lYrODYMXZ" alt=""> 
-      </div>
+	     <div class="vidrios1"> <img src="https://drive.google.com/uc?export=download&id=1KWHC_AoV6yI-kbpIpgC9u8SkuQl5e-_h"> </div>
 
-      <div class="playaventura"> <meta name="Playa ventura">
-        <img src="https://drive.google.com/uc?export=download&id=1Qv-HqIk3cTEZK9jgwRzRWrllh72T8V5k" alt=""> 
-      </div>
+      <div class="sombracelosia"> <img src="https://drive.google.com/uc?export=download&id=13fP6xxAcZeelK6KrkoFCQr9lYrODYMXZ"> </div>
 
-      <div class="single-img12"> <meta name="Montaña Tepoztlan">
-        <img src="https://drive.google.com/uc?export=download&id=1NlRKKcYPthZyElqJ6-FqyCWMqtFX_UKA" alt=""> 
-      </div>
+      <div class="villa"><img src="https://drive.google.com/uc?export=download&id=1OkENWxGqZP6tNijydA5j04zeVBdBQe0R"> </div>
 
-      <div class="single-img3"> <meta name="Ajedrez">
-        <img src="https://drive.google.com/uc?export=download&id=1n9-g8g5QE-mb0xFHgOHzOJQrSelbLOeR" alt="">
-      </div>
+      <div class="playaventura"> <img src="https://drive.google.com/uc?export=download&id=1Qv-HqIk3cTEZK9jgwRzRWrllh72T8V5k"> </div>
 
-      <div class="single-img4"> <meta name="Escalera sombras">
-        <img src="https://drive.google.com/uc?export=download&id=1J5UkO57Zu8sVRDLr_C9IyrV0FVbj20T3" alt="">
-      </div>
+      <div class="ajedrez"> <img src="https://drive.google.com/uc?export=download&id=1n9-g8g5QE-mb0xFHgOHzOJQrSelbLOeR"></div>
 
-      <div class="single-img5"> <meta name="Velero">
-        <img src="https://drive.google.com/uc?export=download&id=1sM3RWjyc2KJX9kYjpgBSNIXP5wk9J8LA" alt="">
-      </div>
+      <div class="escalerasombras"> <img src="https://drive.google.com/uc?export=download&id=1J5UkO57Zu8sVRDLr_C9IyrV0FVbj20T3"></div>
 
-      <div class="single-img6"> <meta name="Vasos cristal sombra">
-        <img src="https://drive.google.com/uc?export=download&id=1wNyepxiyKOXOOSPyuakCE_KTARZnfW1x" alt="">
-      </div>
+      <div class="capilla"> <img src="https://drive.google.com/uc?export=download&id=19YE2U4bDvGF6PV3vDnKas1XJGLVVn2L7"></div>
 
-      <div class="single-img7"> <meta name="Candado">
-        <img src="https://drive.google.com/uc?export=download&id=1FZtwQGTTdef264vx3O6ZsoeTPmJpHZww" alt="">
-      </div>
+      <div class="velero"> <img src="https://drive.google.com/uc?export=download&id=1sM3RWjyc2KJX9kYjpgBSNIXP5wk9J8LA"></div>
 
-       <div class="single-img8"> <meta name="Aviones">
-        <img src="https://drive.google.com/uc?export=download&id=1BDjphb878aaOBmWWmvZWg1gs0h5_ss8f" alt="">
-      </div>
+      <div class="vasoscristalsombra"> <img src="https://drive.google.com/uc?export=download&id=1wNyepxiyKOXOOSPyuakCE_KTARZnfW1x"> </div>
 
-       <div class="single-img9"> <meta name="Niña Ballet Zapatos">
-        <img src="https://drive.google.com/uc?export=download&id=1YL_hxrXe9hLTsvzbhGQXJhXJL1YjJ_WE" alt="">
-      </div>
+      <div class="candado"> <img src="https://drive.google.com/uc?export=download&id=1FZtwQGTTdef264vx3O6ZsoeTPmJpHZww"> </div>
 
-      <div class="florero"> <meta name="Florero">
-        <img src="https://drive.google.com/uc?export=download&id=1FFX9-3p1yAEEQfv6Nql8EFfrKUVE_dgX" alt="">
-      </div>
-    
-    <div class="copyright">
+       <div class="aviones"> <img src="https://drive.google.com/uc?export=download&id=1BDjphb878aaOBmWWmvZWg1gs0h5_ss8f"></div>
+
+       <div class="ballet"> <img src="https://drive.google.com/uc?export=download&id=1YL_hxrXe9hLTsvzbhGQXJhXJL1YjJ_WE"></div>
+
+      <div class="florero"> <img src="https://drive.google.com/uc?export=download&id=1FFX9-3p1yAEEQfv6Nql8EFfrKUVE_dgX"></div>
+
+ <div class="row">
+  <div class="column1">
+    <a style="text-decoration: none; color:#005799" href="studio">Contact</a><br>
+  </div>
+  <div class="column2">
+    <a style="text-decoration: none; color:#005799" href="https://www.instagram.com/ericdelitzsch.architects/" target="_blank">Instagram</a><br>
+  </div>
+  <div class="column3">
+    <a style="text-decoration: none; color:#005799" href="#top">🡡 Top</a><br>
+  </div>
+</div>
+
+<div class="copyright">
     <a style="text-decoration: none; color:gray">© eric delitzsch · architects</a><br>
   </div>
 
-  </header>
-  
+  </header> 
+
+<script type="text/javascript">
+
+window.addEventListener("DOMContentLoaded", function(e) {
+  var links = document.getElementsByTagName("A");
+  for(var i=0; i < links.length; i++) {
+    if(!links[i].hash) continue;
+    if(links[i].origin + links[i].pathname != self.location.href) continue;
+    (function(anchorPoint) {
+      links[i].addEventListener("click", function(e) {
+        anchorPoint.scrollIntoView(true);
+        e.preventDefault();
+      }, false);
+    })(document.getElementById(links[i].hash.replace(/#/, "")));
+  }
+}, false);
+
+</script>
+
+<script type="text/javascript">
+
+// Vanilla version of FitVids
+// Still licencened under WTFPL
+//
+// Not as robust and fault tolerant as the jQuery version.
+// It's BYOCSS.
+// And also, I don't support this at all whatsoever.
+
+(function(window, document, undefined) {
+  "use strict";
+
+  // List of Video Vendors embeds you want to support
+  var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+
+  // Select videos
+  var fitVids = document.querySelectorAll(players.join(","));
+
+  // If there are videos on the page...
+  if (fitVids.length) {
+    // Loop through videos
+    for (var i = 0; i < fitVids.length; i++) {
+      // Get Video Information
+      var fitVid = fitVids[i];
+      var width = fitVid.getAttribute("width");
+      var height = fitVid.getAttribute("height");
+      var aspectRatio = height / width;
+      var parentDiv = fitVid.parentNode;
+
+      // Wrap it in a DIV
+      var div = document.createElement("div");
+      div.className = "fitVids-wrapper";
+      div.style.paddingBottom = aspectRatio * 100 + "%";
+      parentDiv.insertBefore(div, fitVid);
+      fitVid.remove();
+      div.appendChild(fitVid);
+
+      // Clear height/width from fitVid
+      fitVid.removeAttribute("height");
+      fitVid.removeAttribute("width");
+    }
+  }
+})(window, document);
+
+
+</script>
+
+
 <a href="https://ericdelitzsch.xyz/" class="title"><b>eric delitzsch · </b>architects<a/></li>
 <div class="topnav" id="myTopnav">
   <a href="work">work</a>
   <a href="art">art</a>
   <a href="studio">studio</a>
-  <a href="studio"></a>
+  <a href="studio"></a>  
 </div>
+
 <div class="menua" id="mymenua">
   <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">&#9776;</a>
 </div>
