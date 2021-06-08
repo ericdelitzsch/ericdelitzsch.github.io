@@ -203,13 +203,13 @@ function myFunction() {
 
   <script>
       var videoStorage = [
-     'https://drive.google.com/uc?export=download&id=1XNXf_DJFNf5yuqanvzPHG2N_DF3SDCSR', //planta
+     'https://drive.google.com/uc?export=&id=1XNXf_DJFNf5yuqanvzPHG2N_DF3SDCSR', //planta
 
-     'https://drive.google.com/uc?export=download&id=1seMQRcJpOfCvkcLHszjcxzvHepacNZRt', //stone
+     'https://drive.google.com/uc?export=&id=1seMQRcJpOfCvkcLHszjcxzvHepacNZRt', //stone
 
-     'https://drive.google.com/uc?export=download&id=1o9jb6F2Jz1wYAhnp6Vkv3YalwAGvh70w', //concrete
+     'https://drive.google.com/uc?export=&id=1o9jb6F2Jz1wYAhnp6Vkv3YalwAGvh70w', //concrete
 
-     'https://drive.google.com/uc?export=download&id=14J73GKd1CHOYenEeIaRzziIXkWYCXWr9', // wall
+     'https://drive.google.com/uc?export=&id=14J73GKd1CHOYenEeIaRzziIXkWYCXWr9', // wall
 
      
 
@@ -219,6 +219,23 @@ function myFunction() {
         activeVideoUrl = videoStorage[Math.round(Math.random() * (videoStorage.length - 1))];        
 
   video.setAttribute('src', activeVideoUrl)
+</script>
+
+
+<script type="text/javascript">
+function click (e) {
+  if (!e)
+    e = window.event;
+  if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
+    if (window.opera)
+      window.alert("");
+    return false;
+  }
+}
+if (document.layers)
+  document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown = click;
+document.oncontextmenu = click;
 </script>
 
 </body>
