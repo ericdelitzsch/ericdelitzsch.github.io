@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Work | Eric Delitzsch Architects</title>
+  <title>Art | Eric Delitzsch Architects</title>
   <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Description" CONTENT="Casa Xolatlaco - Tepoztlan Insurgentes Sur 609 - Mexico City">
@@ -244,6 +244,8 @@ header div img {
     padding: 0;
 
   }
+  }
+
 
 @media screen and (max-width: 600px) {
   header {
@@ -258,13 +260,144 @@ header div img {
   flex-flow: row wrap;
   display: -webkit-box;
   display: flex;
-}
+}}
+
 
 @media screen and (max-width: 600px) {
   header div img {
   width: 100%;
   height: auto;
   margin:3px auto;
+}}
+
+
+.sketch .logos:hover text {
+    opacity: 1;
+    transform: scale(1);
+}
+.sketch .logos img {
+    width: 100%;
+}
+.sketch .logos {
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+.sketch .logos text {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    text-align: center;
+    opacity: 0;
+    color: white;
+    font-weight: 500;
+    font-size: 2.9vh;
+    text-decoration: none;
+}
+
+.image__overlay1 {
+
+  background-image: url("https://drive.google.com/uc?export=download&id=1eJKDmPrLOqfUVi2cAzLZe9Fn812s8A0E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.25s;
+
+}
+
+.image__overlay1 {
+  opacity: 0;
+
+
+}
+
+.image__overlay1:hover {
+  opacity: .8;
+
+}
+
+.image__overlay2 {
+
+  background-image: url("https://drive.google.com/uc?export=download&id=1TTR4qERMff-73tCwOpfohBuHIEG8qzjz");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.25s;
+
+}
+
+.image__overlay2 {
+  opacity: 0;
+
+
+}
+
+.image__overlay2:hover {
+  opacity: .8;
+
+}
+
+
+.watercolor .logos:hover text {
+    opacity: 1;
+    transform: scale(1);
+}
+.watercolor .logos img {
+    width: 100%;
+}
+.watercolor .logos {
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+.watercolor .logos text {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    text-align: center;
+    opacity: 0;
+    color: white;
+    font-weight: 500;
+    font-size: 2.9vh;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1700px) {
+  .sketch .logos text {
+  font-size: 3.5vh;
+}
+}
+
+@media screen and (max-width: 1700px) {
+  .watercolor .logos text {
+  font-size: 3.5vh;
+}
 }
 
 
@@ -274,9 +407,10 @@ header div img {
 
   <header>
 
-    <div class="sketch"> <a href="art/sketch"> <img src="https://drive.google.com/uc?export=&id=1Fk1PCPn8f1s7pJaO5JbvaBWjJmWOhjSQ"></div>
+    <div class="sketch"> <a href="art/sketches"> <div class="logos"> <img src="https://drive.google.com/uc?export=&id=1Fk1PCPn8f1s7pJaO5JbvaBWjJmWOhjSQ"> <span class="image__overlay1"> <text>Sketches</text> </span> </div> </div>
 
-     <div class="watercolor"> <a href="art/watercolor"> <img src="https://drive.google.com/uc?export=&id=1KalTEvYh6I5svuwjechF-spuESgHQv0Q"></div>
+    <div class="watercolor"> <a href="art/watercolor"> <div class="logos"> <img src="https://drive.google.com/uc?export=&id=1KalTEvYh6I5svuwjechF-spuESgHQv0Q"> <span class="image__overlay2"> <text>Watercolor</text> </span> </div> </div>
+
       
   </header>
 <a href="https://ericdelitzsch.xyz/" class="title"><b>eric delitzsch </b>architects<a/></li>
@@ -284,7 +418,7 @@ header div img {
   <a href="https://ericdelitzsch.xyz/work">work</a>
   <a href="https://ericdelitzsch.xyz/art">art</a>
   <a href="https://ericdelitzsch.xyz/studio">studio</a>
-  <a href="studio"></a>    
+  <a href="studio"></a>     
 </div>
 <div class="menua" id="mymenua">
   <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">&#9776;</a>
