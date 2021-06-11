@@ -384,5 +384,17 @@ document.onmousedown = click;
 document.oncontextmenu = click;
 </script>
 
+<script type="text/javascript">
+$("a.question[href]").click(function(e){
+    e.preventDefault();
+    if (this.href) {
+        var target = this.href;
+        setTimeout(function(){
+            window.location = target;
+        }, 10000);
+    }
+});
+</script>
+
 </body>
 </html>
