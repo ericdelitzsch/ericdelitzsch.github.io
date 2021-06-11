@@ -51,7 +51,7 @@ body {
     position: absolute;
     top: 10.5%;
     right: 6.9%;
-    color: black;
+    color: bredlack;
     text-decoration: none;
   
 }
@@ -59,7 +59,7 @@ body {
 .topnav a {
   float: left;
   display: block;
-  color: black;
+  color: red;
   background-color: none;
   text-align: center;
   padding: 14px 16px;
@@ -385,14 +385,13 @@ document.oncontextmenu = click;
 </script>
 
 <script type="text/javascript">
-$("a.question[href]").click(function(e){
-    e.preventDefault();
-    if (this.href) {
-        var target = this.href;
-        setTimeout(function(){
-            window.location = target;
-        }, 10000);
-    }
+$('#blogLink').click (function (e) {
+   e.preventDefault(); //will stop the link href to call the blog page
+
+   setTimeout(function () {
+       window.location.href = "work/xolatlaco-house"; //will redirect to your blog page (an ex: blog.html)
+    }, 10000); //will call the function after 2 secs.
+
 });
 </script>
 
