@@ -21,9 +21,7 @@ body::-webkit-scrollbar {
 }
 
 
-@media screen and (min-width: 1000px) {
-  html, body {margin: 0; height: 100%; overflow: hidden}
-}
+
 }
 
 @media screen and (max-width: 600px) {
@@ -236,15 +234,13 @@ header div img {
 }
 
 .watercolor {
-    width: 15%;
-    padding: 50px; 
-    margin-top: auto;    
+    width: 25vw; 
+    padding-right: 50px;  
 } 
 
 .sketch {
-    width: 15%;
-    padding: 50px; 
-    margin-top: auto;    
+    width: 25vw; 
+    padding-right: 50px;   
 } 
 
 @media all and (max-width: 1000px)
@@ -394,6 +390,36 @@ header div img {
 
 }
 
+.image__overlay3 {
+
+  background-image: url("https://www.dropbox.com/s/ooav4kl8yii4ztj/thumbnailblack.jpg?raw=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.25s;
+
+}
+
+.image__overlay3 {
+  opacity: 0;
+
+
+}
+
+.image__overlay3:hover {
+  opacity: .8;
+
+}
+
 
 .watercolor .logos:hover text {
     opacity: 1;
@@ -422,6 +448,33 @@ header div img {
     text-decoration: none;
 }
 
+.photography .logos:hover text {
+    opacity: 1;
+}
+.photography .logos img {
+    width: 100%;
+}
+.photography .logos {
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+.photography .logos text {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    text-align: center;
+    opacity: 0;
+    color: white;
+    font-weight: 500;
+    font-size: 2.9vh;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1700px) {
   .sketch .logos text {
   font-size: 3.5vh;
@@ -430,6 +483,12 @@ header div img {
 
 @media screen and (max-width: 1700px) {
   .watercolor .logos text {
+  font-size: 3.5vh;
+}
+}
+
+@media screen and (max-width: 1700px) {
+  .photography .logos text {
   font-size: 3.5vh;
 }
 }
@@ -467,6 +526,10 @@ header div img {
     <div class="sketch"> <a href="art/sketches"> <div class="logos"> <img src="https://www.dropbox.com/s/07ta6ranbgrebn3/thumbnail.jpg?raw=1"> <span class="image__overlay1"> <text>Sketches</text> </span> </div> </div>
 
     <div class="watercolor"> <a href="art/watercolor"> <div class="logos"> <img src="https://www.dropbox.com/s/ank0zk0151i6cdd/thumbnail.jpg?raw=1"> <span class="image__overlay2"> <text>Watercolor</text> </span> </div> </div>
+
+    <div class="watercolor"> <a href="art/photography"> <div class="logos"> <img src="https://www.dropbox.com/s/zcoflgl654ddzl9/thumbnail.jpg?raw=1"> <span class="image__overlay3"> <text>Photography</text> </span> </div> </div>
+
+    <div class="white"> <a> <img src="https://www.dropbox.com/s/9fm07eh0voiumgd/whitebar.jpg?raw=1"></div>
 
       
   </header>
