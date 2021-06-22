@@ -496,6 +496,25 @@ iframe,object,embed,video,.videoWrapper,.video-js {
 
 }
 
+.juxtapose {
+    width: 50%;
+    float: left;    
+    margin-top: auto;
+}
+
+@media all and (min-width: 1000px)
+{
+    .juxtapose {
+    position: relative;
+    padding-bottom: 56.25%; /* 4:3 ratio */
+    padding-top: 0px; 
+    height: 200px;
+    overflow: hidden;
+
+  }
+  }
+
+
 
 
 </style>
@@ -533,6 +552,11 @@ iframe,object,embed,video,.videoWrapper,.video-js {
 
   <div class="pasillo"> <img src="https://www.dropbox.com/s/pckgsqmgpzz9g0y/pasillo.jpg?raw=1"></div>
 
+    
+
+  <div class="juxtapose"> <iframe frameborder="0" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=2c84c1d9-d399-11eb-b7bf-95443c729a29"></iframe></div>
+  
+
   <div class="piso1.5"> <img src="https://www.dropbox.com/s/aico28v5xjkxijd/piso1.5.jpg?raw=1"></div>
 
   <div class="piso2"> <img src="https://www.dropbox.com/s/vs731q23oh8jaax/piso2.jpg?raw=1"></div>
@@ -542,6 +566,8 @@ iframe,object,embed,video,.videoWrapper,.video-js {
   <div class="recamara1.5"> <img src="https://www.dropbox.com/s/zpo5476u9edns6w/recamara1.5.jpg?raw=1"></div>
 
   <div class="baño"> <img src="https://www.dropbox.com/s/jj2d6xuz6zprsnl/ba%C3%B1o.jpg?raw=1"></div>
+
+
 
  <div class="row">
   <div class="column1">
