@@ -415,24 +415,6 @@ h2 {
     overflow: hidden;
 }
 
-.video-wrapper-narrow {
-    padding-bottom: 40%;
-}
-
-iframe,object,embed,video,.videoWrapper,.video-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.video-js, img.vjs-poster {
-    width: 50% !important;
-    height: 100% !important; //these need !important because IE wants to set height/width to 100px
-    max-width: 100%;
-}
-
 .pasillo{
     width: 40vw;
     float: right;    
@@ -457,6 +439,7 @@ iframe,object,embed,video,.videoWrapper,.video-js {
 @media all and (max-width: 1000px)
 {
     .pasillo{
+      width: 100%;
   margin-top: 1vw;
 
   }
@@ -496,24 +479,19 @@ iframe,object,embed,video,.videoWrapper,.video-js {
 
 }
 
-.juxtapose {
-    width: 50%;
-    float: left;    
-    margin-top: auto;
+.video-wrapper{
+  width: 50vw;
+  float: left;
 }
 
-@media all and (min-width: 1000px)
+@media all and (max-width: 1000px)
 {
-    .juxtapose {
-    position: relative;
-    padding-bottom: 56.25%; /* 4:3 ratio */
-    padding-top: 0px; 
-    height: 200px;
-    overflow: hidden;
+    .video-wrapper{
+      width: 400px;
+  margin-top: 1vw;
 
   }
   }
-
 
 
 
@@ -551,11 +529,6 @@ iframe,object,embed,video,.videoWrapper,.video-js {
   <div class="piso1"> <img src="https://www.dropbox.com/s/9eep3lip54u0998/piso1.jpg?raw=1"></div>
 
   <div class="pasillo"> <img src="https://www.dropbox.com/s/pckgsqmgpzz9g0y/pasillo.jpg?raw=1"></div>
-
-    
-
-  <div class="juxtapose"> <iframe frameborder="0" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=2c84c1d9-d399-11eb-b7bf-95443c729a29"></iframe></div>
-  
 
   <div class="piso1.5"> <img src="https://www.dropbox.com/s/aico28v5xjkxijd/piso1.5.jpg?raw=1"></div>
 
