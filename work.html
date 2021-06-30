@@ -106,7 +106,7 @@ body {
 @media screen and (max-width: 700px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
-    background-color: white;
+    margin-top: 30px;
 
 
   }
@@ -236,6 +236,7 @@ header div img {
   flex-flow: row wrap;
   display: -webkit-box;
   display: flex;
+  z-index: -2;
 }
 }
 
@@ -350,6 +351,17 @@ header div img {
 
 }
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255, 0.95);
+}
+
 
 
 
@@ -410,8 +422,7 @@ header div img {
 <div class="topnav" id="myTopnav">
   <a href="https://ericdelitzsch.com/work">work</a>
   <a href="https://ericdelitzsch.com/art">art</a>
-  <a href="https://ericdelitzsch.com/studio">studio</a>
-  <a href="studio"></a>   
+  <a href="https://ericdelitzsch.com/studio">studio</a> 
 </div>
 <div class="menua" id="mymenua">
   <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">
@@ -425,16 +436,40 @@ header div img {
   
 </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
+<div id="myNav" class="overlay">
+</div>
+
+
+ <script>
+    // Defining custom functions
+    function menu1(){
+        var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
     x.className = "topnav";
   }
 }
-</script>
+     
+    var checkFlag = true;
+function fondo(){
+  if(checkFlag == true){
+  document.getElementById("myNav").style.display = "block";
+  }else{
+  document.getElementById("myNav").style.display = "none";
+  }
+  checkFlag = !checkFlag;
+}
+    
+ 
+    // Selecting button element
+    var btn = document.getElementById("mymenua");
+     
+    // Assigning event listeners to the button
+    btn.addEventListener("click", menu1);
+    btn.addEventListener("click", fondo);
+    btn.functionName();;
+    </script>
 
 <script type="text/javascript">
 function click (e) {
