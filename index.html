@@ -215,6 +215,17 @@ body {
   display: none;
 }
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.6);
+}
+
 
 </style>
 </head>
@@ -236,20 +247,44 @@ body {
   
   </a>
 
-  <div class="thumbnail"> <img src="https://www.dropbox.com/s/bu9l544vdv7d7f0/thumbnail2.jpg?raw=1"></div>
-  
 </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
+<div class="thumbnail"> <img src="https://www.dropbox.com/s/bu9l544vdv7d7f0/thumbnail2.jpg?raw=1"></div>
+
+<div id="myNav" class="overlay">
+</div>
+
+
+  <script>
+    // Defining custom functions
+    function menu1(){
+        var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
     x.className = "topnav";
   }
 }
-</script>
+     
+    var checkFlag = true;
+function fondo(){
+  if(checkFlag == true){
+  document.getElementById("myNav").style.display = "block";
+  }else{
+  document.getElementById("myNav").style.display = "none";
+  }
+  checkFlag = !checkFlag;
+}
+    
+ 
+    // Selecting button element
+    var btn = document.getElementById("mymenua");
+     
+    // Assigning event listeners to the button
+    btn.addEventListener("click", menu1);
+    btn.addEventListener("click", fondo);
+    btn.functionName();;
+    </script>
 
 <section class="header">
   <video class="video-background" playsinline autoplay loop muted>
