@@ -121,7 +121,7 @@ body, html {
 @media screen and (max-width: 700px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
-    background-color: white;
+    margin-top: 30px;
   }
   .topnav a.icon {
     float: right;
@@ -247,6 +247,7 @@ header div img {
   flex-flow: row wrap;
   display: -webkit-box;
   display: flex;
+  z-index: -2;
 }
 
  }
@@ -645,6 +646,17 @@ iframe,object,embed,video,.videoWrapper,.video-js {
 
 }
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255, 0.95);
+}
+
 </style>
 </head>
 <body>
@@ -788,16 +800,39 @@ window.addEventListener("DOMContentLoaded", function(e) {
   
 </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
+<div id="myNav" class="overlay">
+</div>
+
+ <script>
+    // Defining custom functions
+    function menu1(){
+        var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
     x.className = "topnav";
   }
 }
-</script>
+     
+    var checkFlag = true;
+function fondo(){
+  if(checkFlag == true){
+  document.getElementById("myNav").style.display = "block";
+  }else{
+  document.getElementById("myNav").style.display = "none";
+  }
+  checkFlag = !checkFlag;
+}
+    
+ 
+    // Selecting button element
+    var btn = document.getElementById("mymenua");
+     
+    // Assigning event listeners to the button
+    btn.addEventListener("click", menu1);
+    btn.addEventListener("click", fondo);
+    btn.functionName();;
+    </script>
 
 <script>
 function myFunction1(x) {
