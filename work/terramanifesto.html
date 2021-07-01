@@ -681,7 +681,7 @@ window.addEventListener("DOMContentLoaded", function(e) {
 </div>
 
 
-  <script>
+ <script>
     // Defining custom functions
     function menu1(){
         var x = document.getElementById("myTopnav");
@@ -701,6 +701,16 @@ function fondo(){
   }
   checkFlag = !checkFlag;
 }
+
+
+function noscroll(){
+  if(checkFlag == true){
+  document.body.style.overflow="scroll";
+  }else{
+  document.body.style.overflow="hidden";
+  }
+  }
+
     
  
     // Selecting button element
@@ -709,7 +719,7 @@ function fondo(){
     // Assigning event listeners to the button
     btn.addEventListener("click", menu1);
     btn.addEventListener("click", fondo);
-    btn.functionName();;
+    btn.addEventListener("click", noscroll);
     </script>
 
 <script>
