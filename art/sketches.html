@@ -121,6 +121,7 @@ body, html {
 @media screen and (max-width: 700px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
+    color: white;
     padding-top: 30px;
   }
   .topnav a.icon {
@@ -515,6 +516,7 @@ iframe,object,embed,video,.videoWrapper,.video-js {
   -webkit-transform: rotate(-45deg) translate(-9px, 0px);
   transform: rotate(-45deg) translate(-2px, 3px);
   width: 20px;
+  background-color: white;
 
 }
 
@@ -522,6 +524,7 @@ iframe,object,embed,video,.videoWrapper,.video-js {
   -webkit-transform: rotate(45deg) translate(-9px, 0px);
   transform: rotate(45deg) translate(-1px, -3px);
   width: 20px;
+  background-color: white;
 
 }
 
@@ -533,7 +536,7 @@ iframe,object,embed,video,.videoWrapper,.video-js {
   z-index: -1;
   top: 0;
   left: 0;
-  background-color: rgba(255,255,255, 0.95);
+  background-color: rgba(0,0,0, 0.9);
 }
 
 
@@ -641,7 +644,7 @@ window.addEventListener("DOMContentLoaded", function(e) {
 </script>
 
 
-<a href="https://ericdelitzsch.com/" class="title"><b>eric delitzsch </b>architects<a/></li>
+<a href="https://ericdelitzsch.com/" class="title" id="title"><b>eric delitzsch </b>architects<a/></li>
 <div class="topnav" id="myTopnav">
   <a href="https://ericdelitzsch.com/work">work</a>
   <a href="https://ericdelitzsch.com/art">art</a>
@@ -694,6 +697,14 @@ function noscroll(){
   }
   }
 
+    function color(){
+  if(checkFlag == true){
+  document.getElementById("title").style.color = 'black';
+  }else{
+  document.getElementById("title").style.color = 'white';
+  }
+  }
+
     
  
     // Selecting button element
@@ -703,6 +714,7 @@ function noscroll(){
     btn.addEventListener("click", menu1);
     btn.addEventListener("click", fondo);
     btn.addEventListener("click", noscroll);
+    btn.addEventListener("click", color);
     </script>
 
 <script type="text/javascript">
