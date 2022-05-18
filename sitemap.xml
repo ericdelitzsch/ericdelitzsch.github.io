@@ -8,18 +8,6 @@
 </url>
 <url>
   <loc>https://ericdelitzsch.com/work</loc>
-	<image:image>
-      	<image:loc>https://www.dropbox.com/s/s1w5hlanw7xbpy0/portada.jpg?raw=1</image:loc>
-    	</image:image>
-	<image:image>
-      	<image:loc>https://www.dropbox.com/s/nrb60csb27ayrkr/render.jpg?raw=1</image:loc>
-    	</image:image>
-	<image:image>
-      	<image:loc>https://www.dropbox.com/s/lodxj31zc74xgvx/pergola.jpg?raw=1</image:loc>
-    	</image:image>
-	<image:image>
-      	<image:loc>https://www.dropbox.com/s/lc76bh8jvx51ry7/exterior.jpg?raw=1</image:loc>
-    	</image:image>
   <lastmod>2022-05-17T16:27:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -36,17 +24,17 @@
 <url>
   <loc>https://ericdelitzsch.com/work/xolatlaco-house</loc>
   <lastmod>2022-05-17T16:27:49+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.7</priority>
 </url>
 <url>
   <loc>https://ericdelitzsch.com/work/chapel</loc>
   <lastmod>2022-05-17T16:27:49+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.7</priority>
 </url>
 <url>
   <loc>https://ericdelitzsch.com/work/t-house</loc>
   <lastmod>2022-05-17T16:27:49+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.7</priority>
 </url>
 <url>
   <loc>https://ericdelitzsch.com/work/lagi-2020</loc>
