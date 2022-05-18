@@ -16,12 +16,15 @@
   <loc>https://ericdelitzsch.com/work</loc>
   <lastmod>2022-05-17T16:27:49+00:00</lastmod>
   <priority>0.80</priority>
+ <url>
+    <loc>http://example.com/sample1.html</loc>
     <image:image>
-      <image:loc>https://www.dropbox.com/s/s1w5hlanw7xbpy0/portada.jpg?raw=1:loc>
+      <image:loc>https://www.dropbox.com/s/s1w5hlanw7xbpy0/portada.jpg?raw=1</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://www.dropbox.com/s/nrb60csb27ayrkr/render.jpg?raw=1</image:loc>
     </image:image>
+  </url>
 </url>
 <url>
   <loc>https://ericdelitzsch.com/art</loc>
