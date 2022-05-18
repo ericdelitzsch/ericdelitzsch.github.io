@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
   <loc>https://ericdelitzsch.com/</loc>
   <lastmod>2022-05-17T16:27:49+00:00</lastmod>
@@ -14,17 +8,11 @@
 </url>
 <url>
   <loc>https://ericdelitzsch.com/work</loc>
+	<image:image>
+      	<image:loc>https://www.dropbox.com/s/s1w5hlanw7xbpy0/portada.jpg?raw=1</image:loc>
+    	</image:image>
   <lastmod>2022-05-17T16:27:49+00:00</lastmod>
   <priority>0.80</priority>
- <url>
-    <loc>http://example.com/sample1.html</loc>
-    <image:image>
-      <image:loc>https://www.dropbox.com/s/s1w5hlanw7xbpy0/portada.jpg?raw=1</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.dropbox.com/s/nrb60csb27ayrkr/render.jpg?raw=1</image:loc>
-    </image:image>
-  </url>
 </url>
 <url>
   <loc>https://ericdelitzsch.com/art</loc>
@@ -146,4 +134,6 @@
   <lastmod>2022-05-17T16:27:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
+
+
 </urlset>
