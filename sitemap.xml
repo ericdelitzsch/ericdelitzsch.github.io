@@ -137,6 +137,17 @@
   <lastmod>2022-05-17T16:27:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
+</urlset>
 
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+ <url>
+    <loc>https://ericdelitzsch.com/work</loc>
+    <image:image>
+      <image:loc>https://www.dropbox.com/s/s1w5hlanw7xbpy0/portada.jpg?raw=1</image:loc>
+    </image:image>
+    <image:image>
+      <image:https://www.dropbox.com/s/nrb60csb27ayrkr/render.jpg?raw=1</image:loc>
+    </image:image>
+  </url>
 </urlset>
