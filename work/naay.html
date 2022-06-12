@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NAAY | Eric Delitzsch Architects</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.dropbox.com/s/i7k9nwvcmirmnlp/icon.png?raw=1">
+  <link rel="apple-touch-icon" sizes="128x128" href="https://www.dropbox.com/s/28ubqe7jfnh6e44/icon.jpg?raw=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" CONTENT="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>history.scrollRestoration = "manual"</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+  /* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 10px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+    display:none;
+}
+
+html {
+  scroll-behavior: smooth;
+
+
+}
+
+body, html {
+  color: black;
+  font-size: 2.9vh;
+  font-family: raleway;
+  height: 100%;
+  margin: 0;
+
+}
+{
+  webkit-overflow-scrolling: touch;
+}
+{
+
+-webkit-font-smoothing: antialiased;
+
+}
+
+.copyright{
+	font-size: 1.5vh;
+	text-align: center;
+}
+
+.bg {
+  background-image: url("https://www.dropbox.com/s/fdpsne5rqp4fsba/Roof%20Top.jpg?raw=1");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.topnav {
+    overflow: hidden;
+    position: absolute;
+    top: 10.5%;
+    right: 6.5%;
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.9vh;
+  z-index: 1;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+
+}
+
+.menub {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  left: 84%;
+  top: 12%;
+  z-index: 1;
+  
+  }
+
+.title {
+      position: absolute;
+      left: 10%;
+      top: 12%;
+      color: white;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.75vh;
+
+    }
+
+    ul li a:hover {
+    Color: white;
+
+    }
+
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+    z-index: 1;
+    padding-top: 30px;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .copyright {
+    font-size: 13px;
+  }
+  .title {
+      position: absolute;
+      left: 10%;
+      top: 7%;
+      color: white;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.75vh;
+
+    }
+
+    .menub {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  left: 85%;
+  top: 7.6%;
+  
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: absolute;
+    left: 6%;
+    top: 9%;
+  }
+
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    line-height: 40%;
+
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar a:not(:first-child) {display: none;}
+  .topbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar.responsive {position: relative;}
+  .topbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ 
+      }
+
+      @media screen and (min-width:700px) {
+      .menub {
+      display:none;
+      float: right;
+      position: absolute;
+      right: 50%;
+      top:50%;
+      
+      }
+
+      
+      }
+
+header {
+	position: absolute;
+  top: 77.5%;
+  margin: 12vw 12vw 1vw 12vw;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+
+}
+
+header div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 100%;
+  height: auto;
+  margin: .5vw;
+  margin:1vw auto;
+  
+
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+  position: relative;
+  top: 0;
+  margin:10px 10px 20px 10px;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+}
+
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0 0.65em;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+#sections {
+  font-size: 2.2vh;
+  padding: 70px 0px 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+
+@media screen and (min-width: 1800px) {
+  #sections {
+  font-size: 1.9vh;
+
+}
+}
+  
+  
+#sections .main {
+  padding-right: 20px;
+  padding-top: 15px;
+  -webkit-flex: 2 1 25%;
+  flex: 2 1 25%;
+  -webkit-order: 2;
+  order: 2;
+}
+
+#sections .sub-section-1 {
+  padding-right: 200px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 90%;
+  -webkit-order: 1;
+  order: 1;
+}
+
+#sections .sub-section-2 {
+  padding-left: 10px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 3;
+  order: 3;
+}
+@media all and (max-width: 1200px)
+{
+  #sections {
+    padding: 60px 60px;
+    font-size: 20px;
+  }
+
+
+@media all and (max-width: 1000px)
+{
+  #sections {
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  
+  #sections > .main, #sections > .sub-section-1, #sections > .sub-section-2 {
+    /* For mobile phones, each section should be on a line of it's own at 100% width. */
+    width: 100%;
+    -webkit-order: 0;
+            order: 0;
+  }
+  
+  #sections .main {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-1 {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-2 {
+    padding-left: 0;
+  }
+}
+}
+
+.column1 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+  }
+
+@media all and (max-width: 1000px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 30%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+@media all and (min-width: 1800px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 33%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 4:3 ratio */
+    padding-top: 0px; 
+    height: 0px;
+    overflow: hidden;
+}
+
+.video-wrapper-narrow {
+    padding-bottom: 40%;
+}
+
+iframe,object,embed,video,.videoWrapper,.video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-js, img.vjs-poster {
+    width: 50% !important;
+    height: 100% !important; //these need !important because IE wants to set height/width to 100px
+    max-width: 100%;
+}
+
+
+
+      .bar1, .bar2{
+  width: 20px;
+  height: 1px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-2px, 3px);
+  width: 20px;
+
+}
+
+.change .bar2 {
+  transform: rotate(45deg) translate(-1px, -3px);
+  width: 20px;
+
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+
+<header>
+
+	<div id="sections">
+  <section class="sub-section-1" id="section2">
+    <b>NAAY</b>
+    <p>
+	</p>
+  </section>
+  
+  <section class="main">
+     <p><b>location:</b> <a style="text-decoration: none; color:blue" href="https://www.google.com/maps/place/77796+Macario+G%C3%B3mez,+Quintana+Roo/@20.3502737,-87.6117119,14z/data=!3m1!4b1!4m5!3m4!1s0x8f51d50343a77b55:0xe5d9b918014ed779!8m2!3d20.3502777!4d-87.5758333" target="_blank"> Macario Gómez</a>, Mexico</p>
+    <p><b>type:</b> Residential</p>
+    <p><b>area:</b> </p>
+    <p><b>year:</b> 2022</p>
+    <p><b>status:</b> </p>
+    <p><b>in collaboration with:</b> <a style="text-decoration: none; color:blue" href="https://www.instagram.com/avendagui/" target="_blank"><br>Juan Carlos Avendaño</a></p>
+  </section>
+
+</div>
+
+<div class="exterior"> <img src="https://www.dropbox.com/s/j5x7liac50enjog/exterior.jpg?raw=1"></div>
+
+  <div class="jardin2"> <img src="https://www.dropbox.com/s/7e4c3kh7a13ei91/jardin2.jpg?raw=1"></div>
+
+		<div class="jardin"> <img src="https://www.dropbox.com/s/gq0rs19h17agyij/jardin.jpg?raw=1"></div>
+
+     <div class="espejoagua"> <img src="https://www.dropbox.com/s/nmvbafn2913cpkf/espejoagua.jpg?raw=1"></div>
+
+	<div class="recamaraguest"> <img src="https://www.dropbox.com/s/lxsa5yrumvxm8qu/recamaraguestroom.jpg?raw=1"></div>
+
+  <div class="bbq"> <img src="https://www.dropbox.com/s/yr1qxejyo1rl5bb/bbq.jpg?raw=1"></div>
+
+  <div class="salaalberca"> <img src="https://www.dropbox.com/s/ixwqv404n2roy4h/salaalberca.jpg?raw=1"></div>
+
+  <div class="sala"> <img src="https://www.dropbox.com/s/3a7mb3tnf3t0k11/sala.jpg?raw=1"></div>
+
+  <div class="comedor"> <img src="https://www.dropbox.com/s/kl9uanox4ymuwwu/comedor.jpg?raw=1"></div>
+
+  <div class="recamara"> <img src="https://www.dropbox.com/s/5gto5hhc7hxbiq3/Recamara.jpg?raw=1"></div>
+
+  <div class="recamaraprincipal"> <img src="https://www.dropbox.com/s/av54zx8vtv75plp/recamaraprincipal.jpg?raw=1"></div>
+
+  <div class="baño"> <img src="https://www.dropbox.com/s/qr0tmjlxqgmdcgb/ba%C3%B1o.jpg?raw=1"></div>
+
+  <div class="aereo"> <img src="https://www.dropbox.com/s/g8ebmwlphobau7d/aereo.jpg?raw=1"></div>
+
+  <div class="rooftop"> <img src="https://www.dropbox.com/s/fdpsne5rqp4fsba/Roof%20Top.jpg?raw=1"></div>
+
+
+
+ <div class="row">
+  <div class="column1">
+    <a style="text-decoration: none; color:#005799" href="https://ericdelitzsch.com/studio">Contact</a><br>
+  </div>
+  <div class="column2">
+    <a style="text-decoration: none; color:#005799" href="https://www.instagram.com/ericdelitzsch.architects/" target="_blank">Instagram</a><br>
+  </div>
+  <div class="column3">
+    <a style="text-decoration: none; color:#005799" href="#top">🡡 Top</a><br>
+  </div>
+</div>
+
+<div class="copyright">
+    <a style="text-decoration: none; color:gray">© eric delitzsch architects</a><br>
+  </div>
+
+  </header> 
+
+<script type="text/javascript">
+
+window.addEventListener("DOMContentLoaded", function(e) {
+  var links = document.getElementsByTagName("A");
+  for(var i=0; i < links.length; i++) {
+    if(!links[i].hash) continue;
+    if(links[i].origin + links[i].pathname != self.location.href) continue;
+    (function(anchorPoint) {
+      links[i].addEventListener("click", function(e) {
+        anchorPoint.scrollIntoView(true);
+        e.preventDefault();
+      }, false);
+    })(document.getElementById(links[i].hash.replace(/#/, "")));
+  }
+}, false);
+
+</script>
+
+<script type="text/javascript">
+
+// Vanilla version of FitVids
+// Still licencened under WTFPL
+//
+// Not as robust and fault tolerant as the jQuery version.
+// It's BYOCSS.
+// And also, I don't support this at all whatsoever.
+
+(function(window, document, undefined) {
+  "use strict";
+
+  // List of Video Vendors embeds you want to support
+  var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+
+  // Select videos
+  var fitVids = document.querySelectorAll(players.join(","));
+
+  // If there are videos on the page...
+  if (fitVids.length) {
+    // Loop through videos
+    for (var i = 0; i < fitVids.length; i++) {
+      // Get Video Information
+      var fitVid = fitVids[i];
+      var width = fitVid.getAttribute("width");
+      var height = fitVid.getAttribute("height");
+      var aspectRatio = height / width;
+      var parentDiv = fitVid.parentNode;
+
+      // Wrap it in a DIV
+      var div = document.createElement("div");
+      div.className = "fitVids-wrapper";
+      div.style.paddingBottom = aspectRatio * 100 + "%";
+      parentDiv.insertBefore(div, fitVid);
+      fitVid.remove();
+      div.appendChild(fitVid);
+
+      // Clear height/width from fitVid
+      fitVid.removeAttribute("height");
+      fitVid.removeAttribute("width");
+    }
+  }
+})(window, document);
+
+
+</script>
+
+
+<a href="https://ericdelitzsch.com/" class="title"><b>eric delitzsch </b>architects<a/></li>
+<div class="topnav" id="myTopnav">
+  <a href="https://ericdelitzsch.com/work">work</a>
+  <a href="https://ericdelitzsch.com/art">art</a>
+  <a href="https://ericdelitzsch.com/studio">studio</a>
+  <a href="studio"></a>   
+</div>
+
+<div class="menua" id="mymenua">
+  <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">
+    
+  <div class="container" onclick="myFunction1(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  </div>
+  
+  </a>
+  
+</div>
+
+<div id="myNav" class="overlay">
+</div>
+
+
+  <script>
+    // Defining custom functions
+    function menu1(){
+        var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+     
+    var checkFlag = true;
+function fondo(){
+  if(checkFlag == true){
+  document.getElementById("myNav").style.display = "block";
+  }else{
+  document.getElementById("myNav").style.display = "none";
+  }
+  checkFlag = !checkFlag;
+}
+
+
+function noscroll(){
+  if(checkFlag == true){
+  document.body.style.overflow="scroll";
+  }else{
+  document.body.style.overflow="hidden";
+  }
+  }
+
+    
+ 
+    // Selecting button element
+    var btn = document.getElementById("mymenua");
+     
+    // Assigning event listeners to the button
+    btn.addEventListener("click", menu1);
+    btn.addEventListener("click", fondo);
+    btn.addEventListener("click", noscroll);
+    </script>
+
+<script>
+function myFunction1(x) {
+  x.classList.toggle("change");
+}
+</script>
+
+</body>
+</html>
