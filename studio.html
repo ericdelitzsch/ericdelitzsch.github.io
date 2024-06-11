@@ -21,7 +21,12 @@ p.small {
 }
 
 p.contact {
-	font-weight: bold;
+  font-weight: bold;
+
+}
+
+p.publications {
+  font-weight: bold;
 
 }
 
@@ -81,6 +86,49 @@ p.contact {
 
     }
 
+       .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .text-section, .image-section {
+            flex: 1;
+        }
+
+
+        .image-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-section .images {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .image-section .images img {
+            max-width: 15vw;
+
+        }
+
+        @media (max-width: 1000px) {
+            .container {
+                flex-direction: column;
+            }
+            .image-section .images {
+                flex-direction: column;
+            }
+
+            .image-section .images img {
+            max-width: 50vw;
+
+
+        }
+
+
+
+        }
 
 @media screen and (max-width: 700px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
@@ -171,117 +219,59 @@ p.contact {
       }
 
 
-.text {
-  position: absolute;
-  top: 25vh;
-  left: 10%;
-  width: 45%;
-  padding: 0 20px;
-  overflow: hidden;
-  text-align: justify;
-  font-size: 2vh;
 
-}
 
-@media only screen and (min-width:1800px) {
-  .text {
-  position: absolute;
-  top: 25vh;
-  left: 10%;
-  width: 45%;
-  padding: 0 20px;
-  overflow: hidden;
-  text-align: justify;
-  font-size: 2vh;
-  }
-  }
+.text{
+      width: 65%;
+top: 25vh;
+    }
 
-@media only screen and (max-width:850px) {
-  .text {
-  	top: 22%;
+    .text2{
+      width: 80vw;
+top: 35vh;
+    }
+
+
+    .text,
+    .text2 {
+      position: relative;
+    
     left: 10%;
-    padding: 1px 20px 1px 1px;
-    font-size: 2vw;
-    width: 50%;
-    padding: 0;
-    z-index: -2;
-  }
-
-@media only screen and (max-width:750px) {
-  .text {
-  	top: 18%;
-    left: 10%;
-    padding: 1px 20px 1px 1px;
-    font-size: 2.5vw;
-    width: 45%;
-    padding: 0;
-    z-index: -2;
-  }
-
-  }
-
-@media only screen and (max-width:500px) {
-  .text {
-    top: 18%;
-    left: 10%;
-    padding: 1px 20px 1px 1px;
-    font-size: 4vw;
-    width: 80%;
-    padding: 0;
-    z-index: -2;
-  }
-
-  }
-  
-  }
-
-.text2 {
-
-  position: absolute;
-  top: 60vh;
-  left: 10.5%;
-  width: 45%;
-  padding: 0 20px;
-  overflow: hidden;
-  text-align: justify;
-  font-size: 2vh;
-}
-
-@media only screen and (max-width:850px) {
-  .text2 {
-  	top: 20%;
-    left: 65%;
-    padding: 1px 20px 1px 1px;
-    font-size: 2vw;
-    width: 25%;
-    padding: 0;
-    z-index: -2;
-  }
-
-@media only screen and (max-width:750px) {
-  .text2 {
-  	top: 17%;
-    left: 65%;
-    padding: 1px 20px 1px 1px;
-    font-size: 2.5vw;
-    width: 30%;
-    padding: 0;
-    z-index: -2;
-  }
+    overflow: auto;
+    text-align: justify;
+    font-size: 2vh;
+    }
 
 
-@media only screen and (max-width:500px) {
-  .text2 {
-    top: 65%;
-    left: 10%;
-    padding: 1px 20px 1px 1px;
-    font-size: 4vw;
-    width: 80%;
-    padding: 0;
-    z-index: -2;
-  }
-  
-  }
+      @media screen and (max-width:1000px) {
+      .text {
+     top: 20vh;
+      width: 75%;
+      
+      }
+
+      .text2 {
+     top: 25vh;
+     width: 100%;
+
+      
+      }
+
+            @media screen and (max-width:600px) {
+      .text {
+     top: 15vh;
+      width: 75%;
+      
+      }
+
+      .text2 {
+     top: 15vh;
+     width: 100%;
+
+      
+      }
+
+
 
   .bar1, .bar2 {
   width: 20px;
@@ -315,6 +305,8 @@ p.contact {
   left: 0;
   background-color: rgba(0,0,0, 0.9);
 }
+
+
 
 
 </style>
@@ -391,21 +383,7 @@ function noscroll(){
     btn.addEventListener("click", color);
     </script>
 
-<script type="text/javascript">
-function click (e) {
-  if (!e)
-    e = window.event;
-  if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
-    if (window.opera)
-      window.alert("");
-    return false;
-  }
-}
-if (document.layers)
-  document.captureEvents(Event.MOUSEDOWN);
-document.onmousedown = click;
-document.oncontextmenu = click;
-</script>
+
 
 <div class="text">
 <p>Eric Delitzsch studied at the Universidad Iberoamericana in Mexico City, obtaining the title of architect in 2021. In 2021 he founded the studio, ranging from architecture to design. 
@@ -413,39 +391,37 @@ By visiting buildings across the world, he taught himself architecture through t
 </div>
 
 
+
 <div class="text2">
-<p class="contact">
- <a style="text-decoration: none; color:black" href="https://issuu.com/ericdelitzsch/docs/portafolio" target="_blank">Contact</a>
-<p class="small">
- Architecture, Planning, and Interiors<br>
-    Austin, USA | Mexico City, MX<br>
- <a style="text-decoration: none; color:blue" href="tel:+5215532251444">+1 737 309 7478</a> |
- <a style="text-decoration: none; color:blue" href="tel:+5215532251444">+52 1 5532251444</a><br>
- <a style="text-decoration: none; color:blue;" href="mailto:eric5d@hotmail.com">Send email</a><br>
- <a style="text-decoration: none; color:blue;" href="https://www.instagram.com/ericdelitzsch.architects/" target="_blank">Instagram</a><br>
- 
-</p>
 
 
-</div>
 
-</div>
+    <div class="container">
+        <div class="text-section">
+          <p class="contact">
+              <a style="text-decoration: none; color:black" href="https://issuu.com/ericdelitzsch/docs/portafolio" target="_blank">Contact</a>
+          <p class="small">
+              Architecture, Planning, and Interiors<br>
+              Austin, USA | Mexico City, MX<br>
+                <a style="text-decoration: none; color:blue" href="tel:+5215532251444">+1 737 309 7478</a> |
+                <a style="text-decoration: none; color:blue" href="tel:+5215532251444">+52 1 5532251444</a><br>
+                <a style="text-decoration: none; color:blue;" href="mailto:eric5d@hotmail.com">Send email</a><br>
+                <a style="text-decoration: none; color:blue;" href="https://www.instagram.com/ericdelitzsch.architects/" target="_blank">Instagram</a><br>
+        </div>
+        <div class="image-section">
+            <p class="contact">
+              <a style="text-decoration: none; color:black" target="_blank">Publications</a>
+            <div class="images">
+                <a href="https://magazine.texasarchitects.org/2024/05/02/a-dance-of-time-and-space/" target="_blank"> <img src="https://www.dropbox.com/scl/fi/ed73bn1cn7ycmjgqx69gn/texas-architect-magazine.gif?rlkey=z1c9wguwgkuy3y3z2fjpfulmz&st=v12pvnam&raw=1" alt="Image 1">
 
-<script type="text/javascript">
-function click (e) {
-  if (!e)
-    e = window.event;
-  if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
-    if (window.opera)
-      window.alert("");
-    return false;
-  }
-}
-if (document.layers)
-  document.captureEvents(Event.MOUSEDOWN);
-document.onmousedown = click;
-document.oncontextmenu = click;
-</script>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
 <script>
 function myFunction1(x) {
