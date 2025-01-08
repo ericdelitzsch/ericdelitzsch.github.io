@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fallingwater | Eric Delitzsch Architects</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.dropbox.com/s/i7k9nwvcmirmnlp/icon.png?raw=1">
+  <link rel="apple-touch-icon" sizes="128x128" href="https://www.dropbox.com/s/28ubqe7jfnh6e44/icon.jpg?raw=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" CONTENT="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>history.scrollRestoration = "manual"</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+  /* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 10px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+    display:none;
+}
+
+html {
+  scroll-behavior: smooth;
+
+
+}
+
+body, html {
+  color: black;
+  font-size: 2.9vh;
+  font-family: raleway;
+  margin: 0;
+
+}
+{
+  webkit-overflow-scrolling: touch;
+}
+{
+
+-webkit-font-smoothing: antialiased;
+
+}
+
+.copyright{
+  font-size: 13px;
+  text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    position: absolute;
+    top: 10.5%;
+    right: 6.5%;
+    color: black;
+    text-decoration: none;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.5vh;
+  z-index: -1;
+}
+
+.topnav a:hover {
+  color: #BFBFBF}
+
+.topnav .icon {
+  display: none;
+
+}
+
+.menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 84%;
+  top: 12%;
+  
+  }
+
+.title {
+      position: absolute;
+      left: 10%;
+      top: 12%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.5vh;
+
+    }
+
+    ul li a:hover {
+    Color: white;
+
+    }
+
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+    color: white;
+    padding-top: 30px;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .copyright {
+    font-size: 13px;
+  }
+  .title {
+      position: absolute;
+      left: 10%;
+      top: 7%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.75vh;
+
+    }
+
+    .menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 85%;
+  top: 7.6%;
+  
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: absolute;
+    left: 6%;
+    top: 9%;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    line-height: 40%;
+
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar a:not(:first-child) {display: none;}
+  .topbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar.responsive {position: relative;}
+  .topbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ 
+      }
+
+      @media screen and (min-width:700px) {
+      .menub {
+      display:none;
+      float: right;
+      position: absolute;
+      right: 50%;
+      top:50%;
+      
+      }
+
+      
+      }
+
+header {
+  position: absolute;
+  margin: 12vw 12vw 1vw 12vw;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+
+}
+
+header div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 100%;
+  height: auto;
+  margin: .5vw;
+  margin:1vw auto;
+  
+
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+  position: absolute;
+  top: 18%;
+  margin:10px 10px 20px 10px;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+  z-index: -2;
+}
+
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0 0.65em;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+#sections {
+  font-size: 17px;
+  padding: 70px 0px 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+  
+#sections .main {
+  padding-right: 20px;
+  padding-top: 15px;
+  -webkit-flex: 2 1 25%;
+  flex: 2 1 25%;
+  -webkit-order: 2;
+  order: 2;
+}
+
+#sections .sub-section-1 {
+  padding-right: 200px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 90%;
+  -webkit-order: 1;
+  order: 1;
+}
+
+#sections .sub-section-2 {
+  padding-left: 10px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 3;
+  order: 3;
+}
+@media all and (max-width: 1200px)
+{
+  #sections {
+    padding: 60px 60px;
+    font-size: 20px;
+  }
+
+
+@media all and (max-width: 1000px)
+{
+  #sections {
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  
+  #sections > .main, #sections > .sub-section-1, #sections > .sub-section-2 {
+    /* For mobile phones, each section should be on a line of it's own at 100% width. */
+    width: 100%;
+    -webkit-order: 0;
+            order: 0;
+  }
+  
+  #sections .main {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-1 {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-2 {
+    padding-left: 0;
+  }
+}
+}
+
+.column1 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+  }
+
+@media all and (max-width: 1000px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 30%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+@media all and (min-width: 1800px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 33%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 4:3 ratio */
+    padding-top: 0px; 
+    height: 0px;
+    overflow: hidden;
+}
+
+.video-wrapper-narrow {
+    padding-bottom: 40%;
+}
+
+iframe,object,embed,video,.videoWrapper,.video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-js, img.vjs-poster {
+    width: 50% !important;
+    height: 100% !important; //these need !important because IE wants to set height/width to 100px
+    max-width: 100%;
+}
+
+
+
+ .textimage1 {
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+.textimage2 {
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+
+.fallingwater1 {
+    width: 23vw;
+    float: right;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 5vw;
+
+}
+
+.fallingwater2 {
+    width: 23vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 25vw;
+
+}
+
+.fallingwater3 {
+    width: 23vw;
+    float: right;
+    margin-right: 8vw;
+    position: relative;
+    margin-top: 20vw;
+
+}
+
+.fallingwater4 {
+    width: 23vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 40vw;
+
+}
+
+.fallingwater5 {
+    width: 23vw;
+    float: right;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 15vw;
+
+}
+
+.fallingwater6 {
+    width: 23vw;
+    float: left;
+    margin-left: 18vw;    
+    position: relative;
+    margin-top: 20vw;
+
+}
+
+.fallingwater7 {
+    width: 23vw;
+    float: right;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 40vw;
+
+}
+
+.fallingwater8 {
+    width: 23vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 40vw;
+
+}
+
+.fallingwater9 {
+    width: 23vw;
+    float: right;   
+    position: relative;
+    margin-top: 20vw;
+
+}
+
+.fallingwater10 {
+    width: 23vw;
+    float: left;
+    margin-left: 4vw;    
+    position: relative;
+    margin-top: 20vw;
+
+}
+
+.fallingwater11 {
+    width: 60vw;
+    float: right;
+    margin-left: 25%;    
+    position: relative;
+    margin-top: 5vw;
+
+}
+
+.fallingwater12 {
+    width: 23vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 40vw;
+
+}
+
+.fallingwater13 {
+    width: 23vw;
+    float: right;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 10vw;
+
+}
+
+.fallingwater14 {
+    width: 23vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 10vw;
+
+}
+
+.fallingwater15 {
+    width: 60vw;
+    float: left;
+    margin-left: 25%;    
+    position: relative;
+    margin-top: 5vw;
+
+}
+
+.fallingwater16 {
+    width: 60vw;
+    float: right;
+    margin-right: 25%;    
+    position: relative;
+    margin-top: 5vw;
+
+}
+
+.fallingwater17 {
+    width: 23vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 10vw;
+
+}
+
+.fallingwater18 {
+    width: 23vw;
+    float: right;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 20vw;
+
+}
+
+.fallingwater19 {
+    width: 60vw;
+    float: right;
+    margin-right: 20%;    
+    position: relative;
+    margin-top: 5vw;
+
+}
+
+.fallingwater20 {
+    width: 23vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 5vw;
+
+}
+
+.fallingwater21 {
+    width: 23vw;
+    float: right;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 15vw;
+
+}
+
+.fallingwater22 {
+    width: 65vw;  
+    float: left;
+    margin-left: 8vw;
+    position: relative;
+    margin-top: 5vw;
+
+}
+
+.fallingwater23 {
+    width: 23vw;
+    float: right;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 40vw;
+
+}
+
+.fallingwater24 {
+    width: 23vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 10vw;
+
+}
+
+.fallingwater25 {
+    width: 23vw;
+    float: none;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 40vw;
+
+}
+
+@media all and (max-width: 1100px)
+{
+
+ .fallingwater1 {
+    text-align: right;
+      margin-top: 2.5vw;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+
+.fallingwater2{
+    width: 100%;
+    height:auto;
+    margin: 0;
+  margin-bottom: 10vw; 
+
+} 
+
+.fallingwater3{
+    width: 100%;
+    height:auto;
+    margin: 0;
+  margin-top: 1vw;
+  margin-bottom: 10vw;    
+} 
+
+.fallingwater4{
+    width: 100%;
+    height:auto;
+    margin: 0;
+  margin-top: 1vw;
+  margin-bottom: 10vw;    
+} 
+
+.fallingwater5{
+    width: 100%;
+    height:auto;
+    margin: 0;
+  margin-top: 1vw; 
+  margin-bottom: 10vw;   
+} 
+
+.fallingwater6{
+    width: 100%;
+    height:auto;
+    margin: 0;
+  margin-top: 1vw;
+  margin-bottom: 10vw;    
+} 
+
+.fallingwater7{
+    width: 100%;
+    height:auto;
+    margin: 0;
+  margin-top: 1vw;   
+  margin-bottom: 10vw; 
+} 
+
+.fallingwater8{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater9{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater10{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater11{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater12{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater13{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater14{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater15{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater16{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater17{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater18{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater19{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater20{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater21{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater22{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater23{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater24{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+.fallingwater25{
+    width: 100%;
+    height:auto;
+    margin: 0;
+    margin-top: 1vw; 
+    margin-bottom: 10vw;  
+} 
+
+
+}      
+
+.bar1, .bar2 {
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.sticks10{
+    width: 80vh;
+  margin-top: 1vw;   
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-2px, 3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.change .bar2 {
+  transform: rotate(45deg) translate(-1px, -3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<header>
+
+
+
+
+        <div class="fallingwater1"> 
+            <img src="https://www.dropbox.com/scl/fi/zpf7biybwno4c2rrwjoym/fallingwater-1.jpg?rlkey=fo8n36tnesnlexznjb6zm4okr&st=j89ax63r&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 8:04 AM</p>
+        </div>
+
+        <div class="fallingwater2"> 
+            <img src="https://www.dropbox.com/scl/fi/od3z18puv22r02jhlu7ig/fallingwater-2.jpg?rlkey=gotyhejcj3sbp7e20wyvdsbmo&st=ajcqnwvu&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 8:45 AM</p>
+        </div>
+
+        <div class="fallingwater3"> 
+            <img src="https://www.dropbox.com/scl/fi/8gjxz9fuy8vtv0yrtzbbl/fallingwater-3.jpg?rlkey=726sxa384ndro4gv6gqrkkpk9&st=u5vweqak&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 8:47 AM</p>
+        </div>
+
+        <div class="fallingwater4"> 
+            <img src="https://www.dropbox.com/scl/fi/68dcp7ou67o9ph3in88sh/fallingwater-4.jpg?rlkey=ozug6nth46xjjiejn9cwzah12&st=z32hrbzv&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 8:51 AM</p>
+        </div>
+
+        <div class="fallingwater5"> 
+            <img src="https://www.dropbox.com/scl/fi/u9hspmnrivncp7d9mfwra/fallingwater-5.jpg?rlkey=vitz6gr61jkcha6q2d3b2biz8&st=bky8jesj&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 8:56 AM</p>
+        </div>
+
+        <div class="fallingwater6"> 
+            <img src="https://www.dropbox.com/scl/fi/8w0y3oxw5tuezv4c2yws0/fallingwater-6.jpg?rlkey=79vzcyrqrb29356dm8u2w96li&st=gtvacw2e&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 9:12 AM</p>
+        </div>
+
+        <div class="fallingwater7"> 
+            <img src="https://www.dropbox.com/scl/fi/fpb1fokfrd6zbxznn9jf6/fallingwater-7.jpg?rlkey=rzh81d2w7rp356qvg0t3p429p&st=kj56yti6&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 9:22 AM</p>
+        </div>
+
+        <div class="fallingwater8"> 
+            <img src="https://www.dropbox.com/scl/fi/08haboo42ciksn2b5586v/fallingwater-8.jpg?rlkey=zr0ds7sox9rsm9nwswl3lhq48&st=372kfjwh&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 9:36 AM</p>
+        </div>
+
+        <div class="fallingwater9"> 
+            <img src="https://www.dropbox.com/scl/fi/dpzztftb1e62gfpfuxk8g/fallingwater-9.jpg?rlkey=i01r8qevzj461kpchcglohnva&st=ug0ywiy8&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 9:37 AM</p>
+        </div>
+
+        <div class="fallingwater10"> 
+            <img src="https://www.dropbox.com/scl/fi/wyuyemiapno3nud0oo39j/fallingwater-10.jpg?rlkey=0kdvhtwlhvb7t6hrpi5yhpxtq&st=45swekpf&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 10:12 AM</p>
+        </div>
+
+        <div class="fallingwater11"> 
+            <img src="https://www.dropbox.com/scl/fi/reee46p32xcgg684by2fv/fallingwater-11.jpg?rlkey=pmhtx2xmzv8aqrvv62r0mxjfi&st=r06w6zvi&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 10:12 AM</p>
+        </div>
+
+        <div class="fallingwater12"> 
+            <img src="https://www.dropbox.com/scl/fi/huxj9ru97jlf677aa4u12/fallingwater-12.jpg?rlkey=icip7zmrz5camb6iq5kb8arx4&st=n5g80a5u&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 10:13 AM</p>
+        </div>
+
+        <div class="fallingwater13"> 
+            <img src="https://www.dropbox.com/scl/fi/pgo2u8ctx4fvp0genye7f/fallingwater-13.jpg?rlkey=lhcenibnsxj1eoq1g1yantg43&st=tyajler8&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 10:13 AM</p>
+        </div>
+
+         <div class="fallingwater14"> 
+            <img src="https://www.dropbox.com/scl/fi/e3fra1m6c7qg1a61fhfvm/fallingwater-14.jpg?rlkey=r372pcuifhw6wp438pl74si66&st=pbp5rcpq&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 10:14 AM</p>
+        </div>
+
+        <div class="fallingwater15"> 
+            <img src="https://www.dropbox.com/scl/fi/1y7cz6mwtvk0dmx142lm5/fallingwater-15.jpg?rlkey=vfmd8jl6don53s0vk34g0ptb5&st=4j9ucqht&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 10:14 AM</p>
+        </div>
+
+        <div class="fallingwater16"> 
+            <img src="https://www.dropbox.com/scl/fi/4708q7q025wxrh1a9ms1a/fallingwater-16.jpg?rlkey=ebwxmamf50wiqu3x3cnkhbuga&st=dt1yam0b&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 10:14 AM</p>
+        </div>
+
+        <div class="fallingwater17"> 
+            <img src="https://www.dropbox.com/scl/fi/ru0e4vyawuemaztcnkm8o/fallingwater-17.jpg?rlkey=0r6ysnpnulcmn8xxj621n5bzu&st=dt1uq85f&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 10:15 AM</p>
+        </div>
+
+        <div class="fallingwater18"> 
+            <img src="https://www.dropbox.com/scl/fi/63z10xpcjfq27hxqq0475/fallingwater-18.jpg?rlkey=8lsdz4o60scpo0tqn1ooa6ydx&st=mdmy5e9b&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 10:28 AM</p>
+        </div>
+
+        <div class="fallingwater19"> 
+            <img src="https://www.dropbox.com/scl/fi/dxu8tsgvjbg8bhmvx030z/fallingwater-19.jpg?rlkey=lrnpri27zu771zq5z3dkv0xwn&st=x93q64jx&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 10:29 AM</p>
+        </div>
+
+        <div class="fallingwater20"> 
+            <img src="https://www.dropbox.com/scl/fi/y9vyutlvrdib2xis5ulak/fallingwater-20.jpg?rlkey=vetwgui830q5eviotj1wlxsl5&st=q50wkhnm&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 10:31 AM</p>
+        </div>
+
+        <div class="fallingwater21"> 
+            <img src="https://www.dropbox.com/scl/fi/ht6v7q9ote93b0nf1oom8/fallingwater-21.jpg?rlkey=tm00tg1vhovu7a20gw3ilkff4&st=0pg51ef5&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 10:31 AM</p>
+        </div>
+
+
+        <div class="fallingwater22"> 
+            <img src="https://www.dropbox.com/scl/fi/pkd372h7r2776f07obicq/fallingwater-22.jpg?rlkey=ol4c6xezi07qxrx0ar9xhhdbb&st=25h1u5ev&raw=1" /> 
+            <p class="textimage1">Frank Lloyd Wright | FallingWater</p>
+            <p class="textimage2">Mill Run, Pennsylvania, 04/08/2024 10:31 AM</p>
+        </div>
+
+        
+
+
+
+
+      <div class="white"> <img src="https://www.dropbox.com/s/9fm07eh0voiumgd/whitebar.jpg?raw=1"></div>
+
+ <div class="row">
+  <div class="column1">
+    <a style="text-decoration: none; color:#005799" href="https://ericdelitzsch.com/studio">Contact</a><br>
+  </div>
+  <div class="column2">
+    <a style="text-decoration: none; color:#005799" href="https://www.instagram.com/ericdelitzsch.architects/" target="_blank">Instagram</a><br>
+  </div>
+  <div class="column3">
+    <a style="text-decoration: none; color:#005799" href="#top">🡡 Top</a><br>
+  </div>
+</div>
+
+<div class="copyright">
+    <a style="text-decoration: none; color:gray">© eric delitzsch architects</a><br>
+  </div>
+
+  </header> 
+
+<script type="text/javascript">
+
+window.addEventListener("DOMContentLoaded", function(e) {
+  var links = document.getElementsByTagName("A");
+  for(var i=0; i < links.length; i++) {
+    if(!links[i].hash) continue;
+    if(links[i].origin + links[i].pathname != self.location.href) continue;
+    (function(anchorPoint) {
+      links[i].addEventListener("click", function(e) {
+        anchorPoint.scrollIntoView(true);
+        e.preventDefault();
+      }, false);
+    })(document.getElementById(links[i].hash.replace(/#/, "")));
+  }
+}, false);
+
+</script>
+
+<script type="text/javascript">
+
+// Vanilla version of FitVids
+// Still licencened under WTFPL
+//
+// Not as robust and fault tolerant as the jQuery version.
+// It's BYOCSS.
+// And also, I don't support this at all whatsoever.
+
+(function(window, document, undefined) {
+  "use strict";
+
+  // List of Video Vendors embeds you want to support
+  var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+
+  // Select videos
+  var fitVids = document.querySelectorAll(players.join(","));
+
+  // If there are videos on the page...
+  if (fitVids.length) {
+    // Loop through videos
+    for (var i = 0; i < fitVids.length; i++) {
+      // Get Video Information
+      var fitVid = fitVids[i];
+      var width = fitVid.getAttribute("width");
+      var height = fitVid.getAttribute("height");
+      var aspectRatio = height / width;
+      var parentDiv = fitVid.parentNode;
+
+      // Wrap it in a DIV
+      var div = document.createElement("div");
+      div.className = "fitVids-wrapper";
+      div.style.paddingBottom = aspectRatio * 100 + "%";
+      parentDiv.insertBefore(div, fitVid);
+      fitVid.remove();
+      div.appendChild(fitVid);
+
+      // Clear height/width from fitVid
+      fitVid.removeAttribute("height");
+      fitVid.removeAttribute("width");
+    }
+  }
+})(window, document);
+
+
+</script>
+
+
+<a href="https://ericdelitzsch.com/" class="title" id="title"><b>eric delitzsch </b>architects<a/></li>
+<div class="topnav" id="myTopnav">
+<a href="https://ericdelitzsch.com/work">work</a>
+  <a href="https://ericdelitzsch.com/drawings">drawings</a>
+  <a href="https://ericdelitzsch.com/photography">photography</a>
+  <a href="https://ericdelitzsch.com/studio">studio</a>
+  <a href="studio"></a>  
+</div>
+
+<div class="menua" id="mymenua">
+  <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">
+    
+  <div class="container" onclick="myFunction1(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  </div>
+  
+  </a>
+  
+</div>
+
+<div id="myNav" class="overlay">
+</div>
+
+<script>
+    // Defining custom functions
+    function menu1(){
+        var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+     
+    var checkFlag = true;
+function fondo(){
+  if(checkFlag == true){
+  document.getElementById("myNav").style.display = "block";
+  }else{
+  document.getElementById("myNav").style.display = "none";
+  }
+  checkFlag = !checkFlag;
+}
+
+
+function noscroll(){
+  if(checkFlag == true){
+  document.body.style.overflow="scroll";
+  }else{
+  document.body.style.overflow="hidden";
+  }
+  }
+
+    function color(){
+  if(checkFlag == true){
+  document.getElementById("title").style.color = 'black';
+  }else{
+  document.getElementById("title").style.color = 'white';
+  }
+  }
+
+    
+ 
+    // Selecting button element
+    var btn = document.getElementById("mymenua");
+     
+    // Assigning event listeners to the button
+    btn.addEventListener("click", menu1);
+    btn.addEventListener("click", fondo);
+    btn.addEventListener("click", noscroll);
+    btn.addEventListener("click", color);
+    </script>
+
+
+
+</body>
+</html>
