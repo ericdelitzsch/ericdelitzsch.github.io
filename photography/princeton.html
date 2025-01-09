@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Princeton | Eric Delitzsch Architects</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.dropbox.com/s/i7k9nwvcmirmnlp/icon.png?raw=1">
+  <link rel="apple-touch-icon" sizes="128x128" href="https://www.dropbox.com/s/28ubqe7jfnh6e44/icon.jpg?raw=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" CONTENT="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>history.scrollRestoration = "manual"</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+  /* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 10px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+    display:none;
+}
+
+html {
+  scroll-behavior: smooth;
+
+
+}
+
+body, html {
+  color: black;
+  font-size: 2.9vh;
+  font-family: raleway;
+  margin: 0;
+
+}
+{
+  webkit-overflow-scrolling: touch;
+}
+{
+
+-webkit-font-smoothing: antialiased;
+
+}
+
+.copyright{
+  font-size: 13px;
+  text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    position: absolute;
+    top: 10.5%;
+    right: 6.5%;
+    color: black;
+    text-decoration: none;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.5vh;
+  z-index: -1;
+}
+
+.topnav a:hover {
+  color: #BFBFBF}
+
+.topnav .icon {
+  display: none;
+
+}
+
+.menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 84%;
+  top: 12%;
+  
+  }
+
+.title {
+      position: absolute;
+      left: 10%;
+      top: 12%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.5vh;
+
+    }
+
+    ul li a:hover {
+    Color: white;
+
+    }
+
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+    color: white;
+    padding-top: 30px;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .copyright {
+    font-size: 13px;
+  }
+  .title {
+      position: absolute;
+      left: 10%;
+      top: 7%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.75vh;
+
+    }
+
+    .menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 85%;
+  top: 7.6%;
+  
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: absolute;
+    left: 6%;
+    top: 9%;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    line-height: 40%;
+
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar a:not(:first-child) {display: none;}
+  .topbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar.responsive {position: relative;}
+  .topbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ 
+      }
+
+      @media screen and (min-width:700px) {
+      .menub {
+      display:none;
+      float: right;
+      position: absolute;
+      right: 50%;
+      top:50%;
+      
+      }
+
+      
+      }
+
+header {
+  position: absolute;
+  margin: 12vw 12vw 1vw 12vw;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+
+}
+
+header div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 100%;
+  height: auto;
+  margin: .5vw;
+  margin:1vw auto;
+  
+
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+  position: absolute;
+  top: 18%;
+  margin:10px 10px 20px 10px;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+  z-index: -2;
+}
+
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0 0.65em;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+#sections {
+  font-size: 17px;
+  padding: 70px 0px 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+  
+#sections .main {
+  padding-right: 20px;
+  padding-top: 15px;
+  -webkit-flex: 2 1 25%;
+  flex: 2 1 25%;
+  -webkit-order: 2;
+  order: 2;
+}
+
+#sections .sub-section-1 {
+  padding-right: 200px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 90%;
+  -webkit-order: 1;
+  order: 1;
+}
+
+#sections .sub-section-2 {
+  padding-left: 10px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 3;
+  order: 3;
+}
+@media all and (max-width: 1200px)
+{
+  #sections {
+    padding: 60px 60px;
+    font-size: 20px;
+  }
+
+
+@media all and (max-width: 1000px)
+{
+  #sections {
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  
+  #sections > .main, #sections > .sub-section-1, #sections > .sub-section-2 {
+    /* For mobile phones, each section should be on a line of it's own at 100% width. */
+    width: 100%;
+    -webkit-order: 0;
+            order: 0;
+  }
+  
+  #sections .main {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-1 {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-2 {
+    padding-left: 0;
+  }
+}
+}
+
+.column1 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+  }
+
+@media all and (max-width: 1000px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 30%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+@media all and (min-width: 1800px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 33%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 4:3 ratio */
+    padding-top: 0px; 
+    height: 0px;
+    overflow: hidden;
+}
+
+.video-wrapper-narrow {
+    padding-bottom: 40%;
+}
+
+iframe,object,embed,video,.videoWrapper,.video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-js, img.vjs-poster {
+    width: 50% !important;
+    height: 100% !important; //these need !important because IE wants to set height/width to 100px
+    max-width: 100%;
+}
+
+
+
+ .textimage1 { 
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+.textimage2 {
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+
+.princeton1 { /* Robert Geddes | Institute for Advanced Study */
+    width: 23vw;
+    float: left;
+    margin-left: 0vw;    
+    position: relative;
+    margin-top: 5vw;
+}
+.princeton2 { /* Robert Geddes | Institute for Advanced Study */
+    width: 23vw;
+    float: right;
+    margin-right: 0vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.princeton3 { /* Pelli Clarke & Partners | Simons Center for Systems Biology */
+    width: 23vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.princeton4 { /* Steven Holl Architects | Rubenstein Commons Institute for Advanced Study */
+    width: 23vw;
+    float: right;
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.thumbnail { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 22vw;
+    float: left;
+    margin-left: 4vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.princeton13 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 23vw;
+    float: right;
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.princeton7 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 21vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.princeton8 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 25vw;
+    float: right;
+    margin-right: 6vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.princeton9 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 22vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.princeton10 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 22vw;
+    float: right;
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 20vw;
+}
+.princeton11 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 23vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.princeton12 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 24vw;
+    float: right;
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 25vw;
+}
+.princeton5 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 23vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.princeton6 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 20vw;
+    float: left;
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.princeton14 { /* I.M. Pei | Spelman Halls */
+    width: 23vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 5vw;
+}
+.princeton15 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 21vw;
+    float: right;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 7vw;
+}
+.princeton16 { /* Steven Holl Architects | Lewis Arts Complex */
+    width: 55vw;
+    float: right;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+.princeton17 { /* Steven Holl Architects | Lewis Arts Complex */
+    width: 23vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 6vw;
+}
+.princeton18 { /* Frank Gehry Partners | Horse Head */
+    width: 21vw;
+    float: right;
+    margin-right: 8vw;    
+    position: relative;
+    margin-top: 45vw;
+}
+.princeton19 { /* Frank Gehry Partners | Horse Head */
+    width: 21vw;
+    float: left;
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.princeton20 { /* Rafael Moneo | Neuroscience Institute */
+    width: 23vw;
+    float: right;
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.princeton21 { /* Unknown | Albert Einstein House */
+    width: 23vw;
+    float: left;
+    margin-left: 2vw;    
+    position: relative;
+    margin-top: 5vw;
+}
+
+
+
+
+@media all and (max-width: 1100px)
+{
+
+ .textimage1 {
+    text-align: right;
+      margin-top: 2.5vw;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+.princeton1 { /* Robert Geddes | Institute for Advanced Study */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton2 { /* Robert Geddes | Institute for Advanced Study */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton3 { /* Pelli Clarke & Partners | Simons Center for Systems Biology */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton4 { /* Steven Holl Architects | Rubenstein Commons Institute for Advanced Study */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton5 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton6 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton7 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton8 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton9 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton10 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton11 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton12 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton13 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton14 { /* I.M. Pei | Spelman Halls */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton15 { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton16 { /* Steven Holl Architects | Lewis Arts Complex */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton17 { /* Steven Holl Architects | Lewis Arts Complex */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton18 { /* Frank Gehry Partners | Horse Head */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton19 { /* Frank Gehry Partners | Horse Head */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton20 { /* Rafael Moneo | Neuroscience Institute */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.princeton21 { /* Unknown | Albert Einstein House */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.thumbnail { /* Studio Rick Joy | Princeton Transit Hall and Market */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+
+
+
+
+
+}      
+
+.bar1, .bar2 {
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.sticks10{
+    width: 80vh;
+  margin-top: 1vw;   
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-2px, 3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.change .bar2 {
+  transform: rotate(45deg) translate(-1px, -3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<header>
+
+
+
+
+        <div class="princeton1"> 
+            <img src="https://www.dropbox.com/scl/fi/qyyy8c85mcmtfxbaye0xy/princeton-1.jpg?rlkey=ya5uvsql3040j5e15h3q4qv05&st=8l3muhtb&raw=1" /> 
+            <p class="textimage1">Robert Geddes | Institute for Advanced Study</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 3:04 PM</p>
+        </div>
+
+        <div class="princeton2"> 
+            <img src="https://www.dropbox.com/scl/fi/xntrk0pdyyovihtrcahh3/princeton-2.jpg?rlkey=4892m9hn4tyhdkqfk5bkncgcb&st=gx6e4k9r&raw=1" /> 
+            <p class="textimage1">Robert Geddes | Institute for Advanced Study</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 3:05 PM</p>
+        </div>
+
+
+        <div class="princeton3"> 
+            <img src="https://www.dropbox.com/scl/fi/7q3br1cu29wt1v2my0qda/princeton-3.jpg?rlkey=tlh6ohx74kcrfepm3k3myci86&st=bhf3s3sz&raw=1" /> 
+            <p class="textimage1">Pelli Clarke & Partners | Simons Center for Systems Biology</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 3:17 PM</p>
+        </div>
+
+        <div class="princeton4"> 
+            <img src="https://www.dropbox.com/scl/fi/u4g3jkp9alg6otmnj2f40/princeton-4.jpg?rlkey=qrvahjhxqxmh3h8p1pisn1orq&st=tox1ktv5&raw=1" /> 
+            <p class="textimage1">Steven Holl Architects | Rubenstein Commons Institute for Advanced Study</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 3:32 PM</p>
+        </div>
+
+        <div class="thumbnail"> 
+            <img src="https://www.dropbox.com/scl/fi/snv1b0qp2ey0dwzltto4v/thumbnail.jpg?rlkey=vh3ts37gul2f2p9mlrycit3bi&st=1fp6ql7q&raw=1" /> 
+            <p class="textimage1">Studio Rick Joy | Princeton Transit Hall and Market</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 6:27 PM</p>
+        </div>
+
+        <div class="princeton13"> 
+            <img src="https://www.dropbox.com/scl/fi/qy8c56lsgmq3ci3v66b0s/princeton-13.jpg?rlkey=6ubix785g61ovn26lywmqiiit&st=7fd28bmr&raw=1" /> 
+            <p class="textimage1">Studio Rick Joy | Princeton Transit Hall and Market</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 6:30 PM</p>
+        </div>
+
+        <div class="princeton7"> 
+            <img src="https://www.dropbox.com/scl/fi/r1v9fc9v1crgn0rhzh16c/princeton-7.jpg?rlkey=2tyoo32t94t2ozs32md8z36os&st=nqniyvoh&raw=1" /> 
+            <p class="textimage1">Studio Rick Joy | Princeton Transit Hall and Market</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 6:11 PM</p>
+        </div>
+
+        <div class="princeton8"> 
+            <img src="https://www.dropbox.com/scl/fi/bl9lnlqelxsi66191dgf6/princeton-8.jpg?rlkey=vfybcisox5hkarrd04f3hu8ci&st=umswx3nq&raw=1" /> 
+            <p class="textimage1">Studio Rick Joy | Princeton Transit Hall and Market</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 6:12 PM</p>
+        </div>
+
+        <div class="princeton9"> 
+            <img src="https://www.dropbox.com/scl/fi/7rmwwlw6cr9ey1bmaa6ij/princeton-9.jpg?rlkey=e7w6el4jpjq8w2mwzud0boxtz&st=bprrd3bw&raw=1" /> 
+            <p class="textimage1">Studio Rick Joy | Princeton Transit Hall and Market</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 6:12 PM</p>
+        </div>
+
+
+        <div class="princeton10"> 
+            <img src="https://www.dropbox.com/scl/fi/ewjekpt73gkmjpdjyg29d/princeton-10.jpg?rlkey=ozp01wq1abrhs3fi9occicx98&st=y3a7a47n&raw=1" /> 
+            <p class="textimage1">Studio Rick Joy | Princeton Transit Hall and Market</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 6:13 PM</p>
+        </div>
+
+        <div class="princeton11"> 
+            <img src="https://www.dropbox.com/scl/fi/etltm5ghxrqlb62bw7ce7/princeton-11.jpg?rlkey=gqjo6wbm1ngxav8rpvkdkrru4&st=9d5zt7ut&raw=1" /> 
+            <p class="textimage1">Studio Rick Joy | Princeton Transit Hall and Market</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 6:13 PM</p>
+        </div>
+
+
+        <div class="princeton12"> 
+            <img src="https://www.dropbox.com/scl/fi/ggxpmcmb33k6gedeb203c/princeton-12.jpg?rlkey=g4pny5oy6u9kpduzqcki8d4eo&st=5e811oci&raw=1" /> 
+            <p class="textimage1">Studio Rick Joy | Princeton Transit Hall and Market</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 6:16 PM</p>
+        </div>
+
+
+        <div class="princeton5"> 
+            <img src="https://www.dropbox.com/scl/fi/0d7y7euqdte55ehivoc20/princeton-5.jpg?rlkey=xvakywwdduaj4vehygaghuncd&st=5p2z3bmj&raw=1" /> 
+            <p class="textimage1">Studio Rick Joy | Princeton Transit Hall and Market</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 6:07 PM</p>
+        </div>
+
+        <div class="princeton6"> 
+            <img src="https://www.dropbox.com/scl/fi/zleuixxljqz4og7l8khf0/princeton-6.jpg?rlkey=42bm5ij3sosvnue6cnm9j7jz6&st=qkzhaw9m&raw=1" /> 
+            <p class="textimage1">Studio Rick Joy | Princeton Transit Hall and Market</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 6:07 PM</p>
+        </div>
+
+        <div class="princeton14"> 
+            <img src="https://www.dropbox.com/scl/fi/ksz9g5rq23tv4s2piprnu/princeton-14.jpg?rlkey=jpr9irs1qlvlftgomssrnbzxr&st=vkyivpmu&raw=1" /> 
+            <p class="textimage1">I.M. Pei | Spelman Halls</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 8:46 PM</p>
+        </div>
+
+
+        <div class="princeton15"> 
+            <img src="https://www.dropbox.com/scl/fi/zhs6bplor4w9q4b8i7wu8/princeton-15.jpg?rlkey=btq2fxa3qh15qx2744jrh412f&st=zqnx9hhr&raw=1" /> 
+            <p class="textimage1">Studio Rick Joy | Princeton Transit Hall and Market</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 8:04 PM</p>
+        </div>
+
+        <div class="princeton16"> 
+            <img src="https://www.dropbox.com/scl/fi/agxskrbd9n8q9w1485hfm/princeton-16.jpg?rlkey=74wh9f7axra5dy8r1nqhy7wqy&st=vf6dxmzt&raw=1" /> 
+            <p class="textimage1">Steven Holl Architects | Lewis Arts Complex</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 6:52PM</p>
+        </div>
+
+        <div class="princeton17"> 
+            <img src="https://www.dropbox.com/scl/fi/1zbw9c6ps9ugvo1mxnyxw/princeton-17.jpg?rlkey=6rdphqp9ulh2xxvpsly44tbn4&st=rbcliifr&raw=1" /> 
+            <p class="textimage1">Steven Holl Architects | Lewis Arts Complex</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 6:53 PM</p>
+        </div>
+
+        <div class="princeton18"> 
+            <img src="https://www.dropbox.com/scl/fi/1y9sdbdn83og1u49nhtb7/princeton-18.jpg?rlkey=l4x9f2cl1ta3jjq6v3p0ygo3y&st=hsmk2hdx&raw=1" /> 
+            <p class="textimage1">Frank Gehry Partners | Horse Head</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 7:12 PM</p>
+        </div>
+
+        <div class="princeton19"> 
+            <img src="https://www.dropbox.com/scl/fi/sg38vks755bsyqt6yqu3y/princeton-19.jpg?rlkey=zb86v633fl8dr82ubbndm7ylt&st=6kkf9tqb&raw=1" /> 
+            <p class="textimage1">Frank Gehry Partners | Horse Head</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 7:14 PM</p>
+        </div>
+
+        <div class="princeton20"> 
+            <img src="https://www.dropbox.com/scl/fi/qlzpq8kuuf3q6zbhq5ouf/princeton-20.jpg?rlkey=14gsu7ztw7tnncvxc51cth5l9&st=pj2q0lyy&raw=1" /> 
+            <p class="textimage1">Rafael Moneo | Neuroscience Institute</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 7:16 PM</p>
+        </div>
+        
+        <div class="princeton21"> 
+            <img src="https://www.dropbox.com/scl/fi/tbr8ccmgdlk2rsyhdnw9r/princeton-21.jpg?rlkey=1ctm04umi3q1fattg93q9qfwn&st=095jit2v&raw=1" /> 
+            <p class="textimage1">Unknown | Albert Einstein House</p>
+            <p class="textimage2">Princeton, New Jersey, 06/08/2024 7:48 PM</p>
+        </div>
+
+
+
+
+
+      <div class="white"> <img src="https://www.dropbox.com/s/9fm07eh0voiumgd/whitebar.jpg?raw=1"></div>
+
+ <div class="row">
+  <div class="column1">
+    <a style="text-decoration: none; color:#005799" href="https://ericdelitzsch.com/studio">Contact</a><br>
+  </div>
+  <div class="column2">
+    <a style="text-decoration: none; color:#005799" href="https://www.instagram.com/ericdelitzsch.architects/" target="_blank">Instagram</a><br>
+  </div>
+  <div class="column3">
+    <a style="text-decoration: none; color:#005799" href="#top">🡡 Top</a><br>
+  </div>
+</div>
+
+<div class="copyright">
+    <a style="text-decoration: none; color:gray">© eric delitzsch architects</a><br>
+  </div>
+
+  </header> 
+
+<script type="text/javascript">
+
+window.addEventListener("DOMContentLoaded", function(e) {
+  var links = document.getElementsByTagName("A");
+  for(var i=0; i < links.length; i++) {
+    if(!links[i].hash) continue;
+    if(links[i].origin + links[i].pathname != self.location.href) continue;
+    (function(anchorPoint) {
+      links[i].addEventListener("click", function(e) {
+        anchorPoint.scrollIntoView(true);
+        e.preventDefault();
+      }, false);
+    })(document.getElementById(links[i].hash.replace(/#/, "")));
+  }
+}, false);
+
+</script>
+
+<script type="text/javascript">
+
+// Vanilla version of FitVids
+// Still licencened under WTFPL
+//
+// Not as robust and fault tolerant as the jQuery version.
+// It's BYOCSS.
+// And also, I don't support this at all whatsoever.
+
+(function(window, document, undefined) {
+  "use strict";
+
+  // List of Video Vendors embeds you want to support
+  var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+
+  // Select videos
+  var fitVids = document.querySelectorAll(players.join(","));
+
+  // If there are videos on the page...
+  if (fitVids.length) {
+    // Loop through videos
+    for (var i = 0; i < fitVids.length; i++) {
+      // Get Video Information
+      var fitVid = fitVids[i];
+      var width = fitVid.getAttribute("width");
+      var height = fitVid.getAttribute("height");
+      var aspectRatio = height / width;
+      var parentDiv = fitVid.parentNode;
+
+      // Wrap it in a DIV
+      var div = document.createElement("div");
+      div.className = "fitVids-wrapper";
+      div.style.paddingBottom = aspectRatio * 100 + "%";
+      parentDiv.insertBefore(div, fitVid);
+      fitVid.remove();
+      div.appendChild(fitVid);
+
+      // Clear height/width from fitVid
+      fitVid.removeAttribute("height");
+      fitVid.removeAttribute("width");
+    }
+  }
+})(window, document);
+
+
+</script>
+
+
+<a href="https://ericdelitzsch.com/" class="title" id="title"><b>eric delitzsch </b>architects<a/></li>
+<div class="topnav" id="myTopnav">
+<a href="https://ericdelitzsch.com/work">work</a>
+  <a href="https://ericdelitzsch.com/drawings">drawings</a>
+  <a href="https://ericdelitzsch.com/photography">photography</a>
+  <a href="https://ericdelitzsch.com/studio">studio</a>
+  <a href="studio"></a>  
+</div>
+
+<div class="menua" id="mymenua">
+  <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">
+    
+  <div class="container" onclick="myFunction1(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  </div>
+  
+  </a>
+  
+</div>
+
+<div id="myNav" class="overlay">
+</div>
+
+<script>
+    // Defining custom functions
+    function menu1(){
+        var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+     
+    var checkFlag = true;
+function fondo(){
+  if(checkFlag == true){
+  document.getElementById("myNav").style.display = "block";
+  }else{
+  document.getElementById("myNav").style.display = "none";
+  }
+  checkFlag = !checkFlag;
+}
+
+
+function noscroll(){
+  if(checkFlag == true){
+  document.body.style.overflow="scroll";
+  }else{
+  document.body.style.overflow="hidden";
+  }
+  }
+
+    function color(){
+  if(checkFlag == true){
+  document.getElementById("title").style.color = 'black';
+  }else{
+  document.getElementById("title").style.color = 'white';
+  }
+  }
+
+    
+ 
+    // Selecting button element
+    var btn = document.getElementById("mymenua");
+     
+    // Assigning event listeners to the button
+    btn.addEventListener("click", menu1);
+    btn.addEventListener("click", fondo);
+    btn.addEventListener("click", noscroll);
+    btn.addEventListener("click", color);
+    </script>
+
+
+
+</body>
+</html>
