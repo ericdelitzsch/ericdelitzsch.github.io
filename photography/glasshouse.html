@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Glass House | Eric Delitzsch Architects</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.dropbox.com/s/i7k9nwvcmirmnlp/icon.png?raw=1">
+  <link rel="apple-touch-icon" sizes="128x128" href="https://www.dropbox.com/s/28ubqe7jfnh6e44/icon.jpg?raw=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" CONTENT="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>history.scrollRestoration = "manual"</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+  /* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 10px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+    display:none;
+}
+
+html {
+  scroll-behavior: smooth;
+
+
+}
+
+body, html {
+  color: black;
+  font-size: 2.9vh;
+  font-family: raleway;
+  margin: 0;
+
+}
+{
+  webkit-overflow-scrolling: touch;
+}
+{
+
+-webkit-font-smoothing: antialiased;
+
+}
+
+.copyright{
+  font-size: 13px;
+  text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    position: absolute;
+    top: 10.5%;
+    right: 6.5%;
+    color: black;
+    text-decoration: none;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.5vh;
+  z-index: -1;
+}
+
+.topnav a:hover {
+  color: #BFBFBF}
+
+.topnav .icon {
+  display: none;
+
+}
+
+.menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 84%;
+  top: 12%;
+  
+  }
+
+.title {
+      position: absolute;
+      left: 10%;
+      top: 12%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.5vh;
+
+    }
+
+    ul li a:hover {
+    Color: white;
+
+    }
+
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+    color: white;
+    padding-top: 30px;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .copyright {
+    font-size: 13px;
+  }
+  .title {
+      position: absolute;
+      left: 10%;
+      top: 7%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.75vh;
+
+    }
+
+    .menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 85%;
+  top: 7.6%;
+  
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: absolute;
+    left: 6%;
+    top: 9%;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    line-height: 40%;
+
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar a:not(:first-child) {display: none;}
+  .topbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar.responsive {position: relative;}
+  .topbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ 
+      }
+
+      @media screen and (min-width:700px) {
+      .menub {
+      display:none;
+      float: right;
+      position: absolute;
+      right: 50%;
+      top:50%;
+      
+      }
+
+      
+      }
+
+header {
+  position: absolute;
+  margin: 12vw 12vw 1vw 12vw;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+
+}
+
+header div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 100%;
+  height: auto;
+  margin: .5vw;
+  margin:1vw auto;
+  
+
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+  position: absolute;
+  top: 18%;
+  margin:10px 10px 20px 10px;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+  z-index: -2;
+}
+
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0 0.65em;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+#sections {
+  font-size: 17px;
+  padding: 70px 0px 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+  
+#sections .main {
+  padding-right: 20px;
+  padding-top: 15px;
+  -webkit-flex: 2 1 25%;
+  flex: 2 1 25%;
+  -webkit-order: 2;
+  order: 2;
+}
+
+#sections .sub-section-1 {
+  padding-right: 200px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 90%;
+  -webkit-order: 1;
+  order: 1;
+}
+
+#sections .sub-section-2 {
+  padding-left: 10px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 3;
+  order: 3;
+}
+@media all and (max-width: 1200px)
+{
+  #sections {
+    padding: 60px 60px;
+    font-size: 20px;
+  }
+
+
+@media all and (max-width: 1000px)
+{
+  #sections {
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  
+  #sections > .main, #sections > .sub-section-1, #sections > .sub-section-2 {
+    /* For mobile phones, each section should be on a line of it's own at 100% width. */
+    width: 100%;
+    -webkit-order: 0;
+            order: 0;
+  }
+  
+  #sections .main {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-1 {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-2 {
+    padding-left: 0;
+  }
+}
+}
+
+.column1 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+  }
+
+@media all and (max-width: 1000px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 30%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+@media all and (min-width: 1800px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 33%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 4:3 ratio */
+    padding-top: 0px; 
+    height: 0px;
+    overflow: hidden;
+}
+
+.video-wrapper-narrow {
+    padding-bottom: 40%;
+}
+
+iframe,object,embed,video,.videoWrapper,.video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-js, img.vjs-poster {
+    width: 50% !important;
+    height: 100% !important; //these need !important because IE wants to set height/width to 100px
+    max-width: 100%;
+}
+
+
+
+ .textimage1 { 
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+.textimage2 {
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+    font-style: italic;
+
+}
+
+.glass-1 {
+    width: 28vw;
+    float: left;
+    margin-left: 7vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+
+.glass-2 {
+    width: 65vw;
+    float: right;
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+
+.glass-3 {
+    width: 29vw;
+    float: left;
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 8vw;
+}
+
+.glass-4 {
+    width: 26vw;
+    float: right;
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 30vw;
+}
+
+.glass-5 {
+    width: 30vw;
+    float: left;
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 25vw;
+}
+
+.glass-6 {
+    width: 25vw;
+    float: right;
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 21vw;
+}
+
+.glass-7 {
+    width: 28vw;
+    float: left;
+    margin-left: 1vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+
+.glass-8 {
+    width: 27vw;
+    float: right;
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 24vw;
+}
+
+.glass-9 {
+    width: 55vw;
+    float: left;
+    margin-left: 2vw;    
+    position: relative;
+    margin-top: 6vw;
+}
+
+.glass-10 {
+    width: 50vw;
+    float: right;
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+
+.glass-11 {
+    width: 24vw;
+    float: left;
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+
+.glass-12 {
+    width: 45vw;
+    float: right;
+    margin-right: 6vw;    
+    position: relative;
+    margin-top: 9vw;
+}
+
+.glass-13 {
+    width: 28vw;
+    float: left;
+    margin-left: 9vw;    
+    position: relative;
+    margin-top: 20vw;
+}
+
+.glass-14 {
+    width: 25vw;
+    float: right;
+    margin-right: 7vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+
+.glass-15 {
+    width: 27vw;
+    float: left;
+    margin-left: 6vw;    
+    position: relative;
+    margin-top: 22vw;
+}
+
+.glass-16 {
+    width: 30vw;
+    float: left;
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 5vw;
+}
+
+
+@media all and (max-width: 1100px)
+{
+
+ .textimage1 {
+    text-align: right;
+      margin-top: 2.5vw;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+.glass-1 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-3 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-4 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-5 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-6 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-7 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-8 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-9 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-10 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-11 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-12 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-13 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-14 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-15 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.glass-16 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+
+}
+
+
+
+.bar1, .bar2 {
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.sticks10{
+    width: 80vh;
+  margin-top: 1vw;   
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-2px, 3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.change .bar2 {
+  transform: rotate(45deg) translate(-1px, -3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<header>
+
+
+
+<div class="glass-1"> 
+    <img src="https://www.dropbox.com/scl/fi/x8kleloizzmkw3mzlkdov/glass-1.jpg?rlkey=87mhuho6hw2lvyw2u7snqcv84&st=k4nyoixc&raw=1" /> 
+    <p class="textimage1">Philip Johnson | The Glass House</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 10:59 AM</p>
+</div>
+<div class="glass-2"> 
+    <img src="https://www.dropbox.com/scl/fi/pzk2uuxcjnj5s3uv33si7/glass-2.jpg?rlkey=h95v6jl73d406owdua4iacpab&st=vtm9ejzk&raw=1" /> 
+    <p class="textimage1">Philip Johnson | The Glass House</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 10:59 AM</p>
+</div>
+<div class="glass-3"> 
+    <img src="https://www.dropbox.com/scl/fi/kl5wsqip7c5juq5gabq4s/glass-3.jpg?rlkey=xt4e7rdkzip86del1fv834t12&st=3zoumbqn&raw=1" /> 
+    <p class="textimage1">Philip Johnson | The Glass House</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 11:02 AM</p>
+</div>
+<div class="glass-4"> 
+    <img src="https://www.dropbox.com/scl/fi/9gk6gibb8djohk9b2yaqn/glass-4.jpg?rlkey=q8tjxqy0t4vxr1audvzjkbole&st=rtg6mtij&raw=1" /> 
+    <p class="textimage1">Philip Johnson | The Glass House</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 11:04 AM</p>
+</div>
+<div class="glass-5"> 
+    <img src="https://www.dropbox.com/scl/fi/1eqempxb9ulpz6svyevnk/glass-5.jpg?rlkey=bx33gwvyahjo8g0rr80c0gm07&st=2eyumjou&raw=1" /> 
+    <p class="textimage1">Philip Johnson | The Glass House</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 11:04 AM</p>
+</div>
+<div class="glass-6"> 
+    <img src="https://www.dropbox.com/scl/fi/jcmtef2ksywlgl0h9uf34/glass-6.jpg?rlkey=cpqt89roke8nbviuv5nijefne&st=88ouymsd&raw=1" /> 
+    <p class="textimage1">Philip Johnson | The Glass House</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 11:09 AM</p>
+</div>
+<div class="glass-7"> 
+    <img src="https://www.dropbox.com/scl/fi/7jl8ra1mqzzpe0klcpx9z/glass-7.jpg?rlkey=ai3yn7p2ojz9tu0pbxhoy10so&st=eqfe4923&raw=1" /> 
+    <p class="textimage1">Philip Johnson | The Glass House</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 11:12 AM</p>
+</div>
+<div class="glass-8"> 
+    <img src="https://www.dropbox.com/scl/fi/26sigwzj3xf0l6jswfsk7/glass-8.jpg?rlkey=mwnmnh29h8rx6vmui3v0dmyid&st=8k6ehmw0&raw=1" /> 
+    <p class="textimage1">Philip Johnson | Pavilion in The Pond</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 11:22 AM</p>
+</div>
+<div class="glass-9"> 
+    <img src="https://www.dropbox.com/scl/fi/kkbnvft5363z2kcgxos8r/glass-9.jpg?rlkey=h9v6a3kpaimbp1753gcup58aj&st=87r9rrcj&raw=1" /> 
+    <p class="textimage1">Philip Johnson | Brick House & The Glass House</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 11:42 AM</p>
+</div>
+<div class="glass-10"> 
+    <img src="https://www.dropbox.com/scl/fi/adqapza25v8lxl76v3paw/glass-10.jpg?rlkey=fqbe47cqvqa5zmpp100cf6de1&st=yhfqoc72&raw=1" /> 
+    <p class="textimage1">Philip Johnson | Painting Gallery</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 11:51 AM</p>
+</div>
+<div class="glass-11"> 
+    <img src="https://www.dropbox.com/scl/fi/pabmkpz11iq373c1m247y/glass-11.jpg?rlkey=011dqoc9tlf67ayj2go7j4gtb&st=haonp42i&raw=1" /> 
+    <p class="textimage1">Philip Johnson | Painting Gallery</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 11:56 AM</p>
+</div>
+<div class="glass-12"> 
+    <img src="https://www.dropbox.com/scl/fi/eg6uu7vmb5sri6ow9me46/glass-12.jpg?rlkey=a6i6zkswiax2q52a7ibpydqpf&st=ymecncvi&raw=1" /> 
+    <p class="textimage1">Philip Johnson | Sculpture Gallery</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 12:05 PM</p>
+</div>
+<div class="glass-13"> 
+    <img src="https://www.dropbox.com/scl/fi/czyq6vy6llhth0pbwkvop/glass-13.jpg?rlkey=fxyj28jwlycujqa5sn9di98jq&st=0uavq3np&raw=1" /> 
+    <p class="textimage1">Philip Johnson | Sculpture Gallery</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 12:15 PM</p>
+</div>
+<div class="glass-14"> 
+    <img src="https://www.dropbox.com/scl/fi/rs3n56c1wza5n7z5twkzn/glass-14.jpg?rlkey=vpre4sgj2iiigl4wgubzd1x8b&st=zook8ypc&raw=1" /> 
+    <p class="textimage1">Philip Johnson | Sculpture Gallery</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 12:15 PM</p>
+</div>
+<div class="glass-15"> 
+    <img src="https://www.dropbox.com/scl/fi/a5ule6ug0m78g12gnrdm0/glass-15.jpg?rlkey=v44720u09eh33wzpps6mckxhj&st=5dwhbwc4&raw=1" /> 
+    <p class="textimage1">Philip Johnson | The Glass House</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 12:17 PM</p>
+</div>
+
+
+<div class="glass-16"> 
+    <img src="https://www.dropbox.com/scl/fi/523uy4quef6gzddjn3c7y/glass-16.jpg?rlkey=o1w6nls7rn0mrssrjk8428y1v&st=4l2x811k&raw=1" /> 
+    <p class="textimage1">Philip Johnson | Studio</p>
+    <p class="textimage2">Canaan, Connecticut, 11/08/2023 12:29 PM</p>
+</div>
+
+
+      <div class="white"> <img src="https://www.dropbox.com/s/9fm07eh0voiumgd/whitebar.jpg?raw=1"></div>
+
+ <div class="row">
+  <div class="column1">
+    <a style="text-decoration: none; color:#005799" href="https://ericdelitzsch.com/studio">Contact</a><br>
+  </div>
+  <div class="column2">
+    <a style="text-decoration: none; color:#005799" href="https://www.instagram.com/ericdelitzsch.architects/" target="_blank">Instagram</a><br>
+  </div>
+  <div class="column3">
+    <a style="text-decoration: none; color:#005799" href="#top">🡡 Top</a><br>
+  </div>
+</div>
+
+<div class="copyright">
+    <a style="text-decoration: none; color:gray">© eric delitzsch architects</a><br>
+  </div>
+
+  </header> 
+
+<script type="text/javascript">
+
+window.addEventListener("DOMContentLoaded", function(e) {
+  var links = document.getElementsByTagName("A");
+  for(var i=0; i < links.length; i++) {
+    if(!links[i].hash) continue;
+    if(links[i].origin + links[i].pathname != self.location.href) continue;
+    (function(anchorPoint) {
+      links[i].addEventListener("click", function(e) {
+        anchorPoint.scrollIntoView(true);
+        e.preventDefault();
+      }, false);
+    })(document.getElementById(links[i].hash.replace(/#/, "")));
+  }
+}, false);
+
+</script>
+
+<script type="text/javascript">
+
+// Vanilla version of FitVids
+// Still licencened under WTFPL
+//
+// Not as robust and fault tolerant as the jQuery version.
+// It's BYOCSS.
+// And also, I don't support this at all whatsoever.
+
+(function(window, document, undefined) {
+  "use strict";
+
+  // List of Video Vendors embeds you want to support
+  var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+
+  // Select videos
+  var fitVids = document.querySelectorAll(players.join(","));
+
+  // If there are videos on the page...
+  if (fitVids.length) {
+    // Loop through videos
+    for (var i = 0; i < fitVids.length; i++) {
+      // Get Video Information
+      var fitVid = fitVids[i];
+      var width = fitVid.getAttribute("width");
+      var height = fitVid.getAttribute("height");
+      var aspectRatio = height / width;
+      var parentDiv = fitVid.parentNode;
+
+      // Wrap it in a DIV
+      var div = document.createElement("div");
+      div.className = "fitVids-wrapper";
+      div.style.paddingBottom = aspectRatio * 100 + "%";
+      parentDiv.insertBefore(div, fitVid);
+      fitVid.remove();
+      div.appendChild(fitVid);
+
+      // Clear height/width from fitVid
+      fitVid.removeAttribute("height");
+      fitVid.removeAttribute("width");
+    }
+  }
+})(window, document);
+
+
+</script>
+
+
+<a href="https://ericdelitzsch.com/" class="title" id="title"><b>eric delitzsch </b>architects<a/></li>
+<div class="topnav" id="myTopnav">
+<a href="https://ericdelitzsch.com/work">work</a>
+  <a href="https://ericdelitzsch.com/drawings">drawings</a>
+  <a href="https://ericdelitzsch.com/photography">photography</a>
+  <a href="https://ericdelitzsch.com/studio">studio</a>
+  <a href="studio"></a>  
+</div>
+
+<div class="menua" id="mymenua">
+  <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">
+    
+  <div class="container" onclick="myFunction1(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  </div>
+  
+  </a>
+  
+</div>
+
+<div id="myNav" class="overlay">
+</div>
+
+<script>
+    // Defining custom functions
+    function menu1(){
+        var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+     
+    var checkFlag = true;
+function fondo(){
+  if(checkFlag == true){
+  document.getElementById("myNav").style.display = "block";
+  }else{
+  document.getElementById("myNav").style.display = "none";
+  }
+  checkFlag = !checkFlag;
+}
+
+
+function noscroll(){
+  if(checkFlag == true){
+  document.body.style.overflow="scroll";
+  }else{
+  document.body.style.overflow="hidden";
+  }
+  }
+
+    function color(){
+  if(checkFlag == true){
+  document.getElementById("title").style.color = 'black';
+  }else{
+  document.getElementById("title").style.color = 'white';
+  }
+  }
+
+    
+ 
+    // Selecting button element
+    var btn = document.getElementById("mymenua");
+     
+    // Assigning event listeners to the button
+    btn.addEventListener("click", menu1);
+    btn.addEventListener("click", fondo);
+    btn.addEventListener("click", noscroll);
+    btn.addEventListener("click", color);
+    </script>
+
+
+
+</body>
+</html>
