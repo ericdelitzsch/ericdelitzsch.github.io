@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Salk Institute for Biological Studies | Eric Delitzsch Architects</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.dropbox.com/s/i7k9nwvcmirmnlp/icon.png?raw=1">
+  <link rel="apple-touch-icon" sizes="128x128" href="https://www.dropbox.com/s/28ubqe7jfnh6e44/icon.jpg?raw=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" CONTENT="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>history.scrollRestoration = "manual"</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+  /* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 10px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+    display:none;
+}
+
+html {
+  scroll-behavior: smooth;
+
+
+}
+
+body, html {
+  color: black;
+  font-size: 2.9vh;
+  font-family: raleway;
+  margin: 0;
+
+}
+{
+  webkit-overflow-scrolling: touch;
+}
+{
+
+-webkit-font-smoothing: antialiased;
+
+}
+
+.copyright{
+  font-size: 13px;
+  text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    position: absolute;
+    top: 10.5%;
+    right: 6.5%;
+    color: black;
+    text-decoration: none;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.5vh;
+  z-index: -1;
+}
+
+.topnav a:hover {
+  color: #BFBFBF}
+
+.topnav .icon {
+  display: none;
+
+}
+
+.menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 84%;
+  top: 12%;
+  
+  }
+
+.title {
+      position: absolute;
+      left: 10%;
+      top: 12%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.5vh;
+
+    }
+
+    ul li a:hover {
+    Color: white;
+
+    }
+
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+    color: white;
+    padding-top: 30px;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .copyright {
+    font-size: 13px;
+  }
+  .title {
+      position: absolute;
+      left: 10%;
+      top: 7%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.75vh;
+
+    }
+
+    .menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 85%;
+  top: 7.6%;
+  
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: absolute;
+    left: 6%;
+    top: 9%;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    line-height: 40%;
+
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar a:not(:first-child) {display: none;}
+  .topbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar.responsive {position: relative;}
+  .topbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ 
+      }
+
+      @media screen and (min-width:700px) {
+      .menub {
+      display:none;
+      float: right;
+      position: absolute;
+      right: 50%;
+      top:50%;
+      
+      }
+
+      
+      }
+
+header {
+  position: absolute;
+  margin: 12vw 12vw 1vw 12vw;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+
+}
+
+header div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 100%;
+  height: auto;
+  margin: .5vw;
+  margin:1vw auto;
+  
+
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+  position: absolute;
+  top: 18%;
+  margin:10px 10px 20px 10px;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+  z-index: -2;
+}
+
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0 0.65em;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+#sections {
+  font-size: 17px;
+  padding: 70px 0px 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+  
+#sections .main {
+  padding-right: 20px;
+  padding-top: 15px;
+  -webkit-flex: 2 1 25%;
+  flex: 2 1 25%;
+  -webkit-order: 2;
+  order: 2;
+}
+
+#sections .sub-section-1 {
+  padding-right: 200px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 90%;
+  -webkit-order: 1;
+  order: 1;
+}
+
+#sections .sub-section-2 {
+  padding-left: 10px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 3;
+  order: 3;
+}
+@media all and (max-width: 1200px)
+{
+  #sections {
+    padding: 60px 60px;
+    font-size: 20px;
+  }
+
+
+@media all and (max-width: 1000px)
+{
+  #sections {
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  
+  #sections > .main, #sections > .sub-section-1, #sections > .sub-section-2 {
+    /* For mobile phones, each section should be on a line of it's own at 100% width. */
+    width: 100%;
+    -webkit-order: 0;
+            order: 0;
+  }
+  
+  #sections .main {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-1 {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-2 {
+    padding-left: 0;
+  }
+}
+}
+
+.column1 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+  }
+
+@media all and (max-width: 1000px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 30%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+@media all and (min-width: 1800px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 33%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 4:3 ratio */
+    padding-top: 0px; 
+    height: 0px;
+    overflow: hidden;
+}
+
+.video-wrapper-narrow {
+    padding-bottom: 40%;
+}
+
+iframe,object,embed,video,.videoWrapper,.video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-js, img.vjs-poster {
+    width: 50% !important;
+    height: 100% !important; //these need !important because IE wants to set height/width to 100px
+    max-width: 100%;
+}
+
+
+
+ .textimage1 { 
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+.textimage2 {
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.salk-1 {
+    width: 25vw;
+    float: left;
+    margin-left: 3vw;
+    position: relative;
+    margin-top: 10vw;
+}
+
+.salk-2 {
+    width: 25vw;
+    float: right;
+    margin-left: 8vw;
+    position: relative;
+    margin-top: 30vw;
+}
+
+.salk-3 {
+    width: 25vw;
+    float: left;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 25vw;
+}
+
+.salk-4 {
+    width: 25vw;
+    float: right;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 30vw;
+}
+
+.salk-5 {
+    width: 25vw;
+    float: left;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 25vw;
+}
+
+.salk-6 {
+    width: 35vw;
+    float: right;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 35vw;
+}
+
+.salk-7 {
+    width: 25vw;
+    float: left;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 35vw;
+}
+
+.salk-8 {
+    width: 25vw;
+    float: right;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 25vw;
+}
+
+.salk-9 {
+    width: 25vw;
+    float: left;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 40vw;
+}
+
+.salk-10 {
+    width: 25vw;
+    float: right;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 20vw;
+}
+
+.salk-11 {
+    width: 25vw;
+    float: left;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 30vw;
+}
+
+.salk-12 {
+    width: 25vw;
+    float: right;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 10vw;
+}
+
+.salk-13 {
+    width: 25vw;
+    float: right;
+    margin-left: 2vw;
+    position: relative;
+    margin-top: 5vw;
+}
+
+.salk-14 {
+    width: 25vw;
+    float: left;
+    margin-right: 5vw;
+    position: relative;
+    margin-top: 50vw;
+}
+
+.salk-15 {
+    width: 25vw;
+    float: right;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 10vw;
+}
+
+
+
+
+
+
+
+@media all and (max-width: 1100px)
+{
+
+ .textimage1 {
+    text-align: right;
+      margin-top: 2.5vw;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+.salk-1 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.salk-2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.salk-3 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.salk-4 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.salk-5 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.salk-6 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.salk-7 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.salk-8 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.salk-9 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.salk-10 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.salk-11 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.salk-12 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.salk-13 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.salk-14 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.salk-15 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+
+}
+
+
+
+.bar1, .bar2 {
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.sticks10{
+    width: 80vh;
+  margin-top: 1vw;   
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-2px, 3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.change .bar2 {
+  transform: rotate(45deg) translate(-1px, -3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<header>
+
+
+
+<div class="salk-1"> 
+    <img src="https://www.dropbox.com/scl/fi/nqjck94qti6ktt9h49ajc/salk-1.jpg?rlkey=tb3qj2sn4c096m5klb89sue82&st=22ch9wb4&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 21/02/2023 11:15 AM</p>
+</div>
+<div class="salk-2"> 
+    <img src="https://www.dropbox.com/scl/fi/q18mumdwpvn8yb0ih6utf/salk-2.jpg?rlkey=e77bcgit75tu70prfc4ro0x5m&st=fwp10gdu&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 21/02/2023 11:17 AM</p>
+</div>
+<div class="salk-3"> 
+    <img src="https://www.dropbox.com/scl/fi/nrhkn87j1tldi72iksfu6/salk-3.jpg?rlkey=y3x1kbysi8y7wlcpqys2o19bh&st=10lhyx3z&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 21/02/2023 11:19 AM</p>
+</div>
+<div class="salk-4"> 
+    <img src="https://www.dropbox.com/scl/fi/6ac5ridlb20qwn5dj6hr9/salk-4.jpg?rlkey=co69hpa8es0rdj9vr8qza664d&st=9kstsutt&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 21/02/2023 11:19 AM</p>
+</div>
+<div class="salk-5"> 
+    <img src="https://www.dropbox.com/scl/fi/rta3rt0c0mj7tntq38clj/salk-5.jpg?rlkey=2un7te8znghn81jgjw9izv3v3&st=5pejv2s3&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 21/02/2023 11:41 AM</p>
+</div>
+<div class="salk-6"> 
+    <img src="https://www.dropbox.com/scl/fi/7a8mfz0z5ravie866r5e8/salk-6.jpg?rlkey=r93yprfolsem0ht2gfk0q6re7&st=ptkv1rsb&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 21/02/2023 11:46 AM</p>
+</div>
+<div class="salk-7"> 
+    <img src="https://www.dropbox.com/scl/fi/kh3ar1av9ck0pvd2mqm0k/salk-7.jpg?rlkey=ditr75t9djq7gx4mynkvhkcpc&st=cenexjmc&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 21/02/2023 11:49 AM</p>
+</div>
+<div class="salk-8"> 
+    <img src="https://www.dropbox.com/scl/fi/pot1dkegb66xd5kxh7rqi/salk-8.jpg?rlkey=08ffx3fwpbht4t3qpp60ml4ei&st=j5zm8hkd&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 21/02/2023 11:54 AM</p>
+</div>
+<div class="salk-9"> 
+    <img src="https://www.dropbox.com/scl/fi/soca3z83c8l4nfyksj9sd/salk-9.jpg?rlkey=tnu5z1p9nccr5q45e6iyd36fm&st=s98nan0m&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 21/02/2023 11:54 AM</p>
+</div>
+<div class="salk-10"> 
+    <img src="https://www.dropbox.com/scl/fi/4fv6qrsudr2get9nlgv7d/salk-10.jpg?rlkey=n5t8bbrqc5jh997f8y7elbl4t&st=o6fiokq0&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 21/02/2023 11:55 AM</p>
+</div>
+<div class="salk-11"> 
+    <img src="https://www.dropbox.com/scl/fi/tf3jsk07a5ngs9ngtl72y/salk-11.jpg?rlkey=4bab0we9iu23f7xx6jvxhc1og&st=yqxm9tuw&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 21/02/2023 12:08 PM</p>
+</div>
+<div class="salk-12"> 
+    <img src="https://www.dropbox.com/scl/fi/g0pfr57wq7yce85phw3d2/salk-12.jpg?rlkey=njjengagiwgb86zoky1q6nclq&st=5l6ppnvv&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 21/02/2023 12:09 PM</p>
+</div>
+
+<div class="white"> <img src="https://www.dropbox.com/s/9fm07eh0voiumgd/whitebar.jpg?raw=1"></div>
+
+<div class="salk-13"> 
+    <img src="https://www.dropbox.com/scl/fi/uh12savn51g0mh7rpbrvl/salk-13.jpg?rlkey=ogg2bcwcuz5x67mlp37df77qi&st=tqgfaru1&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 21/02/2023 12:14 PM</p>
+</div>
+<div class="salk-14"> 
+    <img src="https://www.dropbox.com/scl/fi/xjs9xx3vc5vvd0ifhb3pt/salk-14.jpg?rlkey=boewel8qnyhbcbarra9osx1vs&st=owou8p55&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 20/02/2023 5:32 PM</p>
+</div>
+<div class="salk-15"> 
+    <img src="https://www.dropbox.com/scl/fi/l8cu40okj4m4s17k1lx02/salk-15.jpg?rlkey=g3qkihejkwgdhqhifypujb4b6&st=kma4acze&raw=1" /> 
+    <p class="textimage1">Louis Kahn | Salk Institute for Biological Studies</p>
+    <p class="textimage2">La Jolla, California, 20/02/2023 5:33 PM</p>
+</div>
+
+
+
+      <div class="white"> <img src="https://www.dropbox.com/s/9fm07eh0voiumgd/whitebar.jpg?raw=1"></div>
+
+ <div class="row">
+  <div class="column1">
+    <a style="text-decoration: none; color:#005799" href="https://ericdelitzsch.com/studio">Contact</a><br>
+  </div>
+  <div class="column2">
+    <a style="text-decoration: none; color:#005799" href="https://www.instagram.com/ericdelitzsch.architects/" target="_blank">Instagram</a><br>
+  </div>
+  <div class="column3">
+    <a style="text-decoration: none; color:#005799" href="#top">🡡 Top</a><br>
+  </div>
+</div>
+
+<div class="copyright">
+    <a style="text-decoration: none; color:gray">© eric delitzsch architects</a><br>
+  </div>
+
+  </header> 
+
+<script type="text/javascript">
+
+window.addEventListener("DOMContentLoaded", function(e) {
+  var links = document.getElementsByTagName("A");
+  for(var i=0; i < links.length; i++) {
+    if(!links[i].hash) continue;
+    if(links[i].origin + links[i].pathname != self.location.href) continue;
+    (function(anchorPoint) {
+      links[i].addEventListener("click", function(e) {
+        anchorPoint.scrollIntoView(true);
+        e.preventDefault();
+      }, false);
+    })(document.getElementById(links[i].hash.replace(/#/, "")));
+  }
+}, false);
+
+</script>
+
+<script type="text/javascript">
+
+// Vanilla version of FitVids
+// Still licencened under WTFPL
+//
+// Not as robust and fault tolerant as the jQuery version.
+// It's BYOCSS.
+// And also, I don't support this at all whatsoever.
+
+(function(window, document, undefined) {
+  "use strict";
+
+  // List of Video Vendors embeds you want to support
+  var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+
+  // Select videos
+  var fitVids = document.querySelectorAll(players.join(","));
+
+  // If there are videos on the page...
+  if (fitVids.length) {
+    // Loop through videos
+    for (var i = 0; i < fitVids.length; i++) {
+      // Get Video Information
+      var fitVid = fitVids[i];
+      var width = fitVid.getAttribute("width");
+      var height = fitVid.getAttribute("height");
+      var aspectRatio = height / width;
+      var parentDiv = fitVid.parentNode;
+
+      // Wrap it in a DIV
+      var div = document.createElement("div");
+      div.className = "fitVids-wrapper";
+      div.style.paddingBottom = aspectRatio * 100 + "%";
+      parentDiv.insertBefore(div, fitVid);
+      fitVid.remove();
+      div.appendChild(fitVid);
+
+      // Clear height/width from fitVid
+      fitVid.removeAttribute("height");
+      fitVid.removeAttribute("width");
+    }
+  }
+})(window, document);
+
+
+</script>
+
+
+<a href="https://ericdelitzsch.com/" class="title" id="title"><b>eric delitzsch </b>architects<a/></li>
+<div class="topnav" id="myTopnav">
+<a href="https://ericdelitzsch.com/work">work</a>
+  <a href="https://ericdelitzsch.com/drawings">drawings</a>
+  <a href="https://ericdelitzsch.com/photography">photography</a>
+  <a href="https://ericdelitzsch.com/studio">studio</a>
+  <a href="studio"></a>  
+</div>
+
+<div class="menua" id="mymenua">
+  <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">
+    
+  <div class="container" onclick="myFunction1(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  </div>
+  
+  </a>
+  
+</div>
+
+<div id="myNav" class="overlay">
+</div>
+
+<script>
+    // Defining custom functions
+    function menu1(){
+        var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+     
+    var checkFlag = true;
+function fondo(){
+  if(checkFlag == true){
+  document.getElementById("myNav").style.display = "block";
+  }else{
+  document.getElementById("myNav").style.display = "none";
+  }
+  checkFlag = !checkFlag;
+}
+
+
+function noscroll(){
+  if(checkFlag == true){
+  document.body.style.overflow="scroll";
+  }else{
+  document.body.style.overflow="hidden";
+  }
+  }
+
+    function color(){
+  if(checkFlag == true){
+  document.getElementById("title").style.color = 'black';
+  }else{
+  document.getElementById("title").style.color = 'white';
+  }
+  }
+
+    
+ 
+    // Selecting button element
+    var btn = document.getElementById("mymenua");
+     
+    // Assigning event listeners to the button
+    btn.addEventListener("click", menu1);
+    btn.addEventListener("click", fondo);
+    btn.addEventListener("click", noscroll);
+    btn.addEventListener("click", color);
+    </script>
+
+
+
+</body>
+</html>
