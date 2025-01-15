@@ -1,0 +1,2352 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New York City | Eric Delitzsch Architects</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.dropbox.com/s/i7k9nwvcmirmnlp/icon.png?raw=1">
+  <link rel="apple-touch-icon" sizes="128x128" href="https://www.dropbox.com/s/28ubqe7jfnh6e44/icon.jpg?raw=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" CONTENT="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>history.scrollRestoration = "manual"</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+  /* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 10px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+    display:none;
+}
+
+html {
+  scroll-behavior: smooth;
+
+
+}
+
+body, html {
+  color: black;
+  font-size: 2.9vh;
+  font-family: raleway;
+  margin: 0;
+
+}
+{
+  webkit-overflow-scrolling: touch;
+}
+{
+
+-webkit-font-smoothing: antialiased;
+
+}
+
+.copyright{
+  font-size: 13px;
+  text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    position: absolute;
+    top: 10.5%;
+    right: 6.5%;
+    color: black;
+    text-decoration: none;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.5vh;
+  z-index: -1;
+}
+
+.topnav a:hover {
+  color: #BFBFBF}
+
+.topnav .icon {
+  display: none;
+
+}
+
+.menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 84%;
+  top: 12%;
+  
+  }
+
+.title {
+      position: absolute;
+      left: 10%;
+      top: 12%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.5vh;
+
+    }
+
+    ul li a:hover {
+    Color: white;
+
+    }
+
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+    color: white;
+    padding-top: 30px;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .copyright {
+    font-size: 13px;
+  }
+  .title {
+      position: absolute;
+      left: 10%;
+      top: 7%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.75vh;
+
+    }
+
+    .menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 85%;
+  top: 7.6%;
+  
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: absolute;
+    left: 6%;
+    top: 9%;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    line-height: 40%;
+
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar a:not(:first-child) {display: none;}
+  .topbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar.responsive {position: relative;}
+  .topbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ 
+      }
+
+      @media screen and (min-width:700px) {
+      .menub {
+      display:none;
+      float: right;
+      position: absolute;
+      right: 50%;
+      top:50%;
+      
+      }
+
+      
+      }
+
+header {
+  position: absolute;
+  margin: 12vw 12vw 1vw 12vw;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+
+}
+
+header div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 100%;
+  height: auto;
+  margin: .5vw;
+  margin:1vw auto;
+  
+
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+  position: absolute;
+  top: 18%;
+  margin:10px 10px 20px 10px;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+  z-index: -2;
+}
+
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0 0.65em;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+#sections {
+  font-size: 17px;
+  padding: 70px 0px 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+  
+#sections .main {
+  padding-right: 20px;
+  padding-top: 15px;
+  -webkit-flex: 2 1 25%;
+  flex: 2 1 25%;
+  -webkit-order: 2;
+  order: 2;
+}
+
+#sections .sub-section-1 {
+  padding-right: 200px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 90%;
+  -webkit-order: 1;
+  order: 1;
+}
+
+#sections .sub-section-2 {
+  padding-left: 10px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 3;
+  order: 3;
+}
+@media all and (max-width: 1200px)
+{
+  #sections {
+    padding: 60px 60px;
+    font-size: 20px;
+  }
+
+
+@media all and (max-width: 1000px)
+{
+  #sections {
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  
+  #sections > .main, #sections > .sub-section-1, #sections > .sub-section-2 {
+    /* For mobile phones, each section should be on a line of it's own at 100% width. */
+    width: 100%;
+    -webkit-order: 0;
+            order: 0;
+  }
+  
+  #sections .main {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-1 {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-2 {
+    padding-left: 0;
+  }
+}
+}
+
+.column1 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+  }
+
+@media all and (max-width: 1000px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 30%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+@media all and (min-width: 1800px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 33%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 4:3 ratio */
+    padding-top: 0px; 
+    height: 0px;
+    overflow: hidden;
+}
+
+.video-wrapper-narrow {
+    padding-bottom: 40%;
+}
+
+iframe,object,embed,video,.videoWrapper,.video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-js, img.vjs-poster {
+    width: 50% !important;
+    height: 100% !important; //these need !important because IE wants to set height/width to 100px
+    max-width: 100%;
+}
+
+
+
+ .textimage1 { 
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+.textimage2 {
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.nyc-1 {
+    width: 25vw;
+    float: right;
+    margin-right: 5vw;
+    position: relative;
+    margin-top: 10vw;
+}
+
+.nyc-2 {
+    width: 25vw;
+    float: left;
+    margin-left: 6vw;
+    position: relative;
+    margin-top: 34vw;
+}
+
+.nyc-3 {
+    width: 25vw;
+    float: right;
+    margin-right: 8vw;
+    position: relative;
+    margin-top: 18vw;
+}
+
+.nyc-4 {
+    width: 25vw;
+    float: left;
+    margin-left: 7vw;
+    position: relative;
+    margin-top: 50vw;
+}
+
+.nyc-5 {
+    width: 25vw;
+    float: right;
+    margin-right: 5vw;
+    position: relative;
+    margin-top: 25vw;
+}
+
+.nyc-6 {
+    width: 25vw;
+    float: left;
+    margin-left: 9vw;
+    position: relative;
+    margin-top: 28vw;
+}
+
+.nyc-7 {
+    width: 25vw;
+    float: right;
+    margin-right: 7vw;
+    position: relative;
+    margin-top: 36vw;
+}
+
+.nyc-8 {
+    width: 25vw;
+    float: left;
+    margin-left: 6vw;
+    position: relative;
+    margin-top: 22vw;
+}
+
+.nyc-9 {
+    width: 25vw;
+    float: right;
+    margin-right: 8vw;
+    position: relative;
+    margin-top: 32vw;
+}
+
+.nyc-10 {
+    width: 25vw;
+    float: left;
+    margin-left: 9vw;
+    position: relative;
+    margin-top: 50vw;
+}
+
+.nyc-11 {
+    width: 25vw;
+    float: right;
+    margin-right: 5vw;
+    position: relative;
+    margin-top: 40vw;
+}
+
+.nyc-12 {
+    width: 25vw;
+    float: left;
+    margin-left: 6vw;
+    position: relative;
+    margin-top: 45vw;
+}
+
+.nyc-13 {
+    width: 25vw;
+    float: right;
+    margin-right: 7vw;
+    position: relative;
+    margin-top: 30vw;
+}
+
+.nyc-14 {
+    width: 25vw;
+    float: left;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 40vw;
+}
+
+.nyc-15 {
+    width: 25vw;
+    float: right;
+    margin-right: 9vw;
+    position: relative;
+    margin-top: 31vw;
+}
+
+.nyc-16 {
+    width: 25vw;
+    float: left;
+    margin-left: 8vw;
+    position: relative;
+    margin-top: 34vw;
+}
+
+.nyc-17 {
+    width: 25vw;
+    float: right;
+    margin-right: 5vw;
+    position: relative;
+    margin-top: 35vw;
+}
+
+.nyc-18 {
+    width: 25vw;
+    float: left;
+    margin-left: 9vw;
+    position: relative;
+    margin-top: 41vw;
+}
+
+.nyc-19 {
+    width: 25vw;
+    float: right;
+    margin-right: 6vw;
+    position: relative;
+    margin-top: 20vw;
+}
+
+.nyc-20 {
+    width: 25vw;
+    float: left;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 20vw;
+}
+
+.nyc-21 {
+    width: 25vw;
+    float: right;
+    margin-right: 8vw;
+    position: relative;
+    margin-top: 15vw;
+}
+
+.nyc-22 {
+    width: 25vw;
+    float: left;
+    margin-left: 7vw;
+    position: relative;
+    margin-top: 40vw;
+}
+
+.nyc-23 {
+    width: 25vw;
+    float: right;
+    margin-right: 5vw;
+    position: relative;
+    margin-top: 18vw;
+}
+
+.nyc-24 {
+    width: 25vw;
+    float: left;
+    margin-left: 6vw;
+    position: relative;
+    margin-top: 50vw;
+}
+
+.nyc-25 {
+    width: 25vw;
+    float: right;
+    margin-right: 7vw;
+    position: relative;
+    margin-top: 25vw;
+}
+
+.nyc-26 {
+    width: 25vw;
+    float: left;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 35vw;
+}
+
+.nyc-27 {
+    width: 25vw;
+    float: right;
+    margin-right: 9vw;
+    position: relative;
+    margin-top: 50vw;
+}
+
+.nyc-28 {
+    width: 25vw;
+    float: left;
+    margin-left: 8vw;
+    position: relative;
+    margin-top: 24vw;
+}
+
+.nyc-29 {
+    width: 25vw;
+    float: right;
+    margin-right: 6vw;
+    position: relative;
+    margin-top: 31vw;
+}
+
+.nyc-30 {
+    width: 25vw;
+    float: left;
+    margin-left: 7vw;
+    position: relative;
+    margin-top: 45vw;
+}
+
+.nyc-31 {
+    width: 25vw;
+    float: right;
+    margin-right: 5vw;
+    position: relative;
+    margin-top: 40vw;
+}
+
+.nyc-32 {
+    width: 25vw;
+    float: left;
+    margin-left: 9vw;
+    position: relative;
+    margin-top: 39vw;
+}
+
+.nyc-33 {
+    width: 25vw;
+    float: right;
+    margin-right: 7vw;
+    position: relative;
+    margin-top: 33vw;
+}
+
+.nyc-34 {
+    width: 25vw;
+    float: left;
+    margin-left: 6vw;
+    position: relative;
+    margin-top: 22vw;
+}
+
+.nyc-35 {
+    width: 25vw;
+    float: right;
+    margin-right: 5vw;
+    position: relative;
+    margin-top: 26vw;
+}
+
+.nyc-36 {
+    width: 25vw;
+    float: left;
+    margin-left: 8vw;
+    position: relative;
+    margin-top: 38vw;
+}
+
+.nyc-37 {
+    width: 25vw;
+    float: right;
+    margin-right: 9vw;
+    position: relative;
+    margin-top: 30vw;
+}
+
+.nyc-38 {
+    width: 25vw;
+    float: left;
+    margin-left: 7vw;
+    position: relative;
+    margin-top: 37vw;
+}
+
+.nyc-39 {
+    width: 25vw;
+    float: right;
+    margin-right: 6vw;
+    position: relative;
+    margin-top: 21vw;
+}
+
+.nyc-40 {
+    width: 25vw;
+    float: left;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 25vw;
+}
+
+.nyc-41 {
+    width: 25vw;
+    float: right;
+    margin-right: 9vw;
+    position: relative;
+    margin-top: 40vw;
+}
+
+.nyc-42 {
+    width: 25vw;
+    float: left;
+    margin-left: 3vw;
+    position: relative;
+    margin-top: 20vw;
+}
+
+.nyc-43 {
+    width: 25vw;
+    float: left;
+    margin-left: 7vw;
+    position: relative;
+    margin-top: 19vw;
+}
+
+.nyc-44 {
+    width: 25vw;
+    float: right;
+    margin-right: 9vw;
+    position: relative;
+    margin-top: 50vw;
+}
+
+.nyc-45 {
+    width: 65vw;
+    float: right;
+    margin-right: 3vw;
+    position: relative;
+    margin-top: 15vw;
+}
+
+.nyc-46 {
+    width: 25vw;
+    float: left;
+    margin-left: 8vw;
+    position: relative;
+    margin-top: 10vw;
+}
+
+.nyc-47 {
+    width: 25vw;
+    float: right;
+    margin-right: 5vw;
+    position: relative;
+    margin-top: 43vw;
+}
+
+.nyc-48 {
+    width: 25vw;
+    float: left;
+    margin-left: 7vw;
+    position: relative;
+    margin-top: 30vw;
+}
+
+.nyc-49 {
+    width: 25vw;
+    float: right;
+    margin-right: 8vw;
+    position: relative;
+    margin-top: 26vw;
+}
+
+.nyc-50 {
+    width: 25vw;
+    float: left;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 35vw;
+}
+
+.nyc-51 {
+    width: 25vw;
+    float: right;
+    margin-right: 6vw;
+    position: relative;
+    margin-top: 40vw;
+}
+
+.nyc-52 {
+    width: 25vw;
+    float: left;
+    margin-left: 9vw;
+    position: relative;
+    margin-top: 31vw;
+}
+
+.nyc-53 {
+    width: 25vw;
+    float: right;
+    margin-right: 7vw;
+    position: relative;
+    margin-top: 33vw;
+}
+
+.nyc-54 {
+    width: 25vw;
+    float: left;
+    margin-left: 6vw;
+    position: relative;
+    margin-top: 24vw;
+}
+
+.nyc-55 {
+    width: 25vw;
+    float: right;
+    margin-right: 8vw;
+    position: relative;
+    margin-top: 38vw;
+}
+
+.nyc-56 {
+    width: 25vw;
+    float: right;
+    margin-right: 7vw;
+    position: relative;
+    margin-top: 35vw;
+}
+
+.nyc-57 {
+    width: 25vw;
+    float: right;
+    margin-right: 4vw;
+    position: relative;
+    margin-top: 18vw;
+}
+
+.nyc-58 {
+    width: 25vw;
+    float: left;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 24vw;
+}
+
+.nyc-59 {
+    width: 25vw;
+    float: left;
+    margin-left: 3vw;
+    position: relative;
+    margin-top: 15vw;
+}
+
+.nyc-60 {
+    width: 25vw;
+    float: right;
+    margin-right: 3vw;
+    position: relative;
+    margin-top: 25vw;
+}
+
+.nyc-61 {
+    width: 65vw;
+    float: right;
+    margin-right: 5vw;
+    position: relative;
+    margin-top: 15vw;
+}
+
+.nyc-62 {
+    width: 25vw;
+    float: left;
+    margin-left: 9vw;
+    position: relative;
+    margin-top: 14vw;
+}
+
+.nyc-63 {
+    width: 25vw;
+    float: right;
+    margin-right: 7vw;
+    position: relative;
+    margin-top: 28vw;
+}
+
+.nyc-64 {
+    width: 25vw;
+    float: left;
+    margin-left: 6vw;
+    position: relative;
+    margin-top: 20vw;
+}
+
+.nyc-65 {
+    width: 25vw;
+    float: right;
+    margin-right: 8vw;
+    position: relative;
+    margin-top: 37vw;
+}
+
+.nyc-66 {
+    width: 25vw;
+    float: left;
+    margin-left: 5vw;
+    position: relative;
+    margin-top: 29vw;
+}
+
+.nyc-67 {
+    width: 25vw;
+    float: right;
+    margin-right: 7vw;
+    position: relative;
+    margin-top: 35vw;
+}
+
+.nyc-68 {
+    width: 25vw;
+    float: left;
+    margin-left: 9vw;
+    position: relative;
+    margin-top: 38vw;
+}
+
+.nyc-69 {
+    width: 25vw;
+    float: right;
+    margin-right: 6vw;
+    position: relative;
+    margin-top: 25vw;
+}
+
+.nyc-70 {
+    width: 25vw;
+    float: left;
+    margin-left: 7vw;
+    position: relative;
+    margin-top: 24vw;
+}
+
+.nyc-71 {
+    width: 25vw;
+    float: right;
+    margin-right: 5vw;
+    position: relative;
+    margin-top: 31vw;
+}
+
+.nyc-72 {
+    width: 25vw;
+    float: left;
+    margin-left: 6vw;
+    position: relative;
+    margin-top: 26vw;
+}
+
+.nyc-73 {
+    width: 25vw;
+    float: right;
+    margin-right: 9vw;
+    position: relative;
+    margin-top: 28vw;
+}
+
+.nyc-74 {
+    width: 25vw;
+    float: left;
+    margin-left: 8vw;
+    position: relative;
+    margin-top: 37vw;
+}
+
+.nyc-75 {
+    width: 25vw;
+    float: right;
+    margin-right: 7vw;
+    position: relative;
+    margin-top: 34vw;
+}
+
+.nyc-76 {
+    width: 25vw;
+    float: left;
+    margin-left: 9vw;
+    position: relative;
+    margin-top: 23vw;
+}
+
+.nyc-77 {
+    width: 45vw;
+    float: left;
+    margin-left: 2vw;
+    position: relative;
+    margin-top: 10vw;
+}
+
+.nyc-78 {
+    width: 25vw;
+    float: right;
+    margin-right: 5vw;
+    position: relative;
+    margin-top: 10vw;
+}
+
+
+
+
+@media all and (max-width: 1100px)
+{
+
+ .textimage1 {
+    text-align: right;
+      margin-top: 2.5vw;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+.nyc-1 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-2 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-3 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-4 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-5 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-6 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-7 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-8 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-9 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-10 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-11 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-12 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-13 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-14 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-15 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-16 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-17 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-18 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-19 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-20 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-21 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-22 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-23 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-24 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-25 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-26 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-27 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-28 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-29 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-30 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-31 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-32 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-33 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-34 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-35 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-36 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-37 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-38 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-39 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-40 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-41 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-42 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-43 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-44 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-45 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-46 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-47 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-48 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-49 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-50 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-51 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-52 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-53 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-54 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-55 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-56 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-57 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-58 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-59 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-60 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-61 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-62 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-63 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-64 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-65 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-66 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-67 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-68 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-69 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-70 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-71 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-72 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-73 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-74 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-75 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-76 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-77 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.nyc-78 { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+
+
+
+}
+
+
+
+.bar1, .bar2 {
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.sticks10{
+    width: 80vh;
+  margin-top: 1vw;   
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-2px, 3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.change .bar2 {
+  transform: rotate(45deg) translate(-1px, -3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<header>
+
+
+<div class="nyc-1"> 
+    <img src="https://www.dropbox.com/scl/fi/gk5uzoyfxazfqhzc56kpb/nyc-1.jpg?rlkey=72d82g1o8ncge6u246m9pmlzs&st=tyxw2hth&raw=1" /> 
+    <p class="textimage1">Renzo Piano | The New York Times Building</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 9:23 AM</p>
+</div>
+
+<div class="nyc-2"> 
+    <img src="https://www.dropbox.com/scl/fi/nyv0y1ajw2trrm9akxwr0/nyc-2.jpg?rlkey=bsx957hyytasm9ml1r0hpfa11&st=5v0b6hgn&raw=1" /> 
+    <p class="textimage1">Renzo Piano | The New York Times Building</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 9:25 AM</p>
+</div>
+
+<div class="nyc-3"> 
+    <img src="https://www.dropbox.com/scl/fi/8ky54ztysqh35eyq2ftux/nyc-3.jpg?rlkey=tmrwful0jtl3iphvnm4pz6k7i&st=utjwx6b1&raw=1" /> 
+    <p class="textimage1">Renzo Piano | The New York Times Building</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 9:32 AM</p>
+</div>
+
+<div class="nyc-4"> 
+    <img src="https://www.dropbox.com/scl/fi/0rzgfig4oe0ycpkl7lkal/nyc-4.jpg?rlkey=u8qz6nk96hcuoixqsk8rkstil&st=p1dws26e&raw=1" /> 
+    <p class="textimage1">Foster + Partners | Hearst Tower</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 10:14 AM</p>
+</div>
+
+<div class="nyc-5"> 
+    <img src="https://www.dropbox.com/scl/fi/d3bea6hs36dkmwcw6s4kh/nyc-5.jpg?rlkey=um88t9be0z2nmwokawbl63eu5&st=9i2221m7&raw=1" /> 
+    <p class="textimage1">Foster + Partners | Hearst Tower</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 10:17 AM</p>
+</div>
+
+<div class="nyc-6"> 
+    <img src="https://www.dropbox.com/scl/fi/sieb6rm2bk4qnm0fg23ih/nyc-6.jpg?rlkey=2c8twfrr8r47dcjqarq3xief0&st=xz10yh30&raw=1" /> 
+    <p class="textimage1">Foster + Partners | 270 Park Avenue</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 11:04 AM</p>
+</div>
+
+<div class="nyc-7"> 
+    <img src="https://www.dropbox.com/scl/fi/l6whczajkp0bn4hmmbkrg/nyc-7.jpg?rlkey=a72wkfjgc990o4iyu1tveu9pa&st=n2d5pj6i&raw=1" /> 
+    <p class="textimage1">Foster + Partners | 270 Park Avenue</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 11:08 AM</p>
+</div>
+
+<div class="nyc-8"> 
+    <img src="https://www.dropbox.com/scl/fi/pdbf966srpzm2zbcdsheg/nyc-8.jpg?rlkey=dmu8rb1svg6dc02o5g9c4obvq&st=pmca34up&raw=1" /> 
+    <p class="textimage1">Raimund Abraham | Austrian Cultural Forum</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 11:20 AM</p>
+</div>
+
+<div class="nyc-9"> 
+    <img src="https://www.dropbox.com/scl/fi/miedjg6dk32cddnfadpbl/nyc-9.jpg?rlkey=8oju7rhomu5lwduvc6s0r95hc&st=na5irdp4&raw=1" /> 
+    <p class="textimage1">Raimund Abraham | Austrian Cultural Forum</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 11:20 AM</p>
+</div>
+
+<div class="nyc-10"> 
+    <img src="https://www.dropbox.com/scl/fi/x8bihskvyoqmewobokhuj/nyc-10.jpg?rlkey=v0t39ea2beugz763rm1d5uih3&st=91s0oc85&raw=1" /> 
+    <p class="textimage1">Snohetta | 550 Madison Avenue Garden</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 12:06 PM</p>
+</div>
+
+<div class="nyc-11"> 
+    <img src="https://www.dropbox.com/scl/fi/heqvfoi8vo5wia37reje0/nyc-11.jpg?rlkey=jjqpe3l6oeh4kwlrykqmho1mm&st=sftvbtew&raw=1" /> 
+    <p class="textimage1">Foster + Partners | Apple Store Fifth Avenue</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 12:26 PM</p>
+</div>
+
+<div class="nyc-12"> 
+    <img src="https://www.dropbox.com/scl/fi/4d3zrfa3qdzg8bd22820s/nyc-12.jpg?rlkey=aoj2474o768adctzj3lnimx4h&st=c6ov9jzq&raw=1" /> 
+    <p class="textimage1">Studio Gang | American Museum of Natural History Richard Gilder Center</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 1:44 PM</p>
+</div>
+
+<div class="nyc-13"> 
+    <img src="https://www.dropbox.com/scl/fi/v3zrww9exqfw8x2h2dnwk/nyc-13.jpg?rlkey=tvxl0i3f7dtskfw4bnlzordnj&st=qa4mk7wg&raw=1" /> 
+    <p class="textimage1">Studio Gang | American Museum of Natural History Richard Gilder Center</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 1:44 PM</p>
+</div>
+
+<div class="nyc-14"> 
+    <img src="https://www.dropbox.com/scl/fi/pco3prk42pqf8pht68o2r/nyc-14.jpg?rlkey=1842cr33c2dp3fh3uk9evty59&st=2yyqimyn&raw=1" /> 
+    <p class="textimage1">Frank Lloyd Wright | Solomon R. Guggenheim Museum</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 3:05 PM</p>
+</div>
+
+<div class="nyc-15"> 
+    <img src="https://www.dropbox.com/scl/fi/a8gukl54wxngll83yksej/nyc-15.jpg?rlkey=cxg69tp8mxrma8pmwe15h1w8v&st=4do2fgtc&raw=1" /> 
+    <p class="textimage1">Frank Lloyd Wright | Solomon R. Guggenheim Museum</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 3:25 PM</p>
+</div>
+
+<div class="nyc-16"> 
+    <img src="https://www.dropbox.com/scl/fi/36x6suqpnxuf0iyyweshk/nyc-16.jpg?rlkey=ygr4uit64kwux1hwu6kodru5w&st=ynuahhqc&raw=1" /> 
+    <p class="textimage1">Frank Lloyd Wright | Solomon R. Guggenheim Museum</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 3:49 PM</p>
+</div>
+
+<div class="nyc-17"> 
+    <img src="https://www.dropbox.com/scl/fi/qd7vezs738ljglf1wfb6o/nyc-17.jpg?rlkey=5vwa4rob4bbu6vsncfhbkjme0&st=4k79i5nd&raw=1" /> 
+    <p class="textimage1">Frank Lloyd Wright | Solomon R. Guggenheim Museum</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 4:10 PM</p>
+</div>
+
+<div class="nyc-18"> 
+    <img src="https://www.dropbox.com/scl/fi/sndz0qokagtt72mtbnmho/nyc-18.jpg?rlkey=wo92ocvn7iu1v6o4v18oo87xa&st=8pp98mwa&raw=1" /> 
+    <p class="textimage1">Marcel Breuer | Whitney Museum</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 4:29 PM</p>
+</div>
+
+<div class="nyc-19"> 
+    <img src="https://www.dropbox.com/scl/fi/cf95phkp0oxqsyld74ebz/nyc-19.jpg?rlkey=uthyk7d02rr3bwu3l6tpdfwyi&st=3ep6ehhj&raw=1" /> 
+    <p class="textimage1">Corner of Madison Ave & E 68TH ST</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 4:46 PM</p>
+</div>
+
+<div class="nyc-20"> 
+    <img src="https://www.dropbox.com/scl/fi/ww2wjlp4uc1g64ev0h2it/nyc-20.jpg?rlkey=0f7hb6da1xi0co9gr9cb1tqkp&st=kjw97ljt&raw=1" /> 
+    <p class="textimage1">Paul Rudolp | Hirsch Residence</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 5:13 PM</p>
+</div>
+
+<div class="nyc-21"> 
+    <img src="https://www.dropbox.com/scl/fi/beaf049uuwu5fufvc26tk/nyc-21.jpg?rlkey=pp9pbduoj0hjefss0hi7lmlbm&st=vsx83cw9&raw=1" /> 
+    <p class="textimage1">Foster + Partners | 425 Park Avenue</p>
+    <p class="textimage2">New York City, New York, 07/08/2024 5:29 PM</p>
+</div>
+
+<div class="nyc-22"> 
+    <img src="https://www.dropbox.com/scl/fi/ctg8zlal0ckmpuetapmx1/nyc-22.jpg?rlkey=pxigwyr6mvsu4yswltr1p1i50&st=xjnvg9aa&raw=1" /> 
+    <p class="textimage1">Leon Moisseiff | Manhattan Bridge</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 11:54 AM</p>
+</div>
+
+<div class="nyc-23"> 
+    <img src="https://www.dropbox.com/scl/fi/uabrvk4pwa9uxba5cmthy/nyc-23.jpg?rlkey=fj5j33lnrrirtq5bys8kaegqv&st=oxh57qyq&raw=1" /> 
+    <p class="textimage1">Leon Moisseiff | Manhattan Bridge</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 12:04 PM</p>
+</div>
+
+<div class="nyc-24"> 
+    <img src="https://www.dropbox.com/scl/fi/hcm0aoe799ruedngbowj6/nyc-24.jpg?rlkey=1bvzal67vc3ru657dxvspxyxs&st=ag684raw&raw=1" /> 
+    <p class="textimage1">Tadao Ando | 152 Elizabeth</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 1:32 PM</p>
+</div>
+
+<div class="nyc-25"> 
+    <img src="https://www.dropbox.com/scl/fi/qwbv210u7obqfknw24orv/nyc-25.jpg?rlkey=7rr0c7whxpx7d1o6bad6hguy0&st=jbfd145u&raw=1" /> 
+    <p class="textimage1">Tadao Ando | 152 Elizabeth</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 1:34 PM</p>
+</div>
+
+<div class="nyc-26"> 
+    <img src="https://www.dropbox.com/scl/fi/r1iufvsz0p79ls7zctd29/nyc-26.jpg?rlkey=uhlohut7iq0kmiy82yvwz3d3g&st=k37ksl2i&raw=1" /> 
+    <p class="textimage1">Herzog de Meuron | 215 Chrystie</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 1:44 PM</p>
+</div>
+
+<div class="nyc-27"> 
+    <img src="https://www.dropbox.com/scl/fi/q7awj7i3ed0j9gh3akekk/nyc-27.jpg?rlkey=swqj5m1fmhoe7yzl556qqtduk&st=vghekumz&raw=1" /> 
+    <p class="textimage1">Herzog de Meuron | 215 Chrystie</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 1:44 PM</p>
+</div>
+
+<div class="nyc-28"> 
+    <img src="https://www.dropbox.com/scl/fi/5vg41e3maazvd5ouayn05/nyc-28.jpg?rlkey=k5yb5yk9uoqfiz14gbmch7m66&st=8pdp7pq4&raw=1" /> 
+    <p class="textimage1">Herzog de Meuron | 215 Chrystie</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 1:45 PM</p>
+</div>
+
+<div class="nyc-29"> 
+    <img src="https://www.dropbox.com/scl/fi/fpdey6p3sn6int4x1zwvn/nyc-29.jpg?rlkey=1dh62nb3gzywlqg7yvjfpctsf&st=6mu1o4eg&raw=1" /> 
+    <p class="textimage1">Herzog de Meuron | 215 Chrystie</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 1:59 PM</p>
+</div>
+
+<div class="nyc-30"> 
+    <img src="https://www.dropbox.com/scl/fi/lvxjjfmsoyjk26tggfega/nyc-30.jpg?rlkey=ognp96g7884f6j2vvc600ra06&st=vypb4h0b&raw=1" /> 
+    <p class="textimage1">Herzog de Meuron | 40 Bond</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 2:12 PM</p>
+</div>
+
+<div class="nyc-31"> 
+    <img src="https://www.dropbox.com/scl/fi/4lb6h9ki7uwii6wy0o8q6/nyc-31.jpg?rlkey=txpsuo9f4chmqllbge3or3e6w&st=fti71ioe&raw=1" /> 
+    <p class="textimage1">Herzog de Meuron | 40 Bond</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 2:12 PM</p>
+</div>
+
+<div class="nyc-32"> 
+    <img src="https://www.dropbox.com/scl/fi/h45d710a03il784buhv3y/nyc-32.jpg?rlkey=976jfkkvl3ri9wzoqiegmi61h&st=x222y98b&raw=1" /> 
+    <p class="textimage1">Herzog de Meuron | 40 Bond</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 2:15 PM</p>
+</div>
+
+<div class="nyc-33"> 
+    <img src="https://www.dropbox.com/scl/fi/w5zqouyd9ksymn22vwild/nyc-33.jpg?rlkey=xt05ug3g3ptdd4a5s1fucn4b8&st=uu64ci5n&raw=1" /> 
+    <p class="textimage1">Herzog de Meuron | 56 Leonard Street</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 2:45 PM</p>
+</div>
+
+<div class="nyc-34"> 
+    <img src="https://www.dropbox.com/scl/fi/fl9se8pytjbaazgsejjb8/nyc-34.jpg?rlkey=vdgqta8qfdzvnecotf1q3kgkb&st=p7ewt7bv&raw=1" /> 
+    <p class="textimage1">Herzog de Meuron | 56 Leonard Street</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 2:47 PM</p>
+</div>
+
+<div class="nyc-35"> 
+    <img src="https://www.dropbox.com/scl/fi/60gpde9h7wwaq8ij4uuo3/nyc-35.jpg?rlkey=tsr79i6tm6f5iitfedbfde5g3&st=ko7qy9wd&raw=1" /> 
+    <p class="textimage1">John Carl Warnecke | AT&T Long Lines Building</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 3:02 PM</p>
+</div>
+
+<div class="nyc-36"> 
+    <img src="https://www.dropbox.com/scl/fi/6ttlcyumrbyexefnt3tow/nyc-36.jpg?rlkey=89v66acbf07p1qlhqz5nm5mz7&st=py3ihs6s&raw=1" /> 
+    <p class="textimage1">John Carl Warnecke | AT&T Long Lines Building</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 3:3 PM</p>
+</div>
+
+<div class="nyc-37"> 
+    <img src="https://www.dropbox.com/scl/fi/ad7k4rlwznrmykzh8ntto/nyc-37.jpg?rlkey=aefydhoec3975wgk0cjewma3a&st=dpivhqg5&raw=1" /> 
+    <p class="textimage1">Herzog de Meuron | 56 Leonard Street</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 3:13 PM</p>
+</div>
+
+<div class="nyc-38"> 
+    <img src="https://www.dropbox.com/scl/fi/etvs7yz8xw7xc3esrprb2/nyc-38.jpg?rlkey=tw61x0gye7t5ady98ietdvilg&st=jtkqkiht&raw=1" /> 
+    <p class="textimage1">Santiago Calatrava | WTC Transportation Hub</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 3:18 PM</p>
+</div>
+
+<div class="nyc-39"> 
+    <img src="https://www.dropbox.com/scl/fi/pme4megzk5nantlep7h74/nyc-39.jpg?rlkey=amg7f3axgf33iedid58ntp7im&st=rvixktsd&raw=1" /> 
+    <p class="textimage1">Santiago Calatrava | WTC Transportation Hub</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 3:19 PM</p>
+</div>
+
+<div class="nyc-40"> 
+    <img src="https://www.dropbox.com/scl/fi/zf8irstozm0456vw1im0v/nyc-40.jpg?rlkey=w7sc8aexz7upwaemkxv82ssid&st=7qalqqvu&raw=1" /> 
+    <p class="textimage1">Santiago Calatrava | WTC Transportation Hub</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 3:27 PM</p>
+</div>
+
+<div class="nyc-41"> 
+    <img src="https://www.dropbox.com/scl/fi/m28ejk3le5ev85wuxc2me/nyc-41.jpg?rlkey=w9umqmpdl2rkox7ydlrxr1e20&st=hf0a3eb1&raw=1" /> 
+    <p class="textimage1">Santiago Calatrava | WTC Transportation Hub</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 4:25 PM</p>
+</div>
+
+<div class="nyc-42">
+    <img src="https://www.dropbox.com/scl/fi/t2a0iy54hw7bkm28pqet7/nyc-42.jpg?rlkey=v5whp6h21er8w98ebg7cjdhbs&st=o5tv31at&raw=1" />
+    <p class="textimage1">Santiago Calatrava | WTC Transportation Hub</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 4:26 PM</p>
+</div>
+
+<div class="nyc-44">
+    <img src="https://www.dropbox.com/scl/fi/ul2rl1ce8z8c25a7dy4lw/nyc-44.jpg?rlkey=nbx99m5ncoizz2ib3qgv8xbba&st=vf1fmva6&raw=1" />
+    <p class="textimage1">Santiago Calatrava | WTC Transportation Hub</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 5:12 PM</p>
+</div>
+
+<div class="nyc-43">
+    <img src="https://www.dropbox.com/scl/fi/gi6z538apema24cva653p/nyc-43.jpg?rlkey=ece21xtq4s0kuz3xxis7s2m6s&st=27ov0o5l&raw=1" />
+    <p class="textimage1">Santiago Calatrava | WTC Transportation Hub</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 5:09 PM</p>
+</div>
+
+<div class="nyc-45">
+    <img src="https://www.dropbox.com/scl/fi/ilgb4k77gvs3hzo90w1az/nyc-45.jpg?rlkey=kkqieiapcydzcvq1azgj2aum4&st=v35szhlc&raw=1" />
+    <p class="textimage1">Santiago Calatrava | WTC Transportation Hub</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 5:13 PM</p>
+</div>
+
+<div class="nyc-46">
+    <img src="https://www.dropbox.com/scl/fi/0g9rzsib1g26mexw3g7a9/nyc-46.jpg?rlkey=jux9kin0gjxut0i5hidgiioyq&st=7g3xvfth&raw=1" />
+    <p class="textimage1">Santiago Calatrava | WTC Transportation Hub</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 5:14 PM</p>
+</div>
+
+<div class="nyc-47">
+    <img src="https://www.dropbox.com/scl/fi/l95dr2u37uw8jryn1kd14/nyc-47.jpg?rlkey=7wg9gp892hiviu6xx5v6c0nj3&st=jenc6c7u&raw=1" />
+    <p class="textimage1">Shreve, Lamb and Harmon | Empire State Building</p>
+    <p class="textimage2">New York City, New York, 09/08/2024 7:45 PM</p>
+</div>
+
+<div class="nyc-48">
+    <img src="https://www.dropbox.com/scl/fi/h84ckbl4lk2m77x8etiwg/nyc-48.jpg?rlkey=q80v3g2qi9t1ueybou0o66c7b&st=ahkqrqdx&raw=1" />
+    <p class="textimage1">Louis Kahn | Four Freedoms Park</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 10:43 AM</p>
+</div>
+
+<div class="nyc-49">
+    <img src="https://www.dropbox.com/scl/fi/qes5607w24z6hzp11l887/nyc-49.jpg?rlkey=jez0lpu3kon61z5ew9nalcgw0&st=yrsf97z5&raw=1" />
+    <p class="textimage1">Louis Kahn | Four Freedoms Park</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 10:46 AM</p>
+</div>
+
+<div class="nyc-50">
+    <img src="https://www.dropbox.com/scl/fi/0lghkbepqkxtg00dg78kq/nyc-50.jpg?rlkey=e3pbc6reu5duhuxcuilwci3nv&st=dvjpnp4o&raw=1" />
+    <p class="textimage1">Louis Kahn | Four Freedoms Park</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 10:48 AM</p>
+</div>
+
+<div class="nyc-51">
+    <img src="https://www.dropbox.com/scl/fi/brpdqktmui1371hl7p7b6/nyc-51.jpg?rlkey=ra1kytr360xgbmrpm0blqkx3o&st=jw7348gt&raw=1" />
+    <p class="textimage1">Henry Hornbostel | Queensboro Bridge</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 11:17 AM</p>
+</div>
+
+<div class="nyc-52">
+    <img src="https://www.dropbox.com/scl/fi/vtc8wcv9e3vwdppo9jnhf/nyc-52.jpg?rlkey=35w1t8xc1lwtw2p7xxok6jpmo&st=hmuzshsz&raw=1" />
+    <p class="textimage1">Emery Roth & Sons | 909 Third Ave</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 11:52 AM</p>
+</div>
+
+<div class="nyc-53">
+    <img src="https://www.dropbox.com/scl/fi/da3xpfbksji5gq26rerh3/nyc-53.jpg?rlkey=4pfo1rrrizekb2ukchl81mkru&st=squh9iae&raw=1" />
+    <p class="textimage1">Emery Roth & Sons | 909 Third Ave</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 11:54 AM</p>
+</div>
+
+<div class="nyc-54">
+    <img src="https://www.dropbox.com/scl/fi/rrwzj15enx1kthyywlmfy/nyc-54.jpg?rlkey=ejoy4bt6b4ru8mhjv4c7npsqf&st=99xlhmja&raw=1" />
+    <p class="textimage1">Emery Roth & Sons | 909 Third Ave</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 11:56 AM</p>
+</div>
+
+<div class="nyc-55">
+    <img src="https://www.dropbox.com/scl/fi/xp312h7p9ggnd0xawlz6w/nyc-55.jpg?rlkey=wuulo7748k8rz43lik81pnc28&st=hjexy8do&raw=1" />
+    <p class="textimage1">Emery Roth & Sons | 909 Third Ave</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 11:57 AM</p>
+</div>
+
+<div class="nyc-56">
+    <img src="https://www.dropbox.com/scl/fi/3kxvpmybushkh8bksdltf/nyc-56.jpg?rlkey=riajq9k8usr6laixp1d4l1zhz&st=scj3v3m2&raw=1" />
+    <p class="textimage1">Emery Roth & Sons | 909 Third Ave</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 11:57 AM</p>
+</div>
+
+<div class="nyc-58"> 
+    <img src="https://www.dropbox.com/scl/fi/fhdwysxdjzzmrf9g4ssim/nyc-58.jpg?rlkey=lxfx1kfx8civd4i5c1vthjtyi&st=pqcjhv4e&raw=1" /> 
+    <p class="textimage1">Ludwig Mies van der Rohe, Philip Johnson | Seagram Building</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 12:17 PM</p>
+</div>
+
+<div class="nyc-57">
+    <img src="https://www.dropbox.com/scl/fi/1j1pyrgplx78cok2qsxd2/nyc-57.jpg?rlkey=f0yyx95n76yvywzd5dr52a0a6&st=2oqm4i53&raw=1" />
+    <p class="textimage1">Ludwig Mies van der Rohe, Philip Johnson | Seagram Building</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 12:09 AM</p>
+</div>
+
+<div class="white"> <img src="https://www.dropbox.com/s/9fm07eh0voiumgd/whitebar.jpg?raw=1"></div>
+
+<div class="nyc-59"> 
+    <img src="https://www.dropbox.com/scl/fi/slthfvoy3luptt0tnnwyb/nyc-59.jpg?rlkey=cnify4wvnct1ibxdtry10r1s9&st=40vt5yb3&raw=1" /> 
+    <p class="textimage1">Rafael Viñoly | 432 Park Avenue</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 12:19 PM</p>
+</div>
+
+
+<div class="nyc-60"> 
+    <img src="https://www.dropbox.com/scl/fi/66xrzceir0an5qc5h1966/nyc-60.jpg?rlkey=9ifs3b5gy3nxycnlnkf6knm7l&st=73f3ixnq&raw=1" /> 
+    <p class="textimage1">Rafael Viñoly | 432 Park Avenue</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 12:19 PM</p>
+</div>
+
+<div class="nyc-61"> 
+    <img src="https://www.dropbox.com/scl/fi/4fyk1rvpfjyy3sabl23lg/nyc-61.jpg?rlkey=tdc3btcmzrdomp6bwgq40103m&st=y6i9kr8n&raw=1" /> 
+    <p class="textimage1">Kevin Roche | Ford Foundation Building</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 1:00 PM</p>
+</div>
+
+<div class="nyc-62"> 
+    <img src="https://www.dropbox.com/scl/fi/2y2ngkunvielz5spihvmr/nyc-62.jpg?rlkey=60ete8osp7r5cdyvud65mznsm&st=56l5s2fy&raw=1" /> 
+    <p class="textimage1">Kevin Roche | Ford Foundation Building</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 1:04 PM</p>
+</div>
+
+<div class="nyc-63"> 
+    <img src="https://www.dropbox.com/scl/fi/pbp3ecciv5k4jxiu5r44h/nyc-63.jpg?rlkey=lqymoq2pqaooj8izodc6bpqrs&st=yatazsvr&raw=1" /> 
+    <p class="textimage1">Kevin Roche | Ford Foundation Building</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 1:05 PM</p>
+</div>
+
+<div class="nyc-64"> 
+    <img src="https://www.dropbox.com/scl/fi/wrygf23ds07ghfa70cnvv/nyc-64.jpg?rlkey=p90ldaxxnp7myhrd5j6vxak1a&st=b0im5vlk&raw=1" /> 
+    <p class="textimage1">Kevin Roche | Ford Foundation Building</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 1:08 PM</p>
+</div>
+
+<div class="nyc-65"> 
+    <img src="https://www.dropbox.com/scl/fi/mzchh0d1kaigcst6pve2u/nyc-65.jpg?rlkey=axo0cibl8c0nksp4zyercgoly&st=wfwab54f&raw=1" /> 
+    <p class="textimage1">Paul Rudolp | Rudolph Residence</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 1:26 PM</p>
+</div>
+
+<div class="nyc-66"> 
+    <img src="https://www.dropbox.com/scl/fi/jfe5vl23n65m0fcq632nu/nyc-66.jpg?rlkey=htyxk6hiumby33nswyw5s0mke&st=nky5tkxc&raw=1" /> 
+    <p class="textimage1">Paul Rudolp | Rudolph Residence</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 1:26 PM</p>
+</div>
+
+<div class="nyc-67"> 
+    <img src="https://www.dropbox.com/scl/fi/9uiaf03j6ens95mqipoc2/nyc-67.jpg?rlkey=ym9hbpp9j210thn1jy9n3i487&st=xdom7zw4&raw=1" /> 
+    <p class="textimage1">William Van Alen | Chrysler Building</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 1:47 PM</p>
+</div>
+
+<div class="nyc-68"> 
+    <img src="https://www.dropbox.com/scl/fi/im226wif4wp3gmhcl4sdm/nyc-68.jpg?rlkey=2r4xhfh1byzcmxc2p545fl016&st=6ka4pmo1&raw=1" /> 
+    <p class="textimage1">Reed & Stem and Warren & Wetmore | Grand Central Terminal</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 1:54 PM</p>
+</div>
+
+<div class="nyc-69"> 
+    <img src="https://www.dropbox.com/scl/fi/249uv6djo9h0eiif7vzj3/nyc-69.jpg?rlkey=2pu0luy658twpc6w98auok7tc&st=tnicxdqm&raw=1" /> 
+    <p class="textimage1">Heatherwick Studio | Vessel </p>
+    <p class="textimage2">New York City, New York, 10/08/2024 5:31 PM</p>
+</div>
+
+<div class="nyc-70"> 
+    <img src="https://www.dropbox.com/scl/fi/qzcplqqqnfjgfhtficslk/nyc-70.jpg?rlkey=zkct8mfe6uw4unwtndl72r5uq&st=pegp8o95&raw=1" /> 
+    <p class="textimage1">Zaha Hadid Architects | 520 W 28TH</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 6:14 PM</p>
+</div>
+
+<div class="nyc-71"> 
+    <img src="https://www.dropbox.com/scl/fi/gtpfqnvjyby0smjqop3sl/nyc-71.jpg?rlkey=0m2ilsimngnwpnhc2nzenecfp&st=l8h7thjw&raw=1" /> 
+    <p class="textimage1">Zaha Hadid Architects | 520 W 28TH</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 6:14 PM</p>
+</div>
+
+<div class="nyc-72"> 
+    <img src="https://www.dropbox.com/scl/fi/pfgvwe1yvgh3tjfc6k3a3/nyc-72.jpg?rlkey=p3oki1gn3uo6os25i98qtcugk&st=w6pbb0f6&raw=1" /> 
+    <p class="textimage1">Heatherwick Studio | Lantern House</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 6:33 PM</p>
+</div>
+
+<div class="nyc-73"> 
+    <img src="https://www.dropbox.com/scl/fi/on77lrq26kchj1374vtnx/nyc-73.jpg?rlkey=19i83am44reihvhqvfz4zyweb&st=n5x7hnkf&raw=1" /> 
+    <p class="textimage1">Heatherwick Studio | Lantern House</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 6:34 PM</p>
+</div>
+
+<div class="nyc-74"> 
+    <img src="https://www.dropbox.com/scl/fi/tyyvdl4vujtzzgvtpe1m5/nyc-74.jpg?rlkey=nf5be3zb0tod62fvas8yh48d7&st=ewedhhzf&raw=1" /> 
+    <p class="textimage1">Raëd Abillama Architects | Abi Chelsea</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 7:19 PM</p>
+</div>
+
+<div class="nyc-75"> 
+    <img src="https://www.dropbox.com/scl/fi/fq3yyk02emsr3dw1zjsvw/nyc-75.jpg?rlkey=0h14lvg4qp3j109erbkhtez0v&st=8t1ig7wh&raw=1" /> 
+    <p class="textimage1">Heatherwick Studio + MNLA | Little Island Park</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 7:32 PM</p>
+</div>
+
+<div class="nyc-76"> 
+    <img src="https://www.dropbox.com/scl/fi/zz8uynqlnidomzrnbgfgd/nyc-76.jpg?rlkey=v3kpj7i2vjby3f2mxas9vpe84&st=ono3x9qd&raw=1" /> 
+    <p class="textimage1">Heatherwick Studio + MNLA | Little Island Park</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 7:40 PM</p>
+</div>
+
+<div class="nyc-77"> 
+    <img src="https://www.dropbox.com/scl/fi/ne91czjj3yafkdfowyp4b/nyc-77.jpg?rlkey=d24isg0f8xw65rt5g3em5tynv&st=8o1uza5y&raw=1" /> 
+    <p class="textimage1">Heatherwick Studio + MNLA | Little Island Park</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 7:55 PM</p>
+</div>
+
+<div class="nyc-78"> 
+    <img src="https://www.dropbox.com/scl/fi/j8x51qr0ikjr8neai70df/nyc-78.jpg?rlkey=v73lpaal1sioucnokxrwwklza&st=wdchkzk0&raw=1" /> 
+    <p class="textimage1">Heatherwick Studio + MNLA | Little Island Park</p>
+    <p class="textimage2">New York City, New York, 10/08/2024 7:56 PM</p>
+</div>
+
+
+
+
+
+      <div class="white"> <img src="https://www.dropbox.com/s/9fm07eh0voiumgd/whitebar.jpg?raw=1"></div>
+
+ <div class="row">
+  <div class="column1">
+    <a style="text-decoration: none; color:#005799" href="https://ericdelitzsch.com/studio">Contact</a><br>
+  </div>
+  <div class="column2">
+    <a style="text-decoration: none; color:#005799" href="https://www.instagram.com/ericdelitzsch.architects/" target="_blank">Instagram</a><br>
+  </div>
+  <div class="column3">
+    <a style="text-decoration: none; color:#005799" href="#top">🡡 Top</a><br>
+  </div>
+</div>
+
+<div class="copyright">
+    <a style="text-decoration: none; color:gray">© eric delitzsch architects</a><br>
+  </div>
+
+  </header> 
+
+<script type="text/javascript">
+
+window.addEventListener("DOMContentLoaded", function(e) {
+  var links = document.getElementsByTagName("A");
+  for(var i=0; i < links.length; i++) {
+    if(!links[i].hash) continue;
+    if(links[i].origin + links[i].pathname != self.location.href) continue;
+    (function(anchorPoint) {
+      links[i].addEventListener("click", function(e) {
+        anchorPoint.scrollIntoView(true);
+        e.preventDefault();
+      }, false);
+    })(document.getElementById(links[i].hash.replace(/#/, "")));
+  }
+}, false);
+
+</script>
+
+<script type="text/javascript">
+
+// Vanilla version of FitVids
+// Still licencened under WTFPL
+//
+// Not as robust and fault tolerant as the jQuery version.
+// It's BYOCSS.
+// And also, I don't support this at all whatsoever.
+
+(function(window, document, undefined) {
+  "use strict";
+
+  // List of Video Vendors embeds you want to support
+  var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+
+  // Select videos
+  var fitVids = document.querySelectorAll(players.join(","));
+
+  // If there are videos on the page...
+  if (fitVids.length) {
+    // Loop through videos
+    for (var i = 0; i < fitVids.length; i++) {
+      // Get Video Information
+      var fitVid = fitVids[i];
+      var width = fitVid.getAttribute("width");
+      var height = fitVid.getAttribute("height");
+      var aspectRatio = height / width;
+      var parentDiv = fitVid.parentNode;
+
+      // Wrap it in a DIV
+      var div = document.createElement("div");
+      div.className = "fitVids-wrapper";
+      div.style.paddingBottom = aspectRatio * 100 + "%";
+      parentDiv.insertBefore(div, fitVid);
+      fitVid.remove();
+      div.appendChild(fitVid);
+
+      // Clear height/width from fitVid
+      fitVid.removeAttribute("height");
+      fitVid.removeAttribute("width");
+    }
+  }
+})(window, document);
+
+
+</script>
+
+
+<a href="https://ericdelitzsch.com/" class="title" id="title"><b>eric delitzsch </b>architects<a/></li>
+<div class="topnav" id="myTopnav">
+<a href="https://ericdelitzsch.com/work">work</a>
+  <a href="https://ericdelitzsch.com/drawings">drawings</a>
+  <a href="https://ericdelitzsch.com/photography">photography</a>
+  <a href="https://ericdelitzsch.com/studio">studio</a>
+  <a href="studio"></a>  
+</div>
+
+<div class="menua" id="mymenua">
+  <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">
+    
+  <div class="container" onclick="myFunction1(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  </div>
+  
+  </a>
+  
+</div>
+
+<div id="myNav" class="overlay">
+</div>
+
+<script>
+    // Defining custom functions
+    function menu1(){
+        var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+     
+    var checkFlag = true;
+function fondo(){
+  if(checkFlag == true){
+  document.getElementById("myNav").style.display = "block";
+  }else{
+  document.getElementById("myNav").style.display = "none";
+  }
+  checkFlag = !checkFlag;
+}
+
+
+function noscroll(){
+  if(checkFlag == true){
+  document.body.style.overflow="scroll";
+  }else{
+  document.body.style.overflow="hidden";
+  }
+  }
+
+    function color(){
+  if(checkFlag == true){
+  document.getElementById("title").style.color = 'black';
+  }else{
+  document.getElementById("title").style.color = 'white';
+  }
+  }
+
+    
+ 
+    // Selecting button element
+    var btn = document.getElementById("mymenua");
+     
+    // Assigning event listeners to the button
+    btn.addEventListener("click", menu1);
+    btn.addEventListener("click", fondo);
+    btn.addEventListener("click", noscroll);
+    btn.addEventListener("click", color);
+    </script>
+
+
+
+</body>
+</html>
