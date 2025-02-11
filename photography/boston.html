@@ -1,0 +1,2535 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Boston | Eric Delitzsch Architects</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.dropbox.com/s/i7k9nwvcmirmnlp/icon.png?raw=1">
+  <link rel="apple-touch-icon" sizes="128x128" href="https://www.dropbox.com/s/28ubqe7jfnh6e44/icon.jpg?raw=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" CONTENT="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>history.scrollRestoration = "manual"</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+  /* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 10px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+    display:none;
+}
+
+html {
+  scroll-behavior: smooth;
+
+
+}
+
+body, html {
+  color: black;
+  font-size: 2.9vh;
+  font-family: raleway;
+  margin: 0;
+
+}
+{
+  webkit-overflow-scrolling: touch;
+}
+{
+
+-webkit-font-smoothing: antialiased;
+
+}
+
+.copyright{
+  font-size: 13px;
+  text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    position: absolute;
+    top: 10.5%;
+    right: 6.5%;
+    color: black;
+    text-decoration: none;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.5vh;
+  z-index: -1;
+}
+
+.topnav a:hover {
+  color: #BFBFBF}
+
+.topnav .icon {
+  display: none;
+
+}
+
+.menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 84%;
+  top: 12%;
+  
+  }
+
+.title {
+      position: absolute;
+      left: 10%;
+      top: 12%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.5vh;
+
+    }
+
+    ul li a:hover {
+    Color: white;
+
+    }
+
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+    color: white;
+    padding-top: 30px;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .copyright {
+    font-size: 13px;
+  }
+  .title {
+      position: absolute;
+      left: 10%;
+      top: 7%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.75vh;
+
+    }
+
+    .menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 85%;
+  top: 7.6%;
+  
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: absolute;
+    left: 6%;
+    top: 9%;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    line-height: 40%;
+
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar a:not(:first-child) {display: none;}
+  .topbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar.responsive {position: relative;}
+  .topbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ 
+      }
+
+      @media screen and (min-width:700px) {
+      .menub {
+      display:none;
+      float: right;
+      position: absolute;
+      right: 50%;
+      top:50%;
+      
+      }
+
+      
+      }
+
+header {
+  position: absolute;
+  margin: 12vw 12vw 1vw 12vw;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+
+}
+
+header div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 100%;
+  height: auto;
+  margin: .5vw;
+  margin:1vw auto;
+  
+
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+  position: absolute;
+  top: 18%;
+  margin:10px 10px 20px 10px;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+  z-index: -2;
+}
+
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0 0.65em;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+#sections {
+  font-size: 17px;
+  padding: 70px 0px 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+  
+#sections .main {
+  padding-right: 20px;
+  padding-top: 15px;
+  -webkit-flex: 2 1 25%;
+  flex: 2 1 25%;
+  -webkit-order: 2;
+  order: 2;
+}
+
+#sections .sub-section-1 {
+  padding-right: 200px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 90%;
+  -webkit-order: 1;
+  order: 1;
+}
+
+#sections .sub-section-2 {
+  padding-left: 10px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 3;
+  order: 3;
+}
+@media all and (max-width: 1200px)
+{
+  #sections {
+    padding: 60px 60px;
+    font-size: 20px;
+  }
+
+
+@media all and (max-width: 1000px)
+{
+  #sections {
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  
+  #sections > .main, #sections > .sub-section-1, #sections > .sub-section-2 {
+    /* For mobile phones, each section should be on a line of it's own at 100% width. */
+    width: 100%;
+    -webkit-order: 0;
+            order: 0;
+  }
+  
+  #sections .main {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-1 {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-2 {
+    padding-left: 0;
+  }
+}
+}
+
+.column1 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+  }
+
+@media all and (max-width: 1000px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 30%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+@media all and (min-width: 1800px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 33%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 4:3 ratio */
+    padding-top: 0px; 
+    height: 0px;
+    overflow: hidden;
+}
+
+.video-wrapper-narrow {
+    padding-bottom: 40%;
+}
+
+iframe,object,embed,video,.videoWrapper,.video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-js, img.vjs-poster {
+    width: 50% !important;
+    height: 100% !important; //these need !important because IE wants to set height/width to 100px
+    max-width: 100%;
+}
+
+
+
+ .textimage1 { 
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+.textimage2 {
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+
+.boston-1 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+.boston-2 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 39vw;
+}
+.boston-3 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 6vw;    
+    position: relative;
+    margin-top: 37vw;
+}
+.boston-4 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 34vw;
+}
+.boston-5 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 32vw;
+}
+.boston-6 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 38vw;
+}
+.boston-7 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 44vw;
+}
+.boston-8 { 
+    width: 70vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 8vw;
+}
+.boston-9 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+.boston-10 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 37vw;
+}
+.boston-11 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 6vw;    
+    position: relative;
+    margin-top: 35vw;
+}
+.boston-12 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 45vw;
+}
+.boston-13 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 40vw;
+}
+.boston-14 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 2vw;    
+    position: relative;
+    margin-top: 30vw;
+}
+.boston-15 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 30vw;
+}
+.boston-16 { 
+    width: 70vw;
+    float: left; 
+    margin-left: 4vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.boston-17 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 18vw;
+}
+.boston-18 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 16vw;
+}
+.boston-19 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 6vw;    
+    position: relative;
+    margin-top: 20vw;
+}
+.boston-20 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.boston-21 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 61vw;
+}
+.boston-22 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 6vw;    
+    position: relative;
+    margin-top: 32vw;
+}
+.boston-23 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 30vw;
+}
+.boston-24 { 
+    width: 70vw;
+    float: left; 
+    margin-left: 6vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.boston-25 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 24vw;
+}
+.boston-26 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 12vw;
+}
+.boston-27 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 6vw;    
+    position: relative;
+    margin-top: 25vw;
+}
+.boston-28 { 
+    width: 27vw;
+    float: left; 
+    margin-left: 4vw;    
+    position: relative;
+    margin-top: 20vw;
+}
+.boston-29 { 
+    width: 27vw;
+    float: right; 
+    margin-right: 6vw;    
+    position: relative;
+    margin-top: 58vw;
+}
+.boston-30 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 2vw;    
+    position: relative;
+    margin-top: 40vw;
+}
+.boston-31 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 6vw;    
+    position: relative;
+    margin-top: 60vw;
+}
+.boston-32 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 25vw;
+}
+.boston-33 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 35vw;
+}
+.boston-34 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 2vw;    
+    position: relative;
+    margin-top: 31vw;
+}
+.boston-35 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 20vw;
+}
+.boston-36 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 65vw;
+}
+.boston-37 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 50vw;
+}
+.boston-38 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 6vw;    
+    position: relative;
+    margin-top: 25vw;
+}
+.boston-39 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 6vw;    
+    position: relative;
+    margin-top: 45vw;
+}
+.boston-40 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 4vw;    
+    position: relative;
+    margin-top: 33vw;
+}
+.boston-41 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 25vw;
+}
+.boston-42 { 
+    width: 70vw;
+    float: left; 
+    margin-left: 2vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.boston-43 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 20vw;
+}
+.boston-44 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 2vw;    
+    position: relative;
+    margin-top: 34vw;
+}
+.boston-45 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 25vw;
+}
+.boston-46 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 6vw;    
+    position: relative;
+    margin-top: 40vw;
+}
+.boston-47 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.boston-48 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 42vw;
+}
+.boston-49 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 30vw;
+}
+.boston-50 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.boston-51 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 45vw;
+}
+.boston-52 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 4vw;    
+    position: relative;
+    margin-top: 35vw;
+}
+.boston-53 { 
+    width: 70vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.boston-54 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 2vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.boston-55 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 65vw;
+}
+.boston-56 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 6vw;    
+    position: relative;
+    margin-top: 44vw;
+}
+.boston-57 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 33vw;
+}
+.boston-58 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 6vw;    
+    position: relative;
+    margin-top: 43vw;
+}
+.boston-59 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 43vw;
+}
+.boston-60 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 4vw;    
+    position: relative;
+    margin-top: 38vw;
+}
+.boston-61 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 55vw;
+}
+.boston-62 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 2vw;    
+    position: relative;
+    margin-top: 44vw;
+}
+.boston-63 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 6vw;    
+    position: relative;
+    margin-top: 35vw;
+}
+.boston-64 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 25vw;
+}
+.boston-65 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 45vw;
+}
+.boston-66 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 37vw;
+}
+.boston-67 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 20vw;
+}
+.boston-68 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 25vw;
+}
+.boston-69 { 
+    width: 70vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.boston-70 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+.boston-71 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 25vw;
+}
+.boston-72 { 
+    width: 22vw;
+    float: left; 
+    margin-left: 1vw;    
+    position: relative;
+    margin-top: 20vw;
+}
+.boston-73 { 
+    width: 40vw;
+    float: right; 
+    margin-right: 1vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.boston-74 { 
+    width: 22vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 24vw;
+}
+.boston-75 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.boston-76 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 4vw;    
+    position: relative;
+    margin-top: 70vw;
+}
+.boston-77 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 35vw;
+}
+.boston-78 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 37vw;
+}
+.boston-79 { 
+    width: 70vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.boston-80 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 6vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+.boston-81 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 63vw;
+}
+.boston-82 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 31vw;
+}
+.boston-83 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 35vw;
+}
+.boston-84 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 42vw;
+}
+.boston-85 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 30vw;
+}
+.boston-86 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 4vw;    
+    position: relative;
+    margin-top: 43vw;
+}
+.boston-87 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 30vw;
+}
+.boston-88 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 2vw;    
+    position: relative;
+    margin-top: 37vw;
+}
+.boston-89 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 44vw;
+}
+.boston-90 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 4vw;    
+    position: relative;
+    margin-top: 32vw;
+}
+.boston-91 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 30vw;
+}
+
+
+
+@media all and (max-width: 1100px)
+{
+
+ .textimage1 {
+    text-align: right;
+      margin-top: 2.5vw;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+.boston-1 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-3 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-4 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-5 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-6 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-7 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-8 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-9 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-10 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-11 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-12 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-13 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-14 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-15 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-16 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-17 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-18 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-19 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-20 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-21 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-22 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-23 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-24 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-25 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-26 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-27 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-28 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-29 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-30 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-31 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-32 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-33 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-34 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-35 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-36 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-37 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-38 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-39 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-40 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-41 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-42 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-43 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-44 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-45 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-46 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-47 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-48 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-49 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-50 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-51 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-52 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-53 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-54 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-55 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-56 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-57 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-58 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-59 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-60 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-61 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-62 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-63 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-64 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-65 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-66 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-67 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-68 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-69 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-70 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-71 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-72 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-73 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-74 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-75 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-76 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-77 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-78 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-79 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-80 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-81 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-82 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-83 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-84 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-85 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-86 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-87 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-88 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-89 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-90 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.boston-91 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+
+
+
+
+}      
+
+.bar1, .bar2 {
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.sticks10{
+    width: 80vh;
+  margin-top: 1vw;   
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-2px, 3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.change .bar2 {
+  transform: rotate(45deg) translate(-1px, -3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<header>
+
+
+
+
+    <div class="boston-1">
+    <img src="https://www.dropbox.com/scl/fi/0xk4h90n7sknva30erjjr/boston-1.jpg?rlkey=t59h9txjm037xzgqjukk62uwv&st=tyhfqd5t&raw=1" />
+    <p class="textimage1">I. M. Pei | 177 Huntington Avenue</p>
+    <p class="textimage2">Boston, Massachusetts, 02/11/2024 12:23 PM</p>
+</div>
+
+<div class="boston-2">
+    <img src="https://www.dropbox.com/scl/fi/u2ofnbb1jacx2n64ig5qh/boston-2.jpg?rlkey=9v0suebtv2ccujii85ka8x0za&st=2u2qb95t&raw=1" />
+    <p class="textimage1">I. M. Pei | 177 Huntington Avenue</p>
+    <p class="textimage2">Boston, Massachusetts, 02/11/2024 12:23 PM</p>
+</div>
+
+<div class="boston-3">
+    <img src="https://www.dropbox.com/scl/fi/28q4fqpgq97pzzfy3fdrg/boston-3.jpg?rlkey=5bznbvrgw3592e4xv8v7y7vvc&st=gb5urmjq&raw=1" />
+    <p class="textimage1">I. M. Pei | Colonnade Building</p>
+    <p class="textimage2">Boston, Massachusetts, 02/11/2024 12:27 PM</p>
+</div>
+
+<div class="boston-4">
+    <img src="https://www.dropbox.com/scl/fi/pus6c562ipqajymd9y7k9/boston-4.jpg?rlkey=83719rei5lz2yomlq9tgonrdc&st=c68e54mv&raw=1" />
+    <p class="textimage1">I. M. Pei | Colonnade Building</p>
+    <p class="textimage2">Boston, Massachusetts, 02/11/2024 12:32 PM</p>
+</div>
+
+<div class="boston-5">
+    <img src="https://www.dropbox.com/scl/fi/2nxok01te8nh4uwgpegf3/boston-5.jpg?rlkey=rf8p6ypsuzmobjvhd81dy96ox&st=wop1ven8&raw=1" />
+    <p class="textimage1">I. M. Pei | Colonnade Building</p>
+    <p class="textimage2">Boston, Massachusetts, 02/11/2024 12:32 PM</p>
+</div>
+
+<div class="boston-6">
+    <img src="https://www.dropbox.com/scl/fi/h9t6z43tj1z740whovi9y/boston-6.jpg?rlkey=lv6zqxu30vuq34yhbj3e2sgxx&st=rxbqrl1p&raw=1" />
+    <p class="textimage1">I. M. Pei | Colonnade Building</p>
+    <p class="textimage2">Boston, Massachusetts, 02/11/2024 12:35 PM</p>
+</div>
+
+<div class="boston-7">
+    <img src="https://www.dropbox.com/scl/fi/t3mujz0l08l2jef3dqcs2/boston-7.jpg?rlkey=l4m3l5fsg1fw406cdz51gsspv&st=fz33aajw&raw=1" />
+    <p class="textimage1">The Luckman Partnership | Prudential Tower</p>
+    <p class="textimage2">Boston, Massachusetts, 02/11/2024 5:20 PM</p>
+</div>
+
+<div class="boston-8">
+    <img src="https://www.dropbox.com/scl/fi/my33z86qvfuynsjmhwxxu/boston-8.jpg?rlkey=p6hqpa0e5yxiicxej6bp9k7uj&st=ex80nqg6&raw=1" />
+    <p class="textimage1">‎</p>
+    <p class="textimage2">Danvers, Massachusetts, 03/11/2024 12:39 PM</p>
+</div>
+
+<div class="boston-9">
+    <img src="https://www.dropbox.com/scl/fi/v3ti5umcrb2xy4ze3amf0/boston-9.jpg?rlkey=tnu5z3qp08q9f7wypew104lt5&st=8qm21jc9&raw=1" />
+    <p class="textimage1">‎</p>
+    <p class="textimage2">Danvers, Massachusetts, 03/11/2024 3:57 PM</p>
+</div>
+
+<div class="boston-10">
+    <img src="https://www.dropbox.com/scl/fi/rruwpmofwmy7ghql4sqz7/boston-10.jpg?rlkey=rq7cdwr6kxd25bvrqpw54dv2h&st=ah7nfqx7&raw=1" />
+    <p class="textimage1">‎</p>
+    <p class="textimage2">Danvers, Massachusetts, 03/11/2024 3:58 PM</p>
+</div>
+
+<div class="boston-11">
+    <img src="https://www.dropbox.com/scl/fi/wqrwv6zq7sl6u3m2h963m/boston-11.jpg?rlkey=dlaxx5c2rjf9caqvv3rhze7c6&st=za57wv1o&raw=1" />
+    <p class="textimage1">Moshe Safdie | The Class of 1959 Chapel</p>
+    <p class="textimage2">Boston, Massachusetts, 04/11/2024 11:38 AM</p>
+</div>
+
+<div class="boston-12">
+    <img src="https://www.dropbox.com/scl/fi/ww8so0cxwikue0qpauokz/boston-12.jpg?rlkey=0y8bufgqhdfoa1h5f9jgd2zd8&st=9qush557&raw=1" />
+    <p class="textimage1">Moshe Safdie | The Class of 1959 Chapel</p>
+    <p class="textimage2">Boston, Massachusetts, 04/11/2024 11:39 AM</p>
+</div>
+
+<div class="boston-13">
+    <img src="https://www.dropbox.com/scl/fi/ey1dt7mk9jvzdjn4ndc0r/boston-13.jpg?rlkey=zedtl6nmmp1ypt8ulwngtmwnu&st=41nbzeea&raw=1" />
+    <p class="textimage1">Moshe Safdie | The Class of 1959 Chapel</p>
+    <p class="textimage2">Boston, Massachusetts, 04/11/2024 11:40 AM</p>
+</div>
+
+<div class="boston-14">
+    <img src="https://www.dropbox.com/scl/fi/d4jxxlphxnydt61vmq5kt/boston-14.jpg?rlkey=cnq1x6tb57pmj273erhx148fn&st=vd6wxncy&raw=1" />
+    <p class="textimage1">Moshe Safdie | The Class of 1959 Chapel</p>
+    <p class="textimage2">Boston, Massachusetts, 04/11/2024 11:28 AM</p>
+</div>
+
+<div class="boston-15">
+    <img src="https://www.dropbox.com/scl/fi/cy01qtm4qpy0by3ac99fq/boston-15.jpg?rlkey=2m812rgt58fwyerzsxgtglb4q&st=4scpenwy&raw=1" />
+    <p class="textimage1">Moshe Safdie | The Class of 1959 Chapel</p>
+    <p class="textimage2">Boston, Massachusetts, 04/11/2024 11:28 AM</p>
+</div>
+
+<div class="boston-16">
+    <img src="https://www.dropbox.com/scl/fi/yn9vsf8e5se41tlcozpu8/boston-16.jpg?rlkey=cmgpmfbk8mghc7jvlcqf3lryg&st=gt9lwv0i&raw=1" />
+    <p class="textimage1">Moshe Safdie | The Class of 1959 Chapel</p>
+    <p class="textimage2">Boston, Massachusetts, 04/11/2024 11:32 AM</p>
+</div>
+
+<div class="boston-17">
+    <img src="https://www.dropbox.com/scl/fi/bdxoru3qeq54opf5f02qj/boston-17.jpg?rlkey=08d981opo09xrhogwdkqqhuvx&st=ewza7l2l&raw=1" />
+    <p class="textimage1">Moshe Safdie | The Class of 1959 Chapel</p>
+    <p class="textimage2">Boston, Massachusetts, 04/11/2024 11:33 AM</p>
+</div>
+
+<div class="boston-18">
+    <img src="https://www.dropbox.com/scl/fi/12lt47ws9ul2mp6a9msd0/boston-18.jpg?rlkey=0s8azm4jtzqac2rfb6bjv631s&st=et1s6ino&raw=1" />
+    <p class="textimage1">Moshe Safdie | The Class of 1959 Chapel</p>
+    <p class="textimage2">Boston, Massachusetts, 04/11/2024 11:34 AM</p>
+</div>
+
+<div class="boston-19">
+    <img src="https://www.dropbox.com/scl/fi/e3qgm0ucqhgews7psoziu/boston-19.jpg?rlkey=lqba9ex8qotcuxz0ojvhys6mn&st=jrfsxew1&raw=1" />
+    <p class="textimage1">Alexander Rice Esty | Old Cambridge Baptist Church</p>
+    <p class="textimage2">Cambridge, Massachusetts, 04/11/2024 12:10 PM</p>
+</div>
+
+<div class="boston-20">
+    <img src="https://www.dropbox.com/scl/fi/nxbwolpmjv865f8acq5id/boston-20.jpg?rlkey=cqhcp1ejzvw74silv30q0jsn0&st=c397tuhg&raw=1" />
+    <p class="textimage1">Acorn Street</p>
+    <p class="textimage2">Boston, Massachusetts, 04/11/2024 1:27 PM</p>
+</div>
+
+<div class="boston-21">
+    <img src="https://www.dropbox.com/scl/fi/fwm7gl0pq6d27zz3o4dn7/boston-21.jpg?rlkey=l7kmv76j8aayvwserup5z58em&st=nu154283&raw=1" />
+    <p class="textimage1">Diller Scofidio + Renfro | Institute of Contemporary Art</p>
+    <p class="textimage2">Boston, Massachusetts, 05/08/2023 4:26 PM</p>
+</div>
+
+<div class="boston-22">
+    <img src="https://www.dropbox.com/scl/fi/or9u4ixkdk961fd9mn6ik/boston-22.jpg?rlkey=zq640icboosxqpczcrkedvcpz&st=92kvtm76&raw=1" />
+    <p class="textimage1">Diller Scofidio + Renfro | Institute of Contemporary Art</p>
+    <p class="textimage2">Boston, Massachusetts, 05/08/2023 4:26 PM</p>
+</div>
+
+<div class="boston-23">
+    <img src="https://www.dropbox.com/scl/fi/3nrpvghgonr6n6gwc3t1y/boston-23.jpg?rlkey=1oxnu4s9bg6xq1frsqrkoyb43&st=m95dp2n5&raw=1" />
+    <p class="textimage1">Diller Scofidio + Renfro | Institute of Contemporary Art</p>
+    <p class="textimage2">Boston, Massachusetts, 05/08/2023 4:31 PM</p>
+</div>
+
+<div class="boston-24">
+    <img src="https://www.dropbox.com/scl/fi/g0n6q72grkby1d4ybrmc2/boston-24.jpg?rlkey=s89rqxtyumzn78xhhv68mg4iv&st=4r7exjl5&raw=1" />
+    <p class="textimage1">Araldo Cossutta | Long Wharf Marriott Hotel</p>
+    <p class="textimage2">Boston, Massachusetts, 05/08/2023 5:01 PM</p>
+</div>
+
+<div class="boston-25">
+    <img src="https://www.dropbox.com/scl/fi/rzgaa7zc6fdwcthjd0ree/boston-25.jpg?rlkey=39cfmkwf6ou1gcst8v07utsvc&st=dh4l6p1l&raw=1" />
+    <p class="textimage1">Araldo Cossutta | Long Wharf Marriott Hotel</p>
+    <p class="textimage2">Boston, Massachusetts, 05/08/2023 5:02 PM</p>
+</div>
+
+<div class="boston-26">
+    <img src="https://www.dropbox.com/scl/fi/31lj2fch314o25imo48h8/boston-26.jpg?rlkey=gygqrgpzislin0r525xnjka8s&st=8rsvc5if&raw=1" />
+    <p class="textimage1">Araldo Cossutta | Long Wharf Marriott Hotel</p>
+    <p class="textimage2">Boston, Massachusetts, 05/08/2023 5:02 PM</p>
+</div>
+
+<div class="boston-27">
+    <img src="https://www.dropbox.com/scl/fi/nvs6nu1qdmtbxyd6p82f7/boston-27.jpg?rlkey=tvii1c4ebhhdbbxb2jkjk6ge0&st=nc1xclug&raw=1" />
+    <p class="textimage1">Thomas Dawes | Old State House</p>
+    <p class="textimage2">Boston, Massachusetts, 05/08/2023 5:10 PM</p>
+</div>
+
+<div class="boston-28">
+    <img src="https://www.dropbox.com/scl/fi/8m482judipvlvhice54y5/boston-28.jpg?rlkey=rv0jjka12im735a7jr9q1clto&st=cd97u82k&raw=1" />
+    <p class="textimage1">Kallmann McKinnell & Knowles | Boston City Hall</p>
+    <p class="textimage2">Boston, Massachusetts, 05/08/2023 5:21 PM</p>
+</div>
+
+<div class="boston-29">
+    <img src="https://www.dropbox.com/scl/fi/ud9807fgxutphazam26jv/boston-29.jpg?rlkey=2slmhy0ocw89ez4jmidjynwdq&st=m2vigycq&raw=1" />
+    <p class="textimage1">Kallmann McKinnell & Knowles | Boston City Hall</p>
+    <p class="textimage2">Boston, Massachusetts, 05/08/2023 5:21 PM</p>
+</div>
+
+<div class="boston-30">
+    <img src="https://www.dropbox.com/scl/fi/okkfqi3tnwive7i18hs6i/boston-30.jpg?rlkey=no6leadc0rntbw2k171551943&st=4ywimxvz&raw=1" />
+    <p class="textimage1">Charles Bulfinch | Massachusetts State House</p>
+    <p class="textimage2">Boston, Massachusetts, 05/08/2023 5:35 PM</p>
+</div>
+
+<div class="boston-31">
+    <img src="https://www.dropbox.com/scl/fi/j0dotkkzwvhr8j4latycq/boston-31.jpg?rlkey=eyh8rav2pb2qcenmo1zqpi08a&st=802ronw5&raw=1" />
+    <p class="textimage1">I. M. Pei | Green Building</p>
+    <p class="textimage2">Cambridge, Massachusetts, 05/08/2023 6:12 PM</p>
+</div>
+
+<div class="boston-32">
+    <img src="https://www.dropbox.com/scl/fi/ozm836ovvji800tdsk0kz/boston-32.jpg?rlkey=v0ittyb5mj1xdviqry2ue7xeq&st=gtktb1jo&raw=1" />
+    <p class="textimage1">I. M. Pei | Green Building</p>
+    <p class="textimage2">Cambridge, Massachusetts, 05/08/2023 6:13 PM</p>
+</div>
+
+<div class="boston-33">
+    <img src="https://www.dropbox.com/scl/fi/e7a6kay4693tjcwgwqpho/boston-33.jpg?rlkey=y00c1wwmsvu4rwncc0xzwaycn&st=7cy6wfdp&raw=1" />
+    <p class="textimage1">Frank Gehry | Stata Center</p>
+    <p class="textimage2">Cambridge, Massachusetts, 05/08/2023 6:22 PM</p>
+</div>
+
+<div class="boston-34">
+    <img src="https://www.dropbox.com/scl/fi/kf0ppvsxr7w1bn8dv0zc0/boston-34.jpg?rlkey=k0w4oz31oxqyzmihdhmveh669&st=vvvt1wyh&raw=1" />
+    <p class="textimage1">Frank Gehry | Stata Center</p>
+    <p class="textimage2">Cambridge, Massachusetts, 05/08/2023 6:22 PM</p>
+</div>
+
+<div class="boston-35">
+    <img src="https://www.dropbox.com/scl/fi/xxsasde36wvzxutskev19/boston-35.jpg?rlkey=dwiua1i09cyswer2xs93o9smm&st=xkqxbpty&raw=1" />
+    <p class="textimage1">Frank Gehry | Stata Center</p>
+    <p class="textimage2">Cambridge, Massachusetts, 05/08/2023 6:29 PM</p>
+</div>
+
+<div class="boston-36">
+    <img src="https://www.dropbox.com/scl/fi/gzw08hgxv1lsgp3ts6zan/boston-36.jpg?rlkey=dtu2cy9lph3lhrz1e25wq7nfa&st=5azj0zdq&raw=1" />
+    <p class="textimage1">Unknown | Kavli Institute for Astrophysics and Space Research</p>
+    <p class="textimage2">Cambridge, Massachusetts, 05/08/2023 6:38 PM</p>
+</div>
+
+<div class="boston-37">
+    <img src="https://www.dropbox.com/scl/fi/2lt00vlfbb3tbi3iw08t5/boston-37.jpg?rlkey=yi0915pqse33j2858um21krm2&st=hzy15hmp&raw=1" />
+    <p class="textimage1">John Andrews | Gund Hall</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 10:17 AM</p>
+</div>
+
+<div class="boston-38">
+    <img src="https://www.dropbox.com/scl/fi/w1uvun2xvp5je3lgzvwcc/boston-38.jpg?rlkey=u9c7s8f9fm4e7f67zexq6k0mv&st=4prt0y5n&raw=1" />
+    <p class="textimage1">John Andrews | Gund Hall</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 10:27 AM</p>
+</div>
+
+<div class="boston-39">
+    <img src="https://www.dropbox.com/scl/fi/wntp5tcy0ftcdk9xmg3ap/boston-39.jpg?rlkey=ovnfzrtpsoawog32htam1q34r&st=z7sh775b&raw=1" />
+    <p class="textimage1">Renzo Piano | Harvard Art Museums Expansion</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 10:43 AM</p>
+</div>
+
+<div class="boston-40">
+    <img src="https://www.dropbox.com/scl/fi/hj2zas2yn0g7edta71uqq/boston-40.jpg?rlkey=6d34fh2bnptjwp8v0zwkii28p&st=qt3dggga&raw=1" />
+    <p class="textimage1">Renzo Piano | Harvard Art Museums Expansion</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 10:50 AM</p>
+</div>
+
+<div class="boston-41">
+    <img src="https://www.dropbox.com/scl/fi/iueyyx8bsjt0lvcb2379u/boston-41.jpg?rlkey=v1dvprq7jlmwvpqsr3iwrx1df&st=tyrhk5kw&raw=1" />
+    <p class="textimage1">Renzo Piano | Harvard Art Museums Expansion</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 10:50 AM</p>
+</div>
+
+<div class="boston-42">
+    <img src="https://www.dropbox.com/scl/fi/wgkzztw9gsqwfpz2vnrob/boston-42.jpg?rlkey=2efq3d2ew3owhm4nfcpnjgx5o&st=nbb42kj9&raw=1" />
+    <p class="textimage1">Renzo Piano | Harvard Art Museums Expansion</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 11:08 AM</p>
+</div>
+
+<div class="boston-43">
+    <img src="https://www.dropbox.com/scl/fi/wlk7xgotyg9beuqt2q597/boston-43.jpg?rlkey=s7zsefgsn9uqhgned6mneh9ql&st=lu7i1hub&raw=1" />
+    <p class="textimage1">Renzo Piano | Harvard Art Museums Expansion</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 11:12 AM</p>
+</div>
+
+<div class="boston-44">
+    <img src="https://www.dropbox.com/scl/fi/c42sof86lkoobp501m8z9/boston-44.jpg?rlkey=cwso5fufoycqbrujrbesgkma1&st=iss3ux3f&raw=1" />
+    <p class="textimage1">Renzo Piano | Harvard Art Museums Expansion</p>
+    <p class="textimage2">Boston, Massachusetts, 06/08/2023 11:13 AM</p>
+</div>
+
+<div class="boston-45">
+    <img src="https://www.dropbox.com/scl/fi/ykr7l1sdr9pdx0r5rmgr2/boston-45.jpg?rlkey=pinwd287n3rd7ftdyyui3xhcc&st=c1chu15y&raw=1" />
+    <p class="textimage1">Le Corbusier | Carpenter Center for the Visual Arts</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 11:36 AM</p>
+</div>
+
+<div class="boston-46">
+    <img src="https://www.dropbox.com/scl/fi/e8tch4496ltfvgbnma2yu/boston-46.jpg?rlkey=5p0bpcfb88xxy9l2zhn2gmmlm&st=8anutv8p&raw=1" />
+    <p class="textimage1">Le Corbusier | Carpenter Center for the Visual Arts</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 11:57 AM</p>
+</div>
+
+<div class="boston-47">
+    <img src="https://www.dropbox.com/scl/fi/7hwdepu7ceozetsh4fo6j/boston-47.jpg?rlkey=rpmhcpferi15pomksoc9o5cnr&st=h2lshaik&raw=1" />
+    <p class="textimage1">Le Corbusier | Carpenter Center for the Visual Arts</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 12:10 PM</p>
+</div>
+
+<div class="boston-48">
+    <img src="https://www.dropbox.com/scl/fi/ad2s8dua6fn78mgmrpcd2/boston-48.jpg?rlkey=q7p1ildxkp4xf3fpxfhetfh35&st=zaj5x678&raw=1" />
+    <p class="textimage1">Le Corbusier | Carpenter Center for the Visual Arts</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 12:18 PM</p>
+</div>
+
+<div class="boston-49">
+    <img src="https://www.dropbox.com/scl/fi/37rtjascy6taa7x44puze/boston-49.jpg?rlkey=fbi32joojgoprfys6d8gljk6d&st=0vp79hn8&raw=1" />
+    <p class="textimage1">Le Corbusier | Carpenter Center for the Visual Arts</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 12:18 PM</p>
+</div>
+
+<div class="boston-50">
+    <img src="https://www.dropbox.com/scl/fi/zf2v0kth3pl3waapzyl5p/boston-50.jpg?rlkey=j5y39nk93k6bbngg00y3yfi60&st=h0f20ade&raw=1" />
+    <p class="textimage1">Le Corbusier | Carpenter Center for the Visual Arts</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 12:19 PM</p>
+</div>
+
+<div class="boston-51">
+    <img src="https://www.dropbox.com/scl/fi/p8a3vzkou5ptbm52ie004/boston-51.jpg?rlkey=dfzm3ebg44na48y9i9yopta5k&st=t7lcoa5w&raw=1" />
+    <p class="textimage1">Daniel Chester French | Statue of John Harvard</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 1:05 PM</p>
+</div>
+
+<div class="boston-52">
+    <img src="https://www.dropbox.com/scl/fi/4d24o6uxfvv56a2j1paon/boston-52.jpg?rlkey=ore8apob3emiux2t61ggy2vjp&st=s1h4mmzh&raw=1" />
+    <p class="textimage1">Machado Silvetti | Harvard University Graduate Student Apartments</p>
+    <p class="textimage2">Boston, Massachusetts, 06/08/2023 1:46 PM</p>
+</div>
+
+<div class="boston-53">
+    <img src="https://www.dropbox.com/scl/fi/e23nwxw0uhbl4jen270bl/boston-53.jpg?rlkey=mqb6tuix9hk50r8oau86cc9ak&st=fi3key8c&raw=1" />
+    <p class="textimage1">Machado Silvetti | Harvard University Graduate Student Apartments</p>
+    <p class="textimage2">Boston, Massachusetts, 06/08/2023 1:46 PM</p>
+</div>
+
+<div class="boston-54">
+    <img src="https://www.dropbox.com/scl/fi/1bg9e36zumx2vig1pkpnz/boston-54.jpg?rlkey=h64387e8ep0sb5h4t79znirmd&st=6t2u5hw4&raw=1" />
+    <p class="textimage1">Philip Johnson | 9 Ash Street</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 2:03 PM</p>
+</div>
+
+<div class="boston-55">
+    <img src="https://www.dropbox.com/scl/fi/3nu710tdt66jrn5qem7j6/boston-55.jpg?rlkey=qnl8ply1e8zxbmt2vqlqxe9zh&st=5lqvmd0v&raw=1" />
+    <p class="textimage1">Eero Saarinen | MIT Chapel</p>
+    <p class="textimage2">Cambridge, Massachusetts, 04/11/2023 12:51 PM</p>
+</div>
+
+<div class="boston-56">
+    <img src="https://www.dropbox.com/scl/fi/m4f6mcb70j6mw0k5qtdtu/boston-56.jpg?rlkey=rkiutyvcfirs2nsasi6a7wur8&st=cuwddwsd&raw=1" />
+    <p class="textimage1">Eero Saarinen | MIT Chapel</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 2:32 PM</p>
+</div>
+
+<div class="boston-57">
+    <img src="https://www.dropbox.com/scl/fi/gs9663v1v4niciy7qzddi/boston-57.jpg?rlkey=z07414it0m1eg6zvie8unpisd&st=3u2yhk0m&raw=1" />
+    <p class="textimage1">Eero Saarinen | MIT Chapel</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 2:32 PM</p>
+</div>
+
+<div class="boston-58">
+    <img src="https://www.dropbox.com/scl/fi/o2ox50uqx46twr2ov1lrl/boston-58.jpg?rlkey=1xz8bx2de3qss7cjbfqjdp0u0&st=4nxe8yp6&raw=1" />
+    <p class="textimage1">Eero Saarinen | MIT Chapel</p>
+    <p class="textimage2">Cambridge, Massachusetts, 07/08/2023 10:53 AM</p>
+</div>
+
+<div class="boston-59">
+    <img src="https://www.dropbox.com/scl/fi/7uhkg6ltl7n0haxurnk0n/boston-59.jpg?rlkey=20kx4ihm5r92oab12fjgie101&st=15xf36ji&raw=1" />
+    <p class="textimage1">Eero Saarinen | MIT Chapel</p>
+    <p class="textimage2">Cambridge, Massachusetts, 07/08/2023 10:49 AM</p>
+</div>
+
+<div class="boston-60">
+    <img src="https://www.dropbox.com/scl/fi/0pov5qwdamlaqcud4gq4o/boston-60.jpg?rlkey=4yksctv5o5fk0rvl6h4k3774s&st=j48we8zj&raw=1" />
+    <p class="textimage1">Eero Saarinen | MIT Chapel</p>
+    <p class="textimage2">Cambridge, Massachusetts, 07/08/2023 10:49 AM</p>
+</div>
+
+<div class="boston-61">
+    <img src="https://www.dropbox.com/scl/fi/n0tgzfkvumsf786yhbypt/boston-61.jpg?rlkey=nqm5k2dydnz6u2hlzxbesrpvc&st=is6d2x2n&raw=1" />
+    <p class="textimage1">Eero Saarinen | Kresge Auditorium</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 3:00 PM</p>
+</div>
+
+<div class="boston-62">
+    <img src="https://www.dropbox.com/scl/fi/v3bexlnto6kb1wfvcfian/boston-62.jpg?rlkey=jym0inx0phavq56l2qvukewks&st=pihqm8f2&raw=1" />
+    <p class="textimage1">Eero Saarinen | Kresge Auditorium</p>
+    <p class="textimage2">Cambridge, Massachusetts, 07/08/2023 10:57 PM</p>
+</div>
+
+<div class="boston-63">
+    <img src="https://www.dropbox.com/scl/fi/149u7vzyemsffdr3c434h/boston-63.jpg?rlkey=48jtehdb969bh0qi6f212umcz&st=aicjculh&raw=1" />
+    <p class="textimage1">Eero Saarinen | Kresge Auditorium</p>
+    <p class="textimage2">Cambridge, Massachusetts, 07/08/2023 10:57 PM</p>
+</div>
+
+<div class="boston-64">
+    <img src="https://www.dropbox.com/scl/fi/7llh69tnbojzbml3lo5qe/boston-64.jpg?rlkey=k9nhshvzuvh0t82doewlfdc90&st=aclf699e&raw=1" />
+    <p class="textimage1">Eero Saarinen | Kresge Auditorium</p>
+    <p class="textimage2">Cambridge, Massachusetts, 07/08/2023 10:57 PM</p>
+</div>
+
+<div class="boston-65">
+    <img src="https://www.dropbox.com/scl/fi/1fjpn50qo02jumxun9dy8/boston-65.jpg?rlkey=w35mnbyyk29a8mhqfstmdc639&st=yy57ovuc&raw=1" />
+    <p class="textimage1">Alvar Aalto | MIT Baker House Dormitory</p>
+    <p class="textimage2">Boston, Massachusetts, 06/08/2023 3:07 PM</p>
+</div>
+
+<div class="boston-66">
+    <img src="https://www.dropbox.com/scl/fi/93vh1tw6i0bny2a449ulz/boston-66.jpg?rlkey=boxx7cka0qwy0r1lx4u0md4gm&st=ujvng9xi&raw=1" />
+    <p class="textimage1">Alvar Aalto | MIT Baker House Dormitory</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 3:09 PM</p>
+</div>
+
+<div class="boston-67">
+    <img src="https://www.dropbox.com/scl/fi/tkqot0l7gje327yymtrzd/boston-67.jpg?rlkey=maai6w7z89zol3xl6yu1xy9j3&st=uc64im9l&raw=1" />
+    <p class="textimage1">Alvar Aalto | MIT Baker House Dormitory</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 3:13 PM</p>
+</div>
+
+<div class="boston-68">
+    <img src="https://www.dropbox.com/scl/fi/vpe92ujguqmq2o63zl6er/boston-68.jpg?rlkey=lwxx6zlniis8uhvcldsr68mir&st=6pv9rwim&raw=1" />
+    <p class="textimage1">Alvar Aalto | MIT Baker House Dormitory</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 3:15 PM</p>
+</div>
+
+<div class="boston-69">
+    <img src="https://www.dropbox.com/scl/fi/wtr0zmxfwmlhvv3fd72g0/boston-69.jpg?rlkey=5asfr44yvu5ddzrnwjxliul2t&st=9ktxqs61&raw=1" />
+    <p class="textimage1">Alvar Aalto | MIT Baker House Dormitory</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 3:15 PM</p>
+</div>
+
+<div class="boston-70">
+    <img src="https://www.dropbox.com/scl/fi/v6l9gpnf8ob7j3y5auqgo/boston-70.jpg?rlkey=ykkgpfollqk6k5ojzz0mfa7qu&st=sd56i8ru&raw=1" />
+    <p class="textimage1">Alvar Aalto | MIT Baker House Dormitory</p>
+    <p class="textimage2">Cambridge, Massachusetts, 07/08/2023 6:15 PM</p>
+</div>
+
+<div class="boston-71">
+    <img src="https://www.dropbox.com/scl/fi/skwv4jn68khqs7sm32orp/boston-71.jpg?rlkey=36s4ktkgbj4j554pjq8eddw46&st=hbfsm3go&raw=1" />
+    <p class="textimage1">Alvar Aalto | MIT Baker House Dormitory</p>
+    <p class="textimage2">Cambridge, Massachusetts, 07/08/2023 6:16 PM</p>
+</div>
+
+<div class="boston-72">
+    <img src="https://www.dropbox.com/scl/fi/vqo68swwafixgg9v0atno/boston-72.jpg?rlkey=6rrsl247pvbao50luu8xuuxac&st=5y1oxuvc&raw=1" />
+    <p class="textimage1">Alvar Aalto | MIT Baker House Dormitory</p>
+    <p class="textimage2">Cambridge, Massachusetts, 07/08/2023 6:16 PM</p>
+</div>
+
+<div class="boston-73">
+    <img src="https://www.dropbox.com/scl/fi/5nin3llhf2dgv7juqrgw6/boston-73.jpg?rlkey=9imho9dyb7gqwlctxblz7ox8x&st=tks8qbox&raw=1" />
+    <p class="textimage1">Alvar Aalto | MIT Baker House Dormitory</p>
+    <p class="textimage2">Cambridge, Massachusetts, 07/08/2023 6:17 PM</p>
+</div>
+
+<div class="boston-74">
+    <img src="https://www.dropbox.com/scl/fi/yba6bmvro113cxnh8w5pb/boston-74.jpg?rlkey=wfl37mv6xzjmz3qyr52apprcb&st=vdl9j51e&raw=1" />
+    <p class="textimage1">Alvar Aalto | MIT Baker House Dormitory</p>
+    <p class="textimage2">Cambridge, Massachusetts, 07/08/2023 6:17 PM</p>
+</div>
+
+<div class="boston-75">
+    <img src="https://www.dropbox.com/scl/fi/p2t14l3ui2iogo8egon8d/boston-75.jpg?rlkey=97ti9mvvm6urgv6z31slg4zmo&st=bzqn40b7&raw=1" />
+    <p class="textimage1">Alvar Aalto | MIT Baker House Dormitory</p>
+    <p class="textimage2">Cambridge, Massachusetts, 07/08/2023 6:24 PM</p>
+</div>
+
+<div class="boston-76">
+    <img src="https://www.dropbox.com/scl/fi/m0qo8wew64c66hz6qan92/boston-76.jpg?rlkey=jaa4qxgpd5uo30a0sx1v00ect&st=i3kj331b&raw=1" />
+    <p class="textimage1">Steven Holl | Simmons Hall</p>
+    <p class="textimage2">Cambridge, Massachusetts, 06/08/2023 5:31 PM</p>
+</div>
+
+<div class="boston-77">
+    <img src="https://www.dropbox.com/scl/fi/xs0xtnm47hy6hbte3kenf/boston-77.jpg?rlkey=a522xi7q1k74a3vf8sumw8r7x&st=sy3zlbid&raw=1" />
+    <p class="textimage1">Lam Partners | MIT Brain and Cognitive Sciences Center</p>
+    <p class="textimage2">Boston, Massachusetts, 07/08/2023 11:47 AM</p>
+</div>
+
+<div class="boston-78">
+    <img src="https://www.dropbox.com/scl/fi/jnrejs9rtg0g8qw79eup9/boston-78.jpg?rlkey=sp75v38quvg5av7dsjli96p5g&st=enfno5qa&raw=1" />
+    <p class="textimage1">Pietro Belluschi, Emery Roth & Sons | One Boston Place</p>
+    <p class="textimage2">Boston, Massachusetts, 13/08/2023 12:06 PM</p>
+</div>
+
+<div class="boston-79">
+    <img src="https://www.dropbox.com/scl/fi/81sm93hloh08j13fwup7n/boston-79.jpg?rlkey=44w4j9y6unhv4n0n17eyzs08r&st=yuy2uyxz&raw=1" />
+    <p class="textimage1">Paul Rudolph | Erich Lindemann Mental Health Center</p>
+    <p class="textimage2">Boston, Massachusetts, 13/08/2023 12:42 PM</p>
+</div>
+
+<div class="boston-80">
+    <img src="https://www.dropbox.com/scl/fi/7dtbq177qcnj2yvzk49zk/boston-80.jpg?rlkey=19vfam9t1rruwjlv444eh7xpz&st=lomt8ag6&raw=1" />
+    <p class="textimage1">Paul Rudolph | Erich Lindemann Mental Health Center</p>
+    <p class="textimage2">Boston, Massachusetts, 13/08/2023 12:43 PM</p>
+</div>
+
+<div class="boston-81">
+    <img src="https://www.dropbox.com/scl/fi/gaylq12a75w4jj4asbjjw/boston-81.jpg?rlkey=yyeju7dy53yegoqa8x3wfv9i2&st=4fd2u4lh&raw=1" />
+    <p class="textimage1">Marcel Breuer | John D. O'Bryant School of Mathematics and Science</p>
+    <p class="textimage2">Boston, Massachusetts, 13/08/2023 1:25 PM</p>
+</div>
+
+<div class="boston-82">
+    <img src="https://www.dropbox.com/scl/fi/ig0sgznn5vi0io4d5074x/boston-82.jpg?rlkey=k2ujngawcz6jkwjq2jwgax4rp&st=f4byeri3&raw=1" />
+    <p class="textimage1">Marcel Breuer | John D. O'Bryant School of Mathematics and Science</p>
+    <p class="textimage2">Boston, Massachusetts, 13/08/2023 1:26 PM</p>
+</div>
+
+<div class="boston-83">
+    <img src="https://www.dropbox.com/scl/fi/sw8sbixpotjkqfm9sh8ck/boston-83.jpg?rlkey=7l8626i5d2y2v2rndi4fnhopq&st=5l0hd0d6&raw=1" />
+    <p class="textimage1">Willard T. Sears | Isabella Stewart Gardner Museum</p>
+    <p class="textimage2">Boston, Massachusetts, 13/08/2023 2:03 PM</p>
+</div>
+
+<div class="boston-84">
+    <img src="https://www.dropbox.com/scl/fi/mkcux49kxz97zbulsvge3/boston-84.jpg?rlkey=asifcqpakbe66n2x6qyesgcvw&st=00fav4wt&raw=1" />
+    <p class="textimage1">Willard T. Sears | Isabella Stewart Gardner Museum</p>
+    <p class="textimage2">Boston, Massachusetts, 13/08/2023 2:06 PM</p>
+</div>
+
+<div class="boston-85">
+    <img src="https://www.dropbox.com/scl/fi/09rrmxe47h1oqhxxxlew7/boston-85.jpg?rlkey=74ce9ta8qwb0c3ekjarfv4ize&st=64aq1r67&raw=1" />
+    <p class="textimage1">Rembrandt | The Storm on the Sea of Galilee</p>
+    <p class="textimage2">Boston, Massachusetts, 13/08/2023 2:21 PM</p>
+</div>
+
+<div class="boston-86">
+    <img src="https://www.dropbox.com/scl/fi/tc6z0aguozm3zswbhsg7z/boston-86.jpg?rlkey=z89hecerg490hbm6huhth2fr2&st=sbkq81vp&raw=1" />
+    <p class="textimage1">Rembrandt | The Storm on the Sea of Galilee</p>
+    <p class="textimage2">Boston, Massachusetts, 13/08/2023 2:21 PM</p>
+</div>
+
+<div class="boston-87">
+    <img src="https://www.dropbox.com/scl/fi/658zzwcxr4nngsazwazes/boston-87.jpg?rlkey=3ujr5dl916lms8o3wvdziz29o&st=kknrbout&raw=1" />
+    <p class="textimage1">Willard T. Sears | Isabella Stewart Gardner Museum</p>
+    <p class="textimage2">Boston, Massachusetts, 13/08/2023 2:37 PM</p>
+</div>
+
+<div class="boston-88">
+    <img src="https://www.dropbox.com/scl/fi/bn5fo5s8c8t0vtadqnpni/boston-88.jpg?rlkey=toxzvk2nk4pzegew4wbkk61oh&st=oc6k711e&raw=1" />
+    <p class="textimage1">Renzo Piano | Expansion of the Isabella Stewart Gardner Museum</p>
+    <p class="textimage2">Boston, Massachusetts, 13/08/2023 3:33 PM</p>
+</div>
+
+<div class="boston-89">
+    <img src="https://www.dropbox.com/scl/fi/ezdj8s35ffve7s5gru3ku/boston-89.jpg?rlkey=prk5k8ooeuf33dzmeyjwhlobz&st=h9en4acs&raw=1" />
+    <p class="textimage1">James McLaughlin | Boston Latin School</p>
+    <p class="textimage2">Boston, Massachusetts, 13/08/2023 2:53 PM</p>
+</div>
+
+<div class="boston-90">
+    <img src="https://www.dropbox.com/scl/fi/c4s5ohyyz6lkahft2c4qj/boston-90.jpg?rlkey=zc3j4wd1qwlep9sz6ciodvlbj&st=ecg9m6r6&raw=1" />
+    <p class="textimage1">James McLaughlin | Boston Latin School</p>
+    <p class="textimage2">Boston, Massachusetts, 13/08/2023 3:53 PM</p>
+</div>
+
+<div class="boston-91">
+    <img src="https://www.dropbox.com/scl/fi/z0y8st9qinqebt589k3p7/boston-91.jpg?rlkey=bu4sm4jopmtlaadlal2opoo64&st=dlfov79v&raw=1" />
+    <p class="textimage1">Henry N. Cobb | John Hancock Tower</p>
+    <p class="textimage2">Boston, Massachusetts, 13/08/2023 5:35 PM</p>
+</div>
+
+
+
+
+
+
+
+      <div class="white"> <img src="https://www.dropbox.com/s/9fm07eh0voiumgd/whitebar.jpg?raw=1"></div>
+
+ <div class="row">
+  <div class="column1">
+    <a style="text-decoration: none; color:#005799" href="https://ericdelitzsch.com/studio">Contact</a><br>
+  </div>
+  <div class="column2">
+    <a style="text-decoration: none; color:#005799" href="https://www.instagram.com/ericdelitzsch.architects/" target="_blank">Instagram</a><br>
+  </div>
+  <div class="column3">
+    <a style="text-decoration: none; color:#005799" href="#top">🡡 Top</a><br>
+  </div>
+</div>
+
+<div class="copyright">
+    <a style="text-decoration: none; color:gray">© eric delitzsch architects</a><br>
+  </div>
+
+  </header> 
+
+<script type="text/javascript">
+
+window.addEventListener("DOMContentLoaded", function(e) {
+  var links = document.getElementsByTagName("A");
+  for(var i=0; i < links.length; i++) {
+    if(!links[i].hash) continue;
+    if(links[i].origin + links[i].pathname != self.location.href) continue;
+    (function(anchorPoint) {
+      links[i].addEventListener("click", function(e) {
+        anchorPoint.scrollIntoView(true);
+        e.preventDefault();
+      }, false);
+    })(document.getElementById(links[i].hash.replace(/#/, "")));
+  }
+}, false);
+
+</script>
+
+<script type="text/javascript">
+
+// Vanilla version of FitVids
+// Still licencened under WTFPL
+//
+// Not as robust and fault tolerant as the jQuery version.
+// It's BYOCSS.
+// And also, I don't support this at all whatsoever.
+
+(function(window, document, undefined) {
+  "use strict";
+
+  // List of Video Vendors embeds you want to support
+  var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+
+  // Select videos
+  var fitVids = document.querySelectorAll(players.join(","));
+
+  // If there are videos on the page...
+  if (fitVids.length) {
+    // Loop through videos
+    for (var i = 0; i < fitVids.length; i++) {
+      // Get Video Information
+      var fitVid = fitVids[i];
+      var width = fitVid.getAttribute("width");
+      var height = fitVid.getAttribute("height");
+      var aspectRatio = height / width;
+      var parentDiv = fitVid.parentNode;
+
+      // Wrap it in a DIV
+      var div = document.createElement("div");
+      div.className = "fitVids-wrapper";
+      div.style.paddingBottom = aspectRatio * 100 + "%";
+      parentDiv.insertBefore(div, fitVid);
+      fitVid.remove();
+      div.appendChild(fitVid);
+
+      // Clear height/width from fitVid
+      fitVid.removeAttribute("height");
+      fitVid.removeAttribute("width");
+    }
+  }
+})(window, document);
+
+
+</script>
+
+
+<a href="https://ericdelitzsch.com/" class="title" id="title"><b>eric delitzsch </b>architects<a/></li>
+<div class="topnav" id="myTopnav">
+<a href="https://ericdelitzsch.com/work">work</a>
+  <a href="https://ericdelitzsch.com/drawings">drawings</a>
+  <a href="https://ericdelitzsch.com/photography">photography</a>
+  <a href="https://ericdelitzsch.com/studio">studio</a>
+  <a href="studio"></a>  
+</div>
+
+<div class="menua" id="mymenua">
+  <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">
+    
+  <div class="container" onclick="myFunction1(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  </div>
+  
+  </a>
+  
+</div>
+
+<div id="myNav" class="overlay">
+</div>
+
+<script>
+    // Defining custom functions
+    function menu1(){
+        var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+     
+    var checkFlag = true;
+function fondo(){
+  if(checkFlag == true){
+  document.getElementById("myNav").style.display = "block";
+  }else{
+  document.getElementById("myNav").style.display = "none";
+  }
+  checkFlag = !checkFlag;
+}
+
+
+function noscroll(){
+  if(checkFlag == true){
+  document.body.style.overflow="scroll";
+  }else{
+  document.body.style.overflow="hidden";
+  }
+  }
+
+    function color(){
+  if(checkFlag == true){
+  document.getElementById("title").style.color = 'black';
+  }else{
+  document.getElementById("title").style.color = 'white';
+  }
+  }
+
+    
+ 
+    // Selecting button element
+    var btn = document.getElementById("mymenua");
+     
+    // Assigning event listeners to the button
+    btn.addEventListener("click", menu1);
+    btn.addEventListener("click", fondo);
+    btn.addEventListener("click", noscroll);
+    btn.addEventListener("click", color);
+    </script>
+
+
+
+</body>
+</html>
