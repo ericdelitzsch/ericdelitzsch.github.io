@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chicago | Eric Delitzsch Architects</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.dropbox.com/s/i7k9nwvcmirmnlp/icon.png?raw=1">
+  <link rel="apple-touch-icon" sizes="128x128" href="https://www.dropbox.com/s/28ubqe7jfnh6e44/icon.jpg?raw=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" CONTENT="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>history.scrollRestoration = "manual"</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+  /* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 10px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+    display:none;
+}
+
+html {
+  scroll-behavior: smooth;
+
+
+}
+
+body, html {
+  color: black;
+  font-size: 2.9vh;
+  font-family: raleway;
+  margin: 0;
+
+}
+{
+  webkit-overflow-scrolling: touch;
+}
+{
+
+-webkit-font-smoothing: antialiased;
+
+}
+
+.copyright{
+  font-size: 13px;
+  text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    position: absolute;
+    top: 10.5%;
+    right: 6.5%;
+    color: black;
+    text-decoration: none;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.5vh;
+  z-index: -1;
+}
+
+.topnav a:hover {
+  color: #BFBFBF}
+
+.topnav .icon {
+  display: none;
+
+}
+
+.menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 84%;
+  top: 12%;
+  
+  }
+
+.title {
+      position: absolute;
+      left: 10%;
+      top: 12%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.5vh;
+
+    }
+
+    ul li a:hover {
+    Color: white;
+
+    }
+
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+    color: white;
+    padding-top: 30px;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .copyright {
+    font-size: 13px;
+  }
+  .title {
+      position: absolute;
+      left: 10%;
+      top: 7%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.75vh;
+
+    }
+
+    .menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 85%;
+  top: 7.6%;
+  
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: absolute;
+    left: 6%;
+    top: 9%;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    line-height: 40%;
+
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar a:not(:first-child) {display: none;}
+  .topbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar.responsive {position: relative;}
+  .topbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ 
+      }
+
+      @media screen and (min-width:700px) {
+      .menub {
+      display:none;
+      float: right;
+      position: absolute;
+      right: 50%;
+      top:50%;
+      
+      }
+
+      
+      }
+
+header {
+  position: absolute;
+  margin: 12vw 12vw 1vw 12vw;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+
+}
+
+header div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 100%;
+  height: auto;
+  margin: .5vw;
+  margin:1vw auto;
+  
+
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+  position: absolute;
+  top: 18%;
+  margin:10px 10px 20px 10px;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+  z-index: -2;
+}
+
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0 0.65em;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+#sections {
+  font-size: 17px;
+  padding: 70px 0px 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+  
+#sections .main {
+  padding-right: 20px;
+  padding-top: 15px;
+  -webkit-flex: 2 1 25%;
+  flex: 2 1 25%;
+  -webkit-order: 2;
+  order: 2;
+}
+
+#sections .sub-section-1 {
+  padding-right: 200px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 90%;
+  -webkit-order: 1;
+  order: 1;
+}
+
+#sections .sub-section-2 {
+  padding-left: 10px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 3;
+  order: 3;
+}
+@media all and (max-width: 1200px)
+{
+  #sections {
+    padding: 60px 60px;
+    font-size: 20px;
+  }
+
+
+@media all and (max-width: 1000px)
+{
+  #sections {
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  
+  #sections > .main, #sections > .sub-section-1, #sections > .sub-section-2 {
+    /* For mobile phones, each section should be on a line of it's own at 100% width. */
+    width: 100%;
+    -webkit-order: 0;
+            order: 0;
+  }
+  
+  #sections .main {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-1 {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-2 {
+    padding-left: 0;
+  }
+}
+}
+
+.column1 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+  }
+
+@media all and (max-width: 1000px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 30%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+@media all and (min-width: 1800px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 33%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 4:3 ratio */
+    padding-top: 0px; 
+    height: 0px;
+    overflow: hidden;
+}
+
+.video-wrapper-narrow {
+    padding-bottom: 40%;
+}
+
+iframe,object,embed,video,.videoWrapper,.video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-js, img.vjs-poster {
+    width: 50% !important;
+    height: 100% !important; //these need !important because IE wants to set height/width to 100px
+    max-width: 100%;
+}
+
+
+
+ .textimage1 { 
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+ .textimage15 { 
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+
+.textimage2 {
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+
+.chicago-1 { 
+    width: 27vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.chicago-2 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 70vw;
+}
+.chicago-3 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 50vw;
+}
+.chicago-4 { 
+    width: 27vw;
+    float: right; 
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 50vw;
+}
+.chicago-5 { 
+    width: 27vw;
+    float: left; 
+    margin-left: 1vw;    
+    position: relative;
+    margin-top: 47vw;
+}
+.chicago-6 { 
+    width: 27vw;
+    float: right; 
+    margin-right: 7vw;    
+    position: relative;
+    margin-top: 33vw;
+}
+.chicago-7 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 2vw;    
+    position: relative;
+    margin-top: 26vw;
+}
+.chicago-8 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 26vw;
+}
+.chicago-9 { 
+    width: 27vw;
+    float: left; 
+    margin-left: 4vw;    
+    position: relative;
+    margin-top: 29vw;
+}
+.chicago-10 { 
+    width: 27vw;
+    float: right; 
+    margin-right: 8vw;    
+    position: relative;
+    margin-top: 28vw;
+}
+.chicago-11 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 65vw;
+}
+.chicago-12 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 70vw;
+}
+.chicago-13 { 
+    width: 27vw;
+    float: left; 
+    margin-left: 2vw;    
+    position: relative;
+    margin-top: 40vw;
+}
+.chicago-14 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 7vw;    
+    position: relative;
+    margin-top: 55vw;
+}
+.chicago-15 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 6vw;    
+    position: relative;
+    margin-top: 46vw;
+}
+.chicago-16 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 35vw;
+}
+.chicago-17 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 4vw;    
+    position: relative;
+    margin-top: 60vw;
+}
+.chicago-18 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 6vw;    
+    position: relative;
+    margin-top: 34vw;
+}
+.chicago-19 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 35vw;
+}
+.chicago-20 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 8vw;    
+    position: relative;
+    margin-top: 33vw;
+}
+.chicago-21 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 50vw;
+}
+.chicago-22 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 20vw;
+}
+.chicago-23 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 7vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.chicago-24 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 1vw;    
+    position: relative;
+    margin-top: 60vw;
+}
+.chicago-25 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 15vw;    
+    position: relative;
+    margin-top: 60vw;
+}
+.chicago-26 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 1vw;    
+    position: relative;
+    margin-top: 70vw;
+}
+.chicago-27 { 
+    width: 40vw;
+    float: left; 
+    margin-left: 1vw;    
+    position: relative;
+    margin-top: 30vw;
+}
+.chicago-28 { 
+    width: 27vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 22vw;
+}
+.chicago-29 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 4vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.chicago-30 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 58vw;
+}
+.chicago-31 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 2vw;    
+    position: relative;
+    margin-top: 65vw;
+}
+.chicago-32 { 
+    width: 27vw;
+    float: right; 
+    margin-right: 7vw;    
+    position: relative;
+    margin-top: 60vw;
+}
+.chicago-33 { 
+    width: 27vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 60vw;
+}
+.chicago-34 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 60vw;
+}
+.chicago-35 { 
+    width: 27vw;
+    float: left; 
+    margin-left: 4vw;    
+    position: relative;
+    margin-top: 65vw;
+}
+.chicago-36 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 7vw;    
+    position: relative;
+    margin-top: 25vw;
+}
+.chicago-37 { 
+    width: 40vw;
+    float: left; 
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.chicago-38 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 1vw;    
+    position: relative;
+    margin-top: 60vw;
+}
+.chicago-39 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 35vw;
+}
+.chicago-40 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 45vw;
+}
+.chicago-41 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 40vw;
+}
+.chicago-42 { 
+    width: 27vw;
+    float: right; 
+    margin-right: 6vw;    
+    position: relative;
+    margin-top: 32vw;
+}
+.chicago-43 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 1vw;    
+    position: relative;
+    margin-top: 33vw;
+}
+.chicago-44 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 32vw;
+}
+.chicago-45 { 
+    width: 27vw;
+    float: left; 
+    margin-left: 1vw;    
+    position: relative;
+    margin-top: 60vw;
+}
+.chicago-46 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 40vw;
+}
+.chicago-47 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 40vw;
+}
+
+
+
+
+@media all and (max-width: 1100px)
+{
+
+ .textimage1 {
+    text-align: right;
+      margin-top: 2.5vw;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+ .textimage15 {
+    text-align: right;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+.chicago-1 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-3 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-4 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-5 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-6 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-7 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-8 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-9 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-10 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-11 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-12 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-13 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-14 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-15 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-16 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-17 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-18 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-19 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-20 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-21 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-22 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-23 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-24 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-25 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-26 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-27 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-28 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-29 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-30 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-31 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-32 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-33 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-34 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-35 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-36 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-37 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-38 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-39 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-40 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-41 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-42 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-43 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-44 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-45 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-46 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.chicago-47 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+
+}      
+
+.bar1, .bar2 {
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.sticks10{
+    width: 80vh;
+  margin-top: 1vw;   
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-2px, 3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.change .bar2 {
+  transform: rotate(45deg) translate(-1px, -3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<header>
+
+
+
+<div class="chicago-1">
+    <img src="https://www.dropbox.com/scl/fi/7as9gzskqzxqc0mw3u4m6/chicago-1.jpg?rlkey=zanpbqscs7iozbijm7k8n6ywg&st=34os1u45&raw=1" />
+    <p class="textimage1">Left, Loebl Schlossman & Hackl | Two Prudential Plaza</p>
+    <p class="textimage15">Right, Edward Durell Stone | Aon Center</p>
+    <p class="textimage2">Chicago, Illinois, 29/08/2024 5:55 PM</p>
+</div>
+
+<div class="chicago-2">
+    <img src="https://www.dropbox.com/scl/fi/w5nynuij43ptcgwvywpms/chicago-2.jpg?rlkey=0seyfiy7ahn2ehqbbc9xhyslp&st=m931iimn&raw=1" />
+    <p class="textimage1">Edward Durell Stone | Aon Center</p>
+    <p class="textimage2">Chicago, Illinois, 29/08/2024 5:55 PM</p>
+</div>
+
+<div class="chicago-3">
+    <img src="https://www.dropbox.com/scl/fi/9gjusd34piwdyx4a6qdsp/chicago-3.jpg?rlkey=hg1z79ajp2ixx53hg6w2r22ta&st=f7lu24bu&raw=1" />
+    <p class="textimage1">Studio Gang | The St. Regis Chicago</p>
+    <p class="textimage2">Chicago, Illinois, 29/08/2024 5:55 PM</p>
+</div>
+
+<div class="chicago-4">
+    <img src="https://www.dropbox.com/scl/fi/tcoi6vqga5sf7jebgkwio/chicago-4.jpg?rlkey=cdaxxl89hi75zgjonxl7q4srx&st=w0sttp8l&raw=1" />
+    <p class="textimage1">Bertrand Goldberg | Marina City</p>
+    <p class="textimage2">Chicago, Illinois, 29/08/2024 6:17 PM</p>
+</div>
+
+<div class="chicago-5">
+    <img src="https://www.dropbox.com/scl/fi/3ryzj7fqk5h5qe2sswrc9/chicago-5.jpg?rlkey=ujw7xd3tjam6m9ak29dbpw4df&st=enjr2sdc&raw=1" />
+    <p class="textimage1">Bertrand Goldberg | Marina City</p>
+    <p class="textimage2">Chicago, Illinois, 29/08/2024 6:18 PM</p>
+</div>
+
+<div class="chicago-6">
+    <img src="https://www.dropbox.com/scl/fi/46crnu2ajngruin1gu4sp/chicago-6.jpg?rlkey=rdgrkgh1iwxqlx395sfhktk2z&st=2d5rnc24&raw=1" />
+    <p class="textimage1">Bertrand Goldberg | Marina City</p>
+    <p class="textimage2">Chicago, Illinois, 29/08/2024 6:19 PM</p>
+</div>
+
+<div class="chicago-7">
+    <img src="https://www.dropbox.com/scl/fi/8240vt2h25jrohusa0x1c/chicago-7.jpg?rlkey=booegvedd23ptawqbuqncdg16&st=9r86xej5&raw=1" />
+    <p class="textimage1">Bertrand Goldberg | Marina City</p>
+    <p class="textimage2">Chicago, Illinois, 29/08/2024 6:22 PM</p>
+</div>
+
+<div class="chicago-8">
+    <img src="https://www.dropbox.com/scl/fi/rdd1qvxopt1rb8m9w7wq0/chicago-8.jpg?rlkey=71hi130dkrjx2jegc0pl274mc&st=f469lpra&raw=1" />
+    <p class="textimage1">Bertrand Goldberg | Marina City</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 8:36 AM</p>
+</div>
+
+<div class="chicago-9">
+    <img src="https://www.dropbox.com/scl/fi/nexdy9zemg0rpnonsjip2/chicago-9.jpg?rlkey=no1j8rrp8ko9dck6zsq52kt9d&st=7iz3fgia&raw=1" />
+    <p class="textimage1">Bertrand Goldberg | Marina City</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 8:40 AM</p>
+</div>
+
+<div class="chicago-10">
+    <img src="https://www.dropbox.com/scl/fi/zvs30www1sc3uhsvxqldh/chicago-10.jpg?rlkey=3dbjzqkyx7mdxahwuqj0b85nu&st=5u114bug&raw=1" />
+    <p class="textimage1">Bertrand Goldberg | Marina Cit<ym/p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 8:43 AM</p>
+</div>
+
+<div class="chicago-11">
+    <img src="https://www.dropbox.com/scl/fi/1v4jzj87y8qlu2ue39b57/chicago-11.jpg?rlkey=jbxh3hw39dvbyulmnucu04fyq&st=znos5pv0&raw=1" />
+    <p class="textimage1">Left, Jarvis Hunt | Michigan Boulevard Building</p>
+    <p class="textimage15">Right, Anish Kapoor | Cloud Gate</p>
+    <p class="textimage2">Chicago, Illinois, 29/08/2024 10:37 AM</p>
+</div>
+
+<div class="chicago-12">
+    <img src="https://www.dropbox.com/scl/fi/0b5r0oxzs0cklfd0e0m5n/chicago-12.jpg?rlkey=i2ra1nefu58vfdlcebqji118o&st=hy1482u0&raw=1" />
+    <p class="textimage1">Graham, Anderson, Probst & White | The Wrigley Building</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 10:59 AM</p>
+</div>
+
+<div class="chicago-13">
+    <img src="https://www.dropbox.com/scl/fi/vvai4irdlj7ct16zzhphd/chicago-13.jpg?rlkey=l7vo6y4dpqrsyayawazj48ons&st=hxilu1ix&raw=1" />
+    <p class="textimage1">Graham, Anderson, Probst & White | The Wrigley Building</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 8:56 AM</p>
+</div>
+
+<div class="chicago-14">
+    <img src="https://www.dropbox.com/scl/fi/w70pqy3ug26ghza2ix3ap/chicago-14.jpg?rlkey=8snurg01kbp4m6abzj9ixp0d2&st=xqu2s4ak&raw=1" />
+    <p class="textimage1">Skidmore, Owings & Merrill | Willis Tower</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 10:05 AM</p>
+</div>
+
+<div class="chicago-15">
+    <img src="https://www.dropbox.com/scl/fi/t96sw5ttpmmake0u6twh0/chicago-15.jpg?rlkey=0xweailnapd2vut5uj332j023&st=lshcksjb&raw=1" />
+    <p class="textimage1">Skidmore, Owings & Merrill | Willis Tower</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 10:05 AM</p>
+</div>
+
+<div class="chicago-16">
+    <img src="https://www.dropbox.com/scl/fi/sxtzllso2xyx5y8hu3ad2/chicago-16.jpg?rlkey=o1ieranliymhuvn4xj5wzw0go&st=1q2nb2w0&raw=1" />
+    <p class="textimage1">Bertrand Goldberg | River City</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 10:06 AM</p>
+</div>
+
+<div class="chicago-17">
+    <img src="https://www.dropbox.com/scl/fi/iiekbvb3fe0ixinr1azg5/chicago-17.jpg?rlkey=af4e8vqap6kyhxcbr12snhp5b&st=n1vmmu99&raw=1" />
+    <p class="textimage1">Bertrand Goldberg | River City</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 10:25 AM</p>
+</div>
+
+<div class="chicago-18">
+    <img src="https://www.dropbox.com/scl/fi/q60qzid5xr9vi5lhy190m/chicago-18.jpg?rlkey=fhyqs3noqr4eor7jzsh8i7pme&st=v2ff4ke8&raw=1" />
+    <p class="textimage1">Joseph Strauss | St. Charles Air Line Bridge</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 10:13 AM</p>
+</div>
+
+<div class="chicago-19">
+    <img src="https://www.dropbox.com/scl/fi/j5b3ohr2bmmvb26w0hq8s/chicago-19.jpg?rlkey=juqi6r88ttnbxmgedw0tarol4&st=im4kqwzj&raw=1" />
+    <p class="textimage1">Waddell & Harrington | Canal Street Railroad Bridge</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 10:17 AM</p>
+</div>
+
+<div class="chicago-20">
+    <img src="https://www.dropbox.com/scl/fi/9mw7tzx0muqeuhwisjnno/chicago-20.jpg?rlkey=pxysv607rteh5t1qatptk28ch&st=q4vt1er8&raw=1" />
+    <p class="textimage1">American Bridge Company | Harrison Street Bridge</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 10:29 AM</p>
+</div>
+
+<div class="chicago-21">
+    <img src="https://www.dropbox.com/scl/fi/qvmifi7945loqrsam9lsd/chicago-21.jpg?rlkey=6ksswjkr1g0m3h29hjggqv57b&st=jn35wgnt&raw=1" />
+    <p class="textimage1">Studio Gang | The St. Regis Chicago</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 10:54 AM</p>
+</div>
+
+<div class="chicago-22">
+    <img src="https://www.dropbox.com/scl/fi/edjtg185838p9qtdd5lvs/chicago-22.jpg?rlkey=dm6ums2x9oe5he2fuyimbyepk&st=rjwddc23&raw=1" />
+    <p class="textimage1">Studio Gang | The St. Regis Chicago</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 10:55 AM</p>
+</div>
+
+<div class="chicago-23">
+    <img src="https://www.dropbox.com/scl/fi/a366wg7itez57n9pooo03/chicago-23.jpg?rlkey=wzxuhp7ipr5utkfufx3xu55gb&st=zk0eatad&raw=1" />
+    <p class="textimage1">Chicago River</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 10:15 AM</p>
+</div>
+
+<div class="chicago-24">
+    <img src="https://www.dropbox.com/scl/fi/6hnpi3pn9iazbtecg3sgm/chicago-24.jpg?rlkey=36jisg9e1i1fr84f4pl469k79&st=ufpg81ee&raw=1" />
+    <p class="textimage1">Skidmore, Owings & Merrill | Cook County Administration Building</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 10:22 AM</p>
+</div>
+
+<div class="chicago-25">
+    <img src="https://www.dropbox.com/scl/fi/3049rep8b5es312cra7dr/chicago-25.jpg?rlkey=86dfmndghbxkwgzjpt4v6ygne&st=db62uch6&raw=1" />
+    <p class="textimage1">Magnusson Klemencic Associates | Wabash Building</p>
+    <p class="textimage2">Chicago, Illinois, 30/08/2024 10:30 PM</p>
+</div>
+
+<div class="chicago-26">
+    <img src="https://www.dropbox.com/scl/fi/w82vnyp5wbelcbeop71bc/chicago-26.jpg?rlkey=1fxg1vuf0j6zxsi1pym14bu6x&st=pnojemih&raw=1" />
+    <p class="textimage1">Mies van der Rohe | 860-880 Lake Shore Drive</p>
+    <p class="textimage2">Chicago, Illinois, 01/09/2024 11:40 AM</p>
+</div>
+
+<div class="chicago-27">
+    <img src="https://www.dropbox.com/scl/fi/w0jacclotth0brj48csu8/chicago-27.jpg?rlkey=89wcqla9dbk3jahe8g03n7kwe&st=k64rsi63&raw=1" />
+    <p class="textimage1">Mies van der Rohe | 860-880 Lake Shore Drive</p>
+    <p class="textimage2">Chicago, Illinois, 01/09/2024 11:41 AM</p>
+</div>
+
+<div class="chicago-28">
+    <img src="https://www.dropbox.com/scl/fi/8udkqot6ze4262a2p8867/chicago-28.jpg?rlkey=ec7rwoypyolzox7dje3nqe7tc&st=zuzupgon&raw=1" />
+    <p class="textimage1">Mies van der Rohe | 860-880 Lake Shore Drive</p>
+    <p class="textimage2">Chicago, Illinois, 01/09/2024 11:42 AM</p>
+</div>
+
+<div class="chicago-29">
+    <img src="https://www.dropbox.com/scl/fi/mii1sb12yy2pt1nog3r1z/chicago-29.jpg?rlkey=3r5si49isjfrmcg8feug8zf5s&st=qjugktrb&raw=1" />
+    <p class="textimage1">Mies van der Rohe | 860-880 Lake Shore Drive</p>
+    <p class="textimage2">Chicago, Illinois, 01/09/2024 11:43 AM</p>
+</div>
+
+<div class="chicago-30">
+    <img src="https://www.dropbox.com/scl/fi/zf7114dl0uf5ea6gm3q6g/chicago-30.jpg?rlkey=7h8kxz9x164nvsalhzi9924tx&st=xtrfcydt&raw=1" />
+    <p class="textimage1">Adrian Smith | Trump International Hotel and Tower</p>
+    <p class="textimage2">Chicago, Illinois, 01/09/2024 12:03 PM</p>
+</div>
+
+<div class="chicago-31">
+    <img src="https://www.dropbox.com/scl/fi/7k1ox0ut7pylkwk0j74s9/chicago-31.jpg?rlkey=j6oowozdk253t090ddo065ezu&st=iebrg2sg&raw=1" />
+    <p class="textimage1">Renzo Piano | Modern Wing at the Art Institute of Chicago</p>
+    <p class="textimage2">Chicago, Illinois, 01/09/2024 2:20 PM</p>
+</div>
+
+<div class="chicago-32">
+    <img src="https://www.dropbox.com/scl/fi/ap5fha9qae4c31g0vfrk1/chicago-32.jpg?rlkey=zj5tme18pc3wvyddf8v19fg71&st=7vkttan2&raw=1" />
+    <p class="textimage1">Frank Gehry | Jay Pritzker Pavilion</p>
+    <p class="textimage2">Chicago, Illinois, 01/09/2024 2:44 PM</p>
+</div>
+
+<div class="chicago-33">
+    <img src="https://www.dropbox.com/scl/fi/adl2xr6md6ztvixgc94is/chicago-33.jpg?rlkey=xgv219yzr6a1wj7g7kur035wv&st=wa024ug2&raw=1" />
+    <p class="textimage1">Buildings on the corner of W Adams St & S Dearborn St</p>
+    <p class="textimage2">Chicago, Illinois, 01/09/2024 3:31 PM</p>
+</div>
+
+<div class="chicago-34">
+    <img src="https://www.dropbox.com/scl/fi/ji9quyxlsmxmf1dclmmcy/chicago-34.jpg?rlkey=6kowc0ck8xonzwlppwobo1jdp&st=1sgq526s&raw=1" />
+    <p class="textimage1">Buildings on the corner of W Adams St & S Dearborn St</p>
+    <p class="textimage2">Chicago, Illinois, 01/09/2024 3:32 PM</p>
+</div>
+
+<div class="chicago-35">
+    <img src="https://www.dropbox.com/scl/fi/00dbzp1pk95xvzirr5dip/chicago-35.jpg?rlkey=2fwde6tr7p2jtoobkuj47uo5b&st=22uaumyy&raw=1" />
+    <p class="textimage1">Mies van der Rohe | Chicago Federal Center</p>
+    <p class="textimage15">Sculpture, Alexander Calder | Flamingo</p>
+    <p class="textimage2">Chicago, Illinois, 01/09/2024 3:36 PM</p>
+</div>
+
+<div class="chicago-36">
+    <img src="https://www.dropbox.com/scl/fi/4pa8ndbe16bxq7jt4mu56/chicago-36.jpg?rlkey=5wjn4nyauaqh1e2d1nl5p6e4d&st=iua6wr3m&raw=1" />
+    <p class="textimage1">Mies van der Rohe | Chicago Federal Center</p>
+    <p class="textimage15">Sculpture, Alexander Calder | Flamingo</p>
+    <p class="textimage2">Chicago, Illinois, 16/09/2021 1:23 PM</p>
+</div>
+
+<div class="chicago-37">
+    <img src="https://www.dropbox.com/scl/fi/r87u7ycrwlulxshsrb53g/chicago-37.jpg?rlkey=0lj9tj5vtumtxfgkzmoxdng69&st=3xi38pvv&raw=1" />
+    <p class="textimage1">Frank Lloyd Wright | Oak Park Home & Studio</p>
+    <p class="textimage2">Chicago, Illinois, 17/09/2021 2:35 PM</p>
+</div>
+
+<div class="chicago-38">
+    <img src="https://www.dropbox.com/scl/fi/b11plmheloszjisqtpvp2/chicago-38.jpg?rlkey=a66o08sys6x6qibc7to20k9j2&st=nb0rdu0e&raw=1" />
+    <p class="textimage1">Frank Lloyd Wright | Unity Temple</p>
+    <p class="textimage2">Chicago, Illinois, 17/09/2021 2:46 PM</p>
+</div>
+
+<div class="chicago-39">
+    <img src="https://www.dropbox.com/scl/fi/kvhm7v19hfdqat1ecrigy/chicago-39.jpg?rlkey=1isedc1rmwjhza1xj3eujf6ba&st=rx0s872d&raw=1" />
+    <p class="textimage1">Frank Lloyd Wright | Unity Temple</p>
+    <p class="textimage2">Chicago, Illinois, 17/09/2021 2:48 PM</p>
+</div>
+
+<div class="chicago-40">
+    <img src="https://www.dropbox.com/scl/fi/3f5mbmk7tc6wovl02po6u/chicago-40.jpg?rlkey=k10q8s6pi9xcw8om2hcmq6dwm&st=ouxmjjk5&raw=1" />
+    <p class="textimage1">Frank Lloyd Wright | Frederick C. Robie House</p>
+    <p class="textimage2">Chicago, Illinois, 18/09/2021 11:06 AM</p>
+</div>
+
+<div class="chicago-41">
+    <img src="https://www.dropbox.com/scl/fi/mam9yqxklxri98quf8z7u/chicago-41.jpg?rlkey=242cx0kpf43hpvznj90u7mr35&st=m515emw3&raw=1" />
+    <p class="textimage1">Frank Lloyd Wright | Frederick C. Robie House</p>
+    <p class="textimage2">Chicago, Illinois, 18/09/2021 11:34 AM</p>
+</div>
+
+<div class="chicago-42">
+    <img src="https://www.dropbox.com/scl/fi/8wkqaftgiegf8n2xyiez6/chicago-42.jpg?rlkey=849pa8h3vaaysrtehjrov2yzk&st=uun3vuju&raw=1" />
+    <p class="textimage1">Frank Lloyd Wright | Frederick C. Robie House</p>
+    <p class="textimage2">Chicago, Illinois, 18/09/2021 11:35 AM</p>
+</div>
+
+<div class="chicago-43">
+    <img src="https://www.dropbox.com/scl/fi/1eooc540hzx8z21xcioil/chicago-43.jpg?rlkey=7sy6lssle8l8qcz9r47sy3r69&st=7i2w3674&raw=1" />
+    <p class="textimage1">Frank Lloyd Wright | Frederick C. Robie House</p>
+    <p class="textimage2">Chicago, Illinois, 18/09/2021 11:37 AM</p>
+</div>
+
+<div class="chicago-44">
+    <img src="https://www.dropbox.com/scl/fi/ayb7v18svbkf5rj73u65c/chicago-44.jpg?rlkey=yaw2wh24gch16ejhyvwpu7lyw&st=kfuipnxb&raw=1" />
+    <p class="textimage1">Ludwig Mies van der Rohe | S. R. Crown Hall</p>
+    <p class="textimage2">Chicago, Illinois, 18/09/2021 12:47 PM</p>
+</div>
+
+<div class="chicago-45">
+    <img src="https://www.dropbox.com/scl/fi/rtr9sy4xds0hef1vcwxff/chicago-45.jpg?rlkey=qh3dbjmvwj2xhgtk95emk0uqu&st=8icpdvwl&raw=1" />
+    <p class="textimage1">Bertrand Goldberg | Marina City</p>
+    <p class="textimage2">Chicago, Illinois, 31/08/2024 7:13 PM</p>
+</div>
+
+<div class="chicago-46">
+    <img src="https://www.dropbox.com/scl/fi/03wvdtexl16jwz5efwte6/chicago-46.jpg?rlkey=6debmle43thndwllilctn9q7o&st=35939qqa&raw=1" />
+    <p class="textimage1">‎</p>
+    <p class="textimage2">Chicago, Illinois, 01/09/2024 7:21 PM</p>
+</div>
+
+<div class="chicago-47">
+    <img src="https://www.dropbox.com/scl/fi/x1ut2cis279oiabspfld5/chicago-47.jpg?rlkey=5xfmnwevg1yayivgnhydkqb8j&st=bxwvtc8z&raw=1" />
+    <p class="textimage1">‎</p>
+    <p class="textimage2">Chicago, Illinois, 01/09/2024 7:53 PM</p>
+</div>
+
+
+
+
+      <div class="white"> <img src="https://www.dropbox.com/s/9fm07eh0voiumgd/whitebar.jpg?raw=1"></div>
+
+ <div class="row">
+  <div class="column1">
+    <a style="text-decoration: none; color:#005799" href="https://ericdelitzsch.com/studio">Contact</a><br>
+  </div>
+  <div class="column2">
+    <a style="text-decoration: none; color:#005799" href="https://www.instagram.com/ericdelitzsch.architects/" target="_blank">Instagram</a><br>
+  </div>
+  <div class="column3">
+    <a style="text-decoration: none; color:#005799" href="#top">🡡 Top</a><br>
+  </div>
+</div>
+
+<div class="copyright">
+    <a style="text-decoration: none; color:gray">© eric delitzsch architects</a><br>
+  </div>
+
+  </header> 
+
+<script type="text/javascript">
+
+window.addEventListener("DOMContentLoaded", function(e) {
+  var links = document.getElementsByTagName("A");
+  for(var i=0; i < links.length; i++) {
+    if(!links[i].hash) continue;
+    if(links[i].origin + links[i].pathname != self.location.href) continue;
+    (function(anchorPoint) {
+      links[i].addEventListener("click", function(e) {
+        anchorPoint.scrollIntoView(true);
+        e.preventDefault();
+      }, false);
+    })(document.getElementById(links[i].hash.replace(/#/, "")));
+  }
+}, false);
+
+</script>
+
+<script type="text/javascript">
+
+// Vanilla version of FitVids
+// Still licencened under WTFPL
+//
+// Not as robust and fault tolerant as the jQuery version.
+// It's BYOCSS.
+// And also, I don't support this at all whatsoever.
+
+(function(window, document, undefined) {
+  "use strict";
+
+  // List of Video Vendors embeds you want to support
+  var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+
+  // Select videos
+  var fitVids = document.querySelectorAll(players.join(","));
+
+  // If there are videos on the page...
+  if (fitVids.length) {
+    // Loop through videos
+    for (var i = 0; i < fitVids.length; i++) {
+      // Get Video Information
+      var fitVid = fitVids[i];
+      var width = fitVid.getAttribute("width");
+      var height = fitVid.getAttribute("height");
+      var aspectRatio = height / width;
+      var parentDiv = fitVid.parentNode;
+
+      // Wrap it in a DIV
+      var div = document.createElement("div");
+      div.className = "fitVids-wrapper";
+      div.style.paddingBottom = aspectRatio * 100 + "%";
+      parentDiv.insertBefore(div, fitVid);
+      fitVid.remove();
+      div.appendChild(fitVid);
+
+      // Clear height/width from fitVid
+      fitVid.removeAttribute("height");
+      fitVid.removeAttribute("width");
+    }
+  }
+})(window, document);
+
+
+</script>
+
+
+<a href="https://ericdelitzsch.com/" class="title" id="title"><b>eric delitzsch </b>architects<a/></li>
+<div class="topnav" id="myTopnav">
+<a href="https://ericdelitzsch.com/work">work</a>
+  <a href="https://ericdelitzsch.com/drawings">drawings</a>
+  <a href="https://ericdelitzsch.com/photography">photography</a>
+  <a href="https://ericdelitzsch.com/studio">studio</a>
+  <a href="studio"></a>  
+</div>
+
+<div class="menua" id="mymenua">
+  <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">
+    
+  <div class="container" onclick="myFunction1(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  </div>
+  
+  </a>
+  
+</div>
+
+<div id="myNav" class="overlay">
+</div>
+
+<script>
+    // Defining custom functions
+    function menu1(){
+        var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+     
+    var checkFlag = true;
+function fondo(){
+  if(checkFlag == true){
+  document.getElementById("myNav").style.display = "block";
+  }else{
+  document.getElementById("myNav").style.display = "none";
+  }
+  checkFlag = !checkFlag;
+}
+
+
+function noscroll(){
+  if(checkFlag == true){
+  document.body.style.overflow="scroll";
+  }else{
+  document.body.style.overflow="hidden";
+  }
+  }
+
+    function color(){
+  if(checkFlag == true){
+  document.getElementById("title").style.color = 'black';
+  }else{
+  document.getElementById("title").style.color = 'white';
+  }
+  }
+
+    
+ 
+    // Selecting button element
+    var btn = document.getElementById("mymenua");
+     
+    // Assigning event listeners to the button
+    btn.addEventListener("click", menu1);
+    btn.addEventListener("click", fondo);
+    btn.addEventListener("click", noscroll);
+    btn.addEventListener("click", color);
+    </script>
+
+
+
+</body>
+</html>
