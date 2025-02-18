@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Austin | Eric Delitzsch Architects</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.dropbox.com/s/i7k9nwvcmirmnlp/icon.png?raw=1">
+  <link rel="apple-touch-icon" sizes="128x128" href="https://www.dropbox.com/s/28ubqe7jfnh6e44/icon.jpg?raw=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" CONTENT="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>history.scrollRestoration = "manual"</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+  /* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 10px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+    display:none;
+}
+
+html {
+  scroll-behavior: smooth;
+
+
+}
+
+body, html {
+  color: black;
+  font-size: 2.9vh;
+  font-family: raleway;
+  margin: 0;
+
+}
+{
+  webkit-overflow-scrolling: touch;
+}
+{
+
+-webkit-font-smoothing: antialiased;
+
+}
+
+.copyright{
+  font-size: 13px;
+  text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    position: absolute;
+    top: 10.5%;
+    right: 6.5%;
+    color: black;
+    text-decoration: none;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.5vh;
+  z-index: -1;
+}
+
+.topnav a:hover {
+  color: #BFBFBF}
+
+.topnav .icon {
+  display: none;
+
+}
+
+.menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 84%;
+  top: 12%;
+  
+  }
+
+.title {
+      position: absolute;
+      left: 10%;
+      top: 12%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.5vh;
+
+    }
+
+    ul li a:hover {
+    Color: white;
+
+    }
+
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+    color: white;
+    padding-top: 30px;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .copyright {
+    font-size: 13px;
+  }
+  .title {
+      position: absolute;
+      left: 10%;
+      top: 7%;
+      color: black;
+      text-decoration: none;
+      z-index: 1;
+      font-size: 2.75vh;
+
+    }
+
+    .menub {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 85%;
+  top: 7.6%;
+  
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: absolute;
+    left: 6%;
+    top: 9%;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    line-height: 40%;
+
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar a:not(:first-child) {display: none;}
+  .topbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topbar.responsive {position: relative;}
+  .topbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ 
+      }
+
+      @media screen and (min-width:700px) {
+      .menub {
+      display:none;
+      float: right;
+      position: absolute;
+      right: 50%;
+      top:50%;
+      
+      }
+
+      
+      }
+
+header {
+  position: absolute;
+  margin: 12vw 12vw 1vw 12vw;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+
+}
+
+header div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 100%;
+  height: auto;
+  margin: .5vw;
+  margin:1vw auto;
+  
+
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+  position: absolute;
+  top: 18%;
+  margin:10px 10px 20px 10px;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit.flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+  z-index: -2;
+}
+
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0 0.65em;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+#sections {
+  font-size: 17px;
+  padding: 70px 0px 70px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+  
+#sections .main {
+  padding-right: 20px;
+  padding-top: 15px;
+  -webkit-flex: 2 1 25%;
+  flex: 2 1 25%;
+  -webkit-order: 2;
+  order: 2;
+}
+
+#sections .sub-section-1 {
+  padding-right: 200px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 90%;
+  -webkit-order: 1;
+  order: 1;
+}
+
+#sections .sub-section-2 {
+  padding-left: 10px;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 3;
+  order: 3;
+}
+@media all and (max-width: 1200px)
+{
+  #sections {
+    padding: 60px 60px;
+    font-size: 20px;
+  }
+
+
+@media all and (max-width: 1000px)
+{
+  #sections {
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  
+  #sections > .main, #sections > .sub-section-1, #sections > .sub-section-2 {
+    /* For mobile phones, each section should be on a line of it's own at 100% width. */
+    width: 100%;
+    -webkit-order: 0;
+            order: 0;
+  }
+  
+  #sections .main {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-1 {
+    padding-right: 0;
+  }
+  
+  #sections > .sub-section-2 {
+    padding-left: 0;
+  }
+}
+}
+
+.column1 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2.5vh;
+  width: 32%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+  }
+
+@media all and (max-width: 1000px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 30%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 30%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+@media all and (min-width: 1800px)
+{
+  .column1 {
+  line-height: 30px;
+  float: left;
+  font-size: 2vh;
+  width: 32%;
+  padding: 0px 0px 0px 10px;
+}
+
+.column2 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 32%;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+}
+
+.column3 {
+  float: left;
+  font-size: 2vh;
+  line-height: 30px;
+  width: 33%;
+  text-align: right;
+  padding: 0px 0px 0px 10px;
+}
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 4:3 ratio */
+    padding-top: 0px; 
+    height: 0px;
+    overflow: hidden;
+}
+
+.video-wrapper-narrow {
+    padding-bottom: 40%;
+}
+
+iframe,object,embed,video,.videoWrapper,.video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-js, img.vjs-poster {
+    width: 50% !important;
+    height: 100% !important; //these need !important because IE wants to set height/width to 100px
+    max-width: 100%;
+}
+
+
+
+ .textimage1 { 
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+
+.textimage2 {
+    text-align: right;
+      margin-top: 0;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+
+.luisbarragan-1 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+.luisbarragan-2 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 65vw;
+}
+.luisbarragan-3 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 1vw;    
+    position: relative;
+    margin-top: 30vw;
+}
+.luisbarragan-4 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 25vw;
+}
+.luisbarragan-5 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 29vw;
+}
+.luisbarragan-6 { 
+    width: 27vw;
+    float: left; 
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 40vw;
+}
+.luisbarragan-7 { 
+    width: 65vw;
+    float: right; 
+    margin-right: 1vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+.luisbarragan-8 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+.luisbarragan-9 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 29vw;
+}
+.luisbarragan-10 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 33vw;
+}
+.luisbarragan-11 { 
+    width: 27vw;
+    float: right; 
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 60vw;
+}
+.luisbarragan-12 { 
+    width: 27vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 52vw;
+}
+.luisbarragan-13 { 
+    width: 60vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+.luisbarragan-14 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 1vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.luisbarragan-15 { 
+    width: 25vw;
+    float: right; 
+    margin-right: 3vw;    
+    position: relative;
+    margin-top: 27vw;
+}
+.luisbarragan-16 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 5vw;    
+    position: relative;
+    margin-top: 27vw;
+}
+.luisbarragan-17 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 31vw;
+}
+.luisbarragan-18 { 
+    width: 60vw;
+    float: right; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+.luisbarragan-19 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 7vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+.luisbarragan-20 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 8vw;    
+    position: relative;
+    margin-top: 56vw;
+}
+.luisbarragan-21 { 
+    width: 24vw;
+    float: right; 
+    margin-right: 5vw;    
+    position: relative;
+    margin-top: 35vw;
+}
+.luisbarragan-22 { 
+    width: 24vw;
+    float: left; 
+    margin-left: 1vw;    
+    position: relative;
+    margin-top: 29vw;
+}
+.luisbarragan-23 { 
+    width: 60vw;
+    float: right; 
+    margin-right: 4vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+.luisbarragan-24 { 
+    width: 26vw;
+    float: left; 
+    margin-left: 3vw;    
+    position: relative;
+    margin-top: 15vw;
+}
+.luisbarragan-25 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 6vw;    
+    position: relative;
+    margin-top: 70vw;
+}
+.luisbarragan-26 { 
+    width: 60vw;
+    float: left; 
+    margin-left: 7vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+.luisbarragan-27 { 
+    width: 26vw;
+    float: right; 
+    margin-right: 1vw;    
+    position: relative;
+    margin-top: 10vw;
+}
+.luisbarragan-28 { 
+    width: 27vw;
+    float: left; 
+    margin-left: 1vw;    
+    position: relative;
+    margin-top: 33vw;
+}
+.luisbarragan-29 { 
+    width: 32vw;
+    float: right; 
+    margin-right: 2vw;    
+    position: relative;
+    margin-top: 25vw;
+}
+.luisbarragan-30 { 
+    width: 25vw;
+    float: left; 
+    margin-left: 6vw;    
+    position: relative;
+    margin-top: 49vw;
+}
+
+
+
+
+
+
+@media all and (max-width: 1100px)
+{
+
+ .textimage1 {
+    text-align: right;
+      margin-top: 2.5vw;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+
+.luisbarragan-1 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-3 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-4 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-5 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-6 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-7 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-8 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-9 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-10 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-11 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-12 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-13 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-14 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-15 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-16 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-17 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-18 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-19 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-20 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-21 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-22 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-23 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-24 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-25 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-26 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-27 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-28 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-29 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+.luisbarragan-30 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 10vw;
+}
+
+
+
+}      
+
+.bar1, .bar2 {
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.sticks10{
+    width: 80vh;
+  margin-top: 1vw;   
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-2px, 3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.change .bar2 {
+  transform: rotate(45deg) translate(-1px, -3px);
+  width: 20px;
+  background-color: white;
+
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<header>
+
+<div class="luisbarragan-1">
+    <img src="https://www.dropbox.com/scl/fi/qyh203yftgjwgdjhexgrv/luisbarragan-1.jpg?rlkey=soslfhz86jq3ihichd3qrdpue&st=a52qp753&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 2:54 PM</p>
+</div>
+
+<div class="luisbarragan-2">
+    <img src="https://www.dropbox.com/scl/fi/w76b6vrt77uhmybmv76vc/luisbarragan-2.jpg?rlkey=72h9n9m7vj4wqe5z8nrwhwo1h&st=yo0w5m8x&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:03 PM</p>
+</div>
+
+<div class="luisbarragan-3">
+    <img src="https://www.dropbox.com/scl/fi/mg69kc55edqlx635j2wt5/luisbarragan-3.jpg?rlkey=plogvk8wbow7irbw0qwiowfoy&st=8i37cpyx&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:03 PM</p>
+</div>
+
+<div class="luisbarragan-4">
+    <img src="https://www.dropbox.com/scl/fi/9gni4as6m3i2pf3ly73uu/luisbarragan-4.jpg?rlkey=bqcvdhhr8kndn7g6h9b19gg9j&st=51zp3fhg&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:04 PM</p>
+</div>
+
+<div class="luisbarragan-5">
+    <img src="https://www.dropbox.com/scl/fi/jv75pj8zdd2s7z42cxo6u/luisbarragan-5.jpg?rlkey=7elyt6neujk7siqzse0sk258w&st=qh451f3i&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:04 PM</p>
+</div>
+
+<div class="luisbarragan-6">
+    <img src="https://www.dropbox.com/scl/fi/rvh6s74wgidc73f24v525/luisbarragan-6.jpg?rlkey=fizaqknvru79lzt9mf53dry2l&st=ng5ekh6b&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:06 PM</p>
+</div>
+
+<div class="luisbarragan-7">
+    <img src="https://www.dropbox.com/scl/fi/jeqoynwjcsh23ee2kzdg9/luisbarragan-7.jpg?rlkey=v2r4h9t4wi3g7wiwpo5pqp7ky&st=q2s0flsd&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:08 PM</p>
+</div>
+
+<div class="luisbarragan-8">
+    <img src="https://www.dropbox.com/scl/fi/sp2u7xevygh1f4kx3vccq/luisbarragan-8.jpg?rlkey=px224d704tox9fmz0ka3f4uwz&st=w3n1qz1h&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:10 PM</p>
+</div>
+
+<div class="luisbarragan-9">
+    <img src="https://www.dropbox.com/scl/fi/ppy9ijd7uds8jcmg3c2eb/luisbarragan-9.jpg?rlkey=sesfuaklu44x1wg4juki39uee&st=qccxsz03&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:11 PM</p>
+</div>
+
+<div class="luisbarragan-10">
+    <img src="https://www.dropbox.com/scl/fi/h3ajibxep5077ui8q5ih1/luisbarragan-10.jpg?rlkey=kdiq3bzw5exest91kxl5ubxhy&st=3z8za9a7&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:12 PM</p>
+</div>
+
+<div class="luisbarragan-11">
+    <img src="https://www.dropbox.com/scl/fi/hgmnz6whecc3jwstc9zvl/luisbarragan-11.jpg?rlkey=gle5k67v8ppqe2w5k0s2pleu4&st=cs1p7l4f&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:14 PM</p>
+</div>
+
+<div class="luisbarragan-12">
+    <img src="https://www.dropbox.com/scl/fi/79au7ov7yezza2of3e7a7/luisbarragan-12.jpg?rlkey=xkmyih9v6a5gdks75kol26e58&st=lbko2wp8&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:27 PM</p>
+</div>
+
+<div class="luisbarragan-13">
+    <img src="https://www.dropbox.com/scl/fi/dtbwbe9dqryul9d2zqciv/luisbarragan-13.jpg?rlkey=3yrf673m2tjr0bh5lsjs9ppaf&st=8d3d393v&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:28 PM</p>
+</div>
+
+<div class="luisbarragan-14">
+    <img src="https://www.dropbox.com/scl/fi/oomuqyxpc33fat1yfm51w/luisbarragan-14.jpg?rlkey=8mxbui55qo37jk9tclkei4f4g&st=1imgutms&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:28 PM</p>
+</div>
+
+<div class="luisbarragan-15">
+    <img src="https://www.dropbox.com/scl/fi/xo49r54cuqebjxkgz1ry0/luisbarragan-15.jpg?rlkey=560zn776qfi8z4n1tb6i7nhhh&st=ajw4q9z9&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:28 PM</p>
+</div>
+
+<div class="luisbarragan-16">
+    <img src="https://www.dropbox.com/scl/fi/g9865gyvsig7yxzi4vpd9/luisbarragan-16.jpg?rlkey=mrtnkrtos8e720pfxu7n2azwz&st=mbbqw3zz&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:29 PM</p>
+</div>
+
+<div class="luisbarragan-17">
+    <img src="https://www.dropbox.com/scl/fi/xr3sf8lupzlthv1p64rwh/luisbarragan-17.jpg?rlkey=53clmooi9zjfnu1hbpq27v7xy&st=8zs7mdyj&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:31 PM</p>
+</div>
+
+<div class="luisbarragan-18">
+    <img src="https://www.dropbox.com/scl/fi/i9khtrk7mp97cdychxckk/luisbarragan-18.jpg?rlkey=5h965zfryg7pb2ra908c0zshc&st=kj5ij85e&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:35 PM</p>
+</div>
+
+<div class="luisbarragan-19">
+    <img src="https://www.dropbox.com/scl/fi/c41g8i1mfipkdqjjttfyr/luisbarragan-19.jpg?rlkey=4asx9ckl7jqri4j4xwbegbzv2&st=2qeyzcqs&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:38 PM</p>
+</div>
+
+<div class="luisbarragan-20">
+    <img src="https://www.dropbox.com/scl/fi/ylp1sh8egz3f6u1tk7ekw/luisbarragan-20.jpg?rlkey=3znuk9yh9ndpm5fdyf4pexkr7&st=jz3u0bts&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:39 PM</p>
+</div>
+
+<div class="luisbarragan-21">
+    <img src="https://www.dropbox.com/scl/fi/x83312vtrckb1dkrbqwvw/luisbarragan-21.jpg?rlkey=jhzx71ylzdap82q5t0dmyv1n3&st=yllf094x&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:41 PM</p>
+</div>
+
+<div class="luisbarragan-22">
+    <img src="https://www.dropbox.com/scl/fi/hfy6o68fsgdc7jxvyys6n/luisbarragan-22.jpg?rlkey=e41mapk8vncc95vfw5368cf63&st=eeqq1oov&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:42 PM</p>
+</div>
+
+<div class="luisbarragan-23">
+    <img src="https://www.dropbox.com/scl/fi/beekos4l0uw8ypun7qdey/luisbarragan-23.jpg?rlkey=noj1r4dfoxzbltf4jm63qrntc&st=km41mawv&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:42 PM</p>
+</div>
+
+<div class="luisbarragan-24">
+    <img src="https://www.dropbox.com/scl/fi/3yashzd3u6lpbm7jr8f96/luisbarragan-24.jpg?rlkey=ijnng3h9cdqas2o5wecxy893v&st=fwhl20u5&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa-Estudio Luis Barragán</p>
+    <p class="textimage2">Mexico City, Mexico, 21/01/2025 3:42 PM</p>
+</div>
+
+<div class="luisbarragan-25">
+    <img src="https://www.dropbox.com/scl/fi/z6x3agsmly8z4217ekfob/luisbarragan-25.jpg?rlkey=ewnl219mogyj792pve5a1c7x0&st=opm5b4uw&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa Gilardi</p>
+    <p class="textimage2">Mexico City, Mexico, 14/06/2022 12:04 PM</p>
+</div>
+
+<div class="luisbarragan-26">
+    <img src="https://www.dropbox.com/scl/fi/ct4cmb9m15deefadepwdu/luisbarragan-26.jpg?rlkey=tyd8snaeazajajnpjq00kv2wr&st=j58enwbp&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa Gilardi</p>
+    <p class="textimage2">Mexico City, Mexico, 14/06/2022 12:34 PM</p>
+</div>
+
+<div class="luisbarragan-27">
+    <img src="https://www.dropbox.com/scl/fi/9pufiune5e23p0l2fcayp/luisbarragan-27.jpg?rlkey=2gewrrhqx8vgc1yue7v18mbuw&st=cqlsed3t&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa Gilardi</p>
+    <p class="textimage2">Mexico City, Mexico, 14/06/2022 12:24 PM</p>
+</div>
+
+<div class="luisbarragan-28">
+    <img src="https://www.dropbox.com/scl/fi/9d87twmijlxhko4z4z5eu/luisbarragan-28.jpg?rlkey=6ti5g4teet3g1s4sezgrpi93h&st=tbqws0z5&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa Gilardi</p>
+    <p class="textimage2">Mexico City, Mexico, 14/06/2022 12:30 PM</p>
+</div>
+
+<div class="luisbarragan-29">
+    <img src="https://www.dropbox.com/scl/fi/db4i7g00nc3894pe7rrcs/luisbarragan-29.jpg?rlkey=88ym66mpkiv42ghskxeivmq4v&st=1yyziiez&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa Gilardi</p>
+    <p class="textimage2">Mexico City, Mexico, 14/06/2022 12:31 PM</p>
+</div>
+
+<div class="luisbarragan-30">
+    <img src="https://www.dropbox.com/scl/fi/cuhamxg6i5upexdd1ity4/luisbarragan-30.jpg?rlkey=dkqej9nnatajaap7ztlkjn2vd&st=5fwuxdkr&raw=1" />
+    <p class="textimage1">Luis Barragán | Casa Gilardi</p>
+    <p class="textimage2">Mexico City, Mexico, 14/06/2022 12:39 PM</p>
+</div>
+
+
+
+      <div class="white"> <img src="https://www.dropbox.com/s/9fm07eh0voiumgd/whitebar.jpg?raw=1"></div>
+
+ <div class="row">
+  <div class="column1">
+    <a style="text-decoration: none; color:#005799" href="https://ericdelitzsch.com/studio">Contact</a><br>
+  </div>
+  <div class="column2">
+    <a style="text-decoration: none; color:#005799" href="https://www.instagram.com/ericdelitzsch.architects/" target="_blank">Instagram</a><br>
+  </div>
+  <div class="column3">
+    <a style="text-decoration: none; color:#005799" href="#top">🡡 Top</a><br>
+  </div>
+</div>
+
+<div class="copyright">
+    <a style="text-decoration: none; color:gray">© eric delitzsch architects</a><br>
+  </div>
+
+  </header> 
+
+<script type="text/javascript">
+
+window.addEventListener("DOMContentLoaded", function(e) {
+  var links = document.getElementsByTagName("A");
+  for(var i=0; i < links.length; i++) {
+    if(!links[i].hash) continue;
+    if(links[i].origin + links[i].pathname != self.location.href) continue;
+    (function(anchorPoint) {
+      links[i].addEventListener("click", function(e) {
+        anchorPoint.scrollIntoView(true);
+        e.preventDefault();
+      }, false);
+    })(document.getElementById(links[i].hash.replace(/#/, "")));
+  }
+}, false);
+
+</script>
+
+<script type="text/javascript">
+
+// Vanilla version of FitVids
+// Still licencened under WTFPL
+//
+// Not as robust and fault tolerant as the jQuery version.
+// It's BYOCSS.
+// And also, I don't support this at all whatsoever.
+
+(function(window, document, undefined) {
+  "use strict";
+
+  // List of Video Vendors embeds you want to support
+  var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+
+  // Select videos
+  var fitVids = document.querySelectorAll(players.join(","));
+
+  // If there are videos on the page...
+  if (fitVids.length) {
+    // Loop through videos
+    for (var i = 0; i < fitVids.length; i++) {
+      // Get Video Information
+      var fitVid = fitVids[i];
+      var width = fitVid.getAttribute("width");
+      var height = fitVid.getAttribute("height");
+      var aspectRatio = height / width;
+      var parentDiv = fitVid.parentNode;
+
+      // Wrap it in a DIV
+      var div = document.createElement("div");
+      div.className = "fitVids-wrapper";
+      div.style.paddingBottom = aspectRatio * 100 + "%";
+      parentDiv.insertBefore(div, fitVid);
+      fitVid.remove();
+      div.appendChild(fitVid);
+
+      // Clear height/width from fitVid
+      fitVid.removeAttribute("height");
+      fitVid.removeAttribute("width");
+    }
+  }
+})(window, document);
+
+
+</script>
+
+
+<a href="https://ericdelitzsch.com/" class="title" id="title"><b>eric delitzsch </b>architects<a/></li>
+<div class="topnav" id="myTopnav">
+<a href="https://ericdelitzsch.com/work">work</a>
+  <a href="https://ericdelitzsch.com/drawings">drawings</a>
+  <a href="https://ericdelitzsch.com/photography">photography</a>
+  <a href="https://ericdelitzsch.com/studio">studio</a>
+  <a href="studio"></a>  
+</div>
+
+<div class="menua" id="mymenua">
+  <a href="javascript:void(0);" style="font-size:2.7vh;" class="menub" onclick="myFunction()">
+    
+  <div class="container" onclick="myFunction1(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  </div>
+  
+  </a>
+  
+</div>
+
+<div id="myNav" class="overlay">
+</div>
+
+<script>
+    // Defining custom functions
+    function menu1(){
+        var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+     
+    var checkFlag = true;
+function fondo(){
+  if(checkFlag == true){
+  document.getElementById("myNav").style.display = "block";
+  }else{
+  document.getElementById("myNav").style.display = "none";
+  }
+  checkFlag = !checkFlag;
+}
+
+
+function noscroll(){
+  if(checkFlag == true){
+  document.body.style.overflow="scroll";
+  }else{
+  document.body.style.overflow="hidden";
+  }
+  }
+
+    function color(){
+  if(checkFlag == true){
+  document.getElementById("title").style.color = 'black';
+  }else{
+  document.getElementById("title").style.color = 'white';
+  }
+  }
+
+    
+ 
+    // Selecting button element
+    var btn = document.getElementById("mymenua");
+     
+    // Assigning event listeners to the button
+    btn.addEventListener("click", menu1);
+    btn.addEventListener("click", fondo);
+    btn.addEventListener("click", noscroll);
+    btn.addEventListener("click", color);
+    </script>
+
+
+
+</body>
+</html>
